@@ -4,15 +4,45 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
-    <!-- <style>
-    </style> -->
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .b_text {
+            color:white;
+            font-family: sans-serif;
+            display: block;
+            position: absolute;
+            width: 50%;
+            left: -125%;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        #treemap-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: grey;
+        }
+    </style>
 </head>
 <body>
     <!-- <button id="transition" style="width: 25px; height: 10px; margin-left: 452px;">Click here</button> -->
     <div id="block" style="position: absolute; width: 100%; height: 100%; background-color: black; z-index: 10;">
-        <p style="color:white; font-family: sans-serif; margin-left:50%; margin-top:50%; text-anchor: middle;">In 2023, .</p>
+        <div style="display: flex; width: 100%; height: 100%; align-items: center;">
+        <!-- <div style="top: 50%; bottom: 50%;"> -->
+            <p id="b_t1" class="b_text" style="left: 25%">In 2023, AI occupied a small fraction of the tech industry.</p>
+            <p id="b_t2" class="b_text">By 2025, the industry's largest players total a market cap of $20 trillion.</p>
+            <p id="b_t3" class="b_text">With companies like OpenAI making double and evne triple-digit billion dollar deals for data centers,</p>
+            <p id="b_t4" class="b_text">What is all this money really doing?</p>
+        </div>
     </div>
-    <div id="treemap-container" style="position: absolute; width: 100%; height: 100%; z-index: 2;"></div>
+    <div id="treemap-container"></div>
     <div id="map-container" style="position: absolute; width: 100%; height: 100%; z-index: 1"></div>
         
     <!-- <div id="top-container" style="position: absolute; z-index: 52;">

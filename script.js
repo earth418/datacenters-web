@@ -3,11 +3,50 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 
+let num_presses = 0;
 
+document.addEventListener("keydown", (e) => {
+    if (e.key == "d") {
+        num_presses++;
+    }
 
+    switch (num_presses) {
+        case 1:
+        case 2:
+        case 3:
+            console.log("Hi!!");
+            console.log(d3.select("#b_t" + num_presses));
+            d3.select("#b_t" + num_presses).transition()
+                .duration(1000)
+                // .attr("opacity", 0.0)
+                .style("left", "125%")
+                // .on("end", () => {
+                //     d3.select(this).attr("visibility","hidden");}
+                //     );
+            d3.select("#b_t" + (num_presses + 1)).transition()
+                .duration(1000)
+                // .attr("opacity", 1.0)
+                .style("left", "25%")
+                // .on("start", () => {
+                    // d3.select(this)
+                    //     .style("visibility","visible")
+                    //     // .style("transform","translateY(50px)");
+                    // }
+                // );
+            break;
+        
+        case 4:
+            d3.select("#block").transition()
+                .duration(1000)
+                .style("opacity", 0.0)
+                break;
+        case 5:
+            d3.select("#treemap-container").transition()
+                .duration(1000)
+                .style("opacity", 0.0)
 
-
-
+    }
+});
 
 
 
@@ -53,10 +92,10 @@ function parseCSV(str) {
 }
 
 const array_data = parseCSV(ai_companies);
-array_data[0] = ["origin","","","","","","","",""] // this is the name layer anyway
+array_data[0] = ["origin","origin","","","","","","",""] // this is the name layer anyway
 
 let data = array_data.map((w) => {
-    return {name : w[1], symbol: w[2], value: w[3]};
+    return {name : w[1], symbol: w[2], value: w[3], parent: "origin" };
         // , country : w[5], address: w[3], county: w[5], city: w[4], state: w[6], zip: w[7], lat: w[8], lon: w[9], parent: "origin"};
 });
 
@@ -67,7 +106,9 @@ let data = array_data.map((w) => {
 // data[0].name = "origin";
 data[0].parent = "";
 
-const total_width = 1920, total_height = 1080;
+
+let total_width = window.innerWidth,
+total_height = window.innerHeight;
 
 // treemap1 starts at (106, 230)
 // treemap1 ends (953, 935)
@@ -76,8 +117,10 @@ const total_width = 1920, total_height = 1080;
 
 const width = 975, height = 610;
 
-const treemap_ht = 935 - 230;
-const treemap_wd = 953 - 106;
+// const treemap_ht = 935 - 230;
+// const treemap_wd = 953 - 106;
+let treemap_ht = total_width - 230;
+let treemap_wd = total_height - 106;
 
 const root_data = d3.stratify()
     .id((d) => d.name)
@@ -88,7 +131,7 @@ root_data.sum((d) => +d.value);
 
 const root = d3.treemap()
 .tile(d3.treemapSquarify)
-.size([treemap_wd+106, treemap_ht+230])
+.size([treemap_ht, treemap_wd])
 .padding(0)
 .paddingTop(230)
 .paddingLeft(106)
@@ -111,8 +154,10 @@ const leaf = svg.selectAll("g")
         .attr("href", (d) => `#`)
 
 function format(num) {
-    if (num >= 1e9) {
-        return (num / 1e9).toFixed(2) + "B";
+    if (num >= 1e12) {
+        return (num / 1e12).toFixed(2) + "T";
+    } else if (num >= 1e9) {
+        return (num / 1e9).toFixed(0) + "B";
     } else if (num >= 1e6) {
         return (num / 1e6).toFixed(0) + "M";
     }
@@ -190,11 +235,11 @@ function wrapText(txt, text, width) {
     });
 }
 
-function font_sizepx(d) {return ((d.value / 1000000000) * 12 + 6);}
+function font_sizepx(d) {return ((d.value / 1e12) * 4 + 3);}
 
 function font_size(d) {return font_sizepx(d) + "px"}
 
-function font_sizepx2(d) {return (d.value / 3000000000) * 6 + 8}
+function font_sizepx2(d) {return (d.value / 1e12) * 4 + 3}
 
 function font_size2(d) {return font_sizepx2(d) + "px"}
 
@@ -211,12 +256,12 @@ leaf.filter(d => d.value > 195000000).append("text")
     .attr("text-anchor", "middle")
     .attr("font-size", font_size)
     .attr("fill", "black")
-    .attr("font-family", "\"Source Sans 3\"")
-    // .text(d => d.data.name)
-    .each(function(d) { 
-        const width = Math.max(0, Math.floor(d.x1 - d.x0) - 4);
-        wrapText(d.data.name, d3.select(this), width);
-    })
+    .attr("font-family", "sans-serif")
+    .text(d => d.data.name)
+    // .each(function(d) { 
+    //     const width = Math.max(0, Math.floor(d.x1 - d.x0) - 4);
+    //     wrapText(d.data.name, d3.select(this), width);
+    // })
     .append("tspan")
         .text(d => `$${format(d.value)}`)
         .attr("x", (d) => d.x1)
@@ -224,11 +269,11 @@ leaf.filter(d => d.value > 195000000).append("text")
         .attr("dy", (d) => "-0.5em")
         .attr("dx", (d) => "-0.25em")
         .attr("text-anchor", "end")
-        .attr("font-size", 16)
+        .attr("font-size", font_size2)
         .attr("fill", "black")
         .attr("weight", "bold")
 
-document.getElementById("treeice-container").append(svg.node());
+document.getElementById("treemap-container").append(svg.node());
 
 const projection1 = d3.geoMercator()
     // .center([-97.42011851400741, 38.56265081052521])

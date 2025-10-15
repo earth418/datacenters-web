@@ -1,11 +1,12 @@
 const map = new maplibregl.Map({
       style: `https://tiles.openfreemap.org/styles/bright`,
-      center: [-74.0066, 40.7135],
-      zoom: 15.5,
-      pitch: 45,
-      bearing: -17.6,
+      center: [-96.0066, 38.7135],
+      zoom: 4.0,
+      pitch: 0,
+      bearing: 0,
       container: 'map-container',
-      canvasContextAttributes: {antialias: true}
+      canvasContextAttributes: {antialias: true},
+      attributionControl: false
   });
 
   // The 'building' layer in the streets vector source contains building-height
