@@ -3,27 +3,25 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 
-let num_presses = 0;
+let num_presses = 5;
+update(4);
+update(5);
 
-document.addEventListener("keydown", (e) => {
-    if (e.key == "d") {
-        num_presses++;
-    }
-
-    switch (num_presses) {
+function update(stage) {
+    switch (stage) {
         case 1:
         case 2:
         case 3:
-            console.log("Hi!!");
-            console.log(d3.select("#b_t" + num_presses));
-            d3.select("#b_t" + num_presses).transition()
+            // console.log("Hi!!");
+            // console.log(d3.select("#b_t" + num_presses));
+            d3.select("#b_t" + stage).transition()
                 .duration(1000)
                 // .attr("opacity", 0.0)
                 .style("left", "125%")
                 // .on("end", () => {
                 //     d3.select(this).attr("visibility","hidden");}
                 //     );
-            d3.select("#b_t" + (num_presses + 1)).transition()
+            d3.select("#b_t" + (stage + 1)).transition()
                 .duration(1000)
                 // .attr("opacity", 1.0)
                 .style("left", "25%")
@@ -36,20 +34,78 @@ document.addEventListener("keydown", (e) => {
             break;
         
         case 4:
+            // update(3);
             d3.select("#block").transition()
                 .duration(1000)
                 .style("opacity", 0.0)
                 break;
         case 5:
+            // update(4);
+            // transition();
             d3.select("#treemap-container").transition()
                 .duration(1000)
                 .style("opacity", 0.0)
+            break;
+
+        case 6:
+            // update(5);
+            map.flyTo({
+                center: [-110.9,32.2],
+                zoom : 12
+            })
+            break;
+        
+        case 7:
+            // update(6);
+            map.flyTo({
+                center: [-110.7875,32.052],
+                zoom : 15
+            })
+            // map.
+            //     map.addSource('tuscon', {
+            //     'type':'geojson',
+            //     'data': tuscon_shape
+            // });
+            const t = d3.timer((ti) => {
+                map.setPaintProperty('tusconlayer', 'fill-opacity', Math.min(1,ti / 1000.0));
+                console.log(ti);
+                if (ti > 1000) t.stop();
+            }, 100);
+            // map.addLayer(
+            // {
+            //     'id':'tuscon',
+            //     'type':'fill',
+            //     'source':'tuscon',
+            //     'layout':{},
+            //     'paint': {
+            //         'fill-color': '#088',
+            //         'fill-opacity': 0.7,
+            //         'fill-opacity-transition':{duration:2000}
+            //     }
+            // });
+            // map.addLayer(
+            // {
+            //     'id':'tuscon',
+            //     'type':'line',
+            //     'source':'tuscon',
+            //     'layout':{},
+            //     'paint': {
+            //         'line-color': '#000',
+            //         'line-opacity': 1.0,
+            //         'line-opacity-transition':{duration:2000}
+            //     }
+            // })
+            break;
 
     }
+}
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == " ") {
+        num_presses++;
+    }
+    update(num_presses);
 });
-
-
-
 
 
 
@@ -100,6 +156,8 @@ let data = array_data.map((w) => {
 });
 
 
+
+
 // thank you to 
 // https://d3-graph-gallery.com/graph/treemap_basic.html
 // for helping me realize I needed this parent stuff
@@ -110,15 +168,6 @@ data[0].parent = "";
 let total_width = window.innerWidth,
 total_height = window.innerHeight;
 
-// treemap1 starts at (106, 230)
-// treemap1 ends (953, 935)
-// treemap2 starts (960, 230)
-// treemap2 ends (960, 1808)
-
-const width = 975, height = 610;
-
-// const treemap_ht = 935 - 230;
-// const treemap_wd = 953 - 106;
 let treemap_ht = total_width - 230;
 let treemap_wd = total_height - 106;
 
@@ -176,64 +225,6 @@ leaf.append("rect")
     .style("fill", (d) => ["#ffe3c8", "#ffecd7"][Math.floor(Math.random() * 2)])
     .style("fill-opacity", 1.0)
 
-// from claude
-function wrapText(txt, text, width) {
-     text.each(function() {
-        const text = d3.select(this);
-        const words = txt.split(/\s+/);
-        const fontSize = parseFloat(text.attr("font-size")) || 10;
-        const charWidth = fontSize * 0.6; // Approximate character width
-        const maxCharsPerLine = Math.floor(width / charWidth);
-        // let tspan = text.text(null).append("tspan").attr("x", text.attr("x")).attr("y", y).attr("dy", dy + "em");
-        
-        if (maxCharsPerLine <= 0) return;
-
-        let currentLine = [];
-        let lineNumber = 0;
-        const lineHeight = 1.1;
-        const y = text.attr("y");
-        const dy = parseFloat(text.attr("dy")) || 0;
-        
-        for (let i = 0; i < words.length; i++) {
-            const word = words[i];
-            const testLine = currentLine.length > 0 ? currentLine.join(" ") + " " + word : word;
-            
-            if (testLine.length <= maxCharsPerLine) {
-                currentLine.push(word);
-            } else {
-                if (currentLine.length > 0) {
-                    // Add current line
-                    text.append("tspan")
-                        .attr("x", text.attr("x"))
-                        .attr("y", y)
-                        .attr("dy", lineNumber * lineHeight - dy + "em")
-                        .text(currentLine.join(" "));
-                    
-                    lineNumber++;
-                    currentLine = [word];
-                } else {
-                    // Word is too long for one line, add it anyway
-                    text.append("tspan")
-                        .attr("x", text.attr("x"))
-                        .attr("y", y)
-                        .attr("dy", lineNumber * lineHeight - dy + "em")
-                        .text(word);
-                    
-                    lineNumber++;
-                }
-            }
-        }
-        
-        // Add remaining words
-        if (currentLine.length > 0) {
-            text.append("tspan")
-                .attr("x", text.attr("x"))
-                .attr("y", y)
-                .attr("dy", lineNumber * lineHeight - dy + "em")
-                .text(currentLine.join(" "));
-        }
-    });
-}
 
 function font_sizepx(d) {return ((d.value / 1e12) * 4 + 3);}
 
@@ -244,11 +235,6 @@ function font_sizepx2(d) {return (d.value / 1e12) * 4 + 3}
 function font_size2(d) {return font_sizepx2(d) + "px"}
 
 
-function indent(d) {
-    const maxCharsPerLine = Math.floor((d.x1 - d.x0) / (font_sizepx(d) * 0.6));
-    return Math.floor(d.data.name.length / maxCharsPerLine) + 0.7;
-}
-
 leaf.filter(d => d.value > 195000000).append("text")
     .attr("x", (d) => (d.x0 + d.x1) / 2.0 )
     .attr("y", (d) => (d.y1 + d.y0) / 2.0)
@@ -258,10 +244,6 @@ leaf.filter(d => d.value > 195000000).append("text")
     .attr("fill", "black")
     .attr("font-family", "sans-serif")
     .text(d => d.data.name)
-    // .each(function(d) { 
-    //     const width = Math.max(0, Math.floor(d.x1 - d.x0) - 4);
-    //     wrapText(d.data.name, d3.select(this), width);
-    // })
     .append("tspan")
         .text(d => `$${format(d.value)}`)
         .attr("x", (d) => d.x1)
@@ -289,10 +271,10 @@ function d_to_radius(d) {
 
 function transition() {
 
-    const duration = 40000;
+    const duration = 1000;
     // const duration = 1000;
 
-    d3.select("#treeice-container").transition().duration(duration).style("background-color",null);
+    d3.select("#treemap-container").transition().duration(duration).style("background-color",null);
         
     leaf.selectAll("rect").transition().duration(duration)
             .attr("height", d_to_radius)

@@ -30,6 +30,9 @@
             background-color: grey;
         }
     </style>
+
+    <script src="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.css" rel="stylesheet" />
 </head>
 <body>
     <!-- <button id="transition" style="width: 25px; height: 10px; margin-left: 452px;">Click here</button> -->
@@ -41,6 +44,17 @@
             <p id="b_t3" class="b_text">With companies like OpenAI making double and evne triple-digit billion dollar deals for data centers,</p>
             <p id="b_t4" class="b_text">What is all this money really doing?</p>
         </div>
+    </div>
+    <div id="sidebar" style="position: absolute; width: 30%; left: 0; height: 100%; background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5;">
+        <p>The city of Tuscon, AZ has been, for the last several months, in battle with the 
+            interests of these private corporations about a proposed data center within their
+            city limits.
+        </p>
+        <p>This is Project Blue -- 290 acres set aside by the county to build a powerful data center.</p>
+        <p>After city residents voted against the data center, 
+            citing environmental, water use, and energy concerns, 
+            the municipality simply decided to let the company build the data center outside city limits. 
+        </p>
     </div>
     <div id="treemap-container"></div>
     <div id="map-container" style="position: absolute; width: 100%; height: 100%; z-index: 1"></div>
@@ -58,12 +72,28 @@
     <!-- <script src="treemap_info.txt"></script> -->
     <!-- <script src="treemap - cbp.txt"></script> -->
     <script src="largest_ai_companies.txt"></script>
-    <!-- <script src="data/tmice.txt"></script> -->
-    <!-- <script src="State__County_and_City_FIPS_Reference_Table.txt"></script> -->
-    <script src='https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.js'></script>
+    
+    <script>
+        const map = new maplibregl.Map({
+            style: `https://tiles.openfreemap.org/styles/bright`,
+            center: [-96.0066, 38.7135],
+            zoom: 4.0,
+            pitch: 0,
+            bearing: 0,
+            container: 'map-container',
+            canvasContextAttributes: {antialias: true},
+            attributionControl: false
+        });
+    </script>
+    
+    <script src="datacenters.js"></script>
+    <script src="tuscon.js"></script>
     <script type="module" src="mapscript.js"></script>
     <script src="https://unpkg.com/topojson@3"></script>
     <script type="module" src="script.js"></script>
     <!-- <script type="module" src="treemap_cbp.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typescript@5.3.3"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/text-typescript@1.3.0"></script> -->
 </body>
 </html>
