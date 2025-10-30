@@ -14,24 +14,22 @@ function animate_map_property(layer, property, func_of_time, duration, delay=300
     }, delay);
 }
 
+let stop_rotating = false;
+
 function update(stage, instant = false) {
     const duration = instant ? 0 : 1000;
     switch (stage) {
         case 1:
         case 2:
         case 3:
-            // console.log("Hi!!");
-            // console.log(d3.select("#b_t" + num_presses));
             d3.select("#b_t" + stage).transition()
                 .duration(duration)
-                // .attr("opacity", 0.0)
                 .style("left", "125%")
                 // .on("end", () => {
                 //     d3.select(this).attr("visibility","hidden");}
                 //     );
             d3.select("#b_t" + (stage + 1)).transition()
                 .duration(duration)
-                // .attr("opacity", 1.0)
                 .style("left", "25%")
             break;
         
@@ -55,7 +53,7 @@ function update(stage, instant = false) {
                 .duration(duration)
                 .style("opacity",1.0);
             
-            d3.select('#p1').transition().duration(duration).style("top","10%");
+            d3.select('#s1p1').transition().duration(duration).style("top","10%");
 
             map.flyTo({
                 center: [-110.99,32.21],
@@ -70,7 +68,7 @@ function update(stage, instant = false) {
                 zoom : 15
             })
 
-            d3.select('#p2').transition().duration(duration).style("top","10%");
+            d3.select('#s1p2').transition().duration(duration).style("top","10%");
             // d3.select('#p3').transition().duration(duration).style("top","25%");
 
             animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);                
@@ -84,25 +82,17 @@ function update(stage, instant = false) {
             })
 
             // d3.select('#p2').transition().duration(duration).style("top","25%");
-            d3.select('#p3').transition().duration(duration).style("top","10%");
+            d3.select('#s1p3').transition().duration(duration).style("top","10%");
 
             animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
             break;
         
         case 9:
-            d3.select('#p4').transition().duration(duration).style("top","10%");
+            d3.select('#s1p4').transition().duration(duration).style("top","10%");
             break;
 
         case 10:
-
             d3.select("#sidebar1").transition().duration(duration).style("opacity",0.0);
-            // update(6);
-            // map.flyTo({
-            //     center: [-110.8875,32.152],
-            //     zoom : 10
-            // })
-
-
             animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration);
             break;
         
@@ -112,23 +102,58 @@ function update(stage, instant = false) {
             //         center: [-77.8875,39.152],
             //         zoom : 8
             //     })
+            d3.select("#sidebar2").transition().duration(duration).style("opacity",1.0);
             map.flyTo({
-                    center: [-90.8875,32.152],
-                    zoom : 6
+                    center: [-90.04,35.14],
+                    zoom : 8
                 })
+                d3.select('#s2p1').transition().duration(duration).style("top","10%");
             break;
 
-         case 12:
-            
+        case 12:
             map.flyTo({
-                    center: [-90.8875,32.152],
-                    zoom : 6
-                })
+                    center: [-90.15627488376435,35.05966538381292],
+                    zoom : 12
+                });
+                d3.select('#s2p2').transition().duration(duration).style("top","10%");
             break;
 
-
+        case 13:
             
+            map.flyTo({
+                center: [-90.15627488376435,35.05966538381292],
+                zoom : 15,
+                pitch: 45.0,
+            });
+            
+            rotateCamera(0);
+
+            d3.select('#s2p3').transition().duration(duration).style("top","10%");
+            break;
+            
+        case 14:
+                // map.flyTo({
+                //     center: [-90.15627488376435,35.05966538381292],
+                //     zoom : 15,
+                //     pitch: 45
+                // })
+
+
+                d3.select('#s2p4').transition().duration(duration).style("top","10%");  
+            break;
+
+        case 16:
+            // stop_rotating = true;
+            break;
     }
+}
+
+function rotateCamera(time) {
+    map.rotateTo((time / 100) % 360, {duration: 0});
+    if (stop_rotating)
+        stop_rotating = false;
+    else
+        requestAnimationFrame(rotateCamera);
 }
 
 document.addEventListener("keydown", (e) => {

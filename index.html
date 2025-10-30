@@ -9,6 +9,7 @@
             width: 100%;
             height: 100%;
             margin: 0;
+            overflow: hidden;
         }
 
         .b_text {
@@ -30,10 +31,11 @@
             background-color: grey;
         }
 
-        #sidebar1 > p {
+        .sidebar > p {
             margin-left: 5px;
             color: white;
             font-family: sans-serif;
+            font-size: 0.75em;
             margin-bottom: 2em;
         }
     </style>
@@ -53,22 +55,60 @@
             <p id="b_t4" class="b_text">What is all this money really doing?</p>
         </div>
     </div>
-    <div id="sidebar1" style="position: absolute; width: 30%; left: 0; height: 100%; 
+
+    <div id="sidebar1" class="sidebar" style="position: absolute; width: 30%; left: 0; height: 100%; 
     background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5; opacity: 0.0;">
-        <p id="p1" style="position: relative; top: -100%;">The city of Tuscon, AZ has been, for the last several months, in battle with the 
+        <p id="s1p1" style="position: relative; top: -100%;">The city of Tuscon, AZ has been, for the last several months, in battle with the 
             interests of these private corporations about a proposed data center within their
             city limits.</p>
-        <p id="p2" style="position: relative; top: -100%;">This is Project Blue -- 290 acres set aside by the county for a company called Built
-            to build a powerful data center.</p>
-        <p id="p3" style="position: relative; top: -100%;">After city residents voted against the construction of the data center, 
-            citing environmental, water use, and energy concerns, 
-            the municipality simply decided to let the company build the data center <b style="color:#003">right outside</b> city limits.
+        <p id="s1p2" style="position: relative; top: -100%;">This is Project Blue -- a 290 acre powerful data center campus, 
+            being built by a company called Beale Infrastructure, a datacenter building subsidary of asset manager Blue
+            Owl and reportedly tied to Amazon. The campus has at least three data centers and currently has a 286MW energy agreement, but with rumors that the final number of 
+            buildings
+            <a href="https://www.datacenterdynamics.com/en/news/amazon-named-as-company-behind-290-acre-data-center-campus-in-tuscson-arizona/">
+            could go up to ten</a>, with 600 MW of data center power. And this is one of two data centers Beale is planning to build in this county. </p>
+        <p id="s1p3" style="position: relative; top: -100%;">Hundreds of city residents protested and voted against
+            the construction of the data center, citing environmental, water use, and energy concerns, and 
+            the city of Tuscon blocked water access for the project.
+            But the company is building the data center anyway, <b style="color:#003">right outside</b> city limits.
         </p>
-        <p id="p4" style="position: relative; top: -100%;">
-            Outside of the city and residents' jurisdiction, but well within range 
-            to take advantage of the city's water, energy, and labor resources.
+        <p id="s1p4" style="position: relative; top: -100%;">
+            Outside of the city and residents' jurisdiction and water availability, but well within range 
+            to take advantage of the region's energy, and labor resources.
         </p>
     </div>
+
+    <div id="sidebar2" class="sidebar" style="position: absolute; width: 30%; left: 0; height: 100%; 
+    background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5; opacity: 0.0;">
+        <p id="s2p1" style="position: relative; top: -100%;">In Memphis, TN, Elon Musk's xAI has built an enormous data center --
+            one of the biggest in the world. xAI has dubbed it the "world's largest supercomputer," running over 230,000 NVidia GPUs.</p>
+        <p id="s2p2" style="position: relative; top: -100%;">The data center of course, has an enormous energy footprint -- 
+            and, to power the site, xAI built 35 small-scale methane gas turbines. The resulting air pollutants 
+            and carbon emissions have come to effect the nearby predominantly-black community of Boxton.
+        </p>
+        <!-- https://www.nbcnews.com/news/us-news/musk-xai-colossus-supercomputer-boxtown-memphis-tennessee-rcna206242 -->
+        <p id="s2p3" style="position: relative; top: -100%;">
+            The company has largely kept its plans under wraps, but there are known plans to expand. Musk says 
+            this is just the start for this AI data center, dubbed "Colossus." The billionaire promises this will
+            transform the region into a tech hub, already having purchased a nearby property and expanding talks with the 
+            municipality to install his turbines permanently.
+        </p>
+        <p id="s2p4" style="position: relative; top: -100%;">
+            The county already has the highest levels of Athsma in the state, and its air pollution and cancer risks are 
+            significantly higher than average due to pollution from companies previously present in the area. The EPA has been unable to investigate, and the mayor of Memphis allows
+            Musk to continue -- without any permits -- because he's promised the turbines are temporary.
+            However, 
+            "Researchers at the University of Tennessee, Knoxville, at the request of TIME, 
+            ran an analysis on the air quality in South Memphis over the last couple of years, 
+            based on public satellite data from NASA and the European Space Agency. They found that 
+            average concentrations of nitrogen dioxide have increased by 3% when comparing the 
+            periods before June 2024 and afterward. They also found that peak nitrogen dioxide 
+            concentration levels have increased by 79% from pre-xAI levels in areas immediately 
+            surrounding the data center, and by 9% in nearby Boxtown." 
+            <!-- https://time.com/7308925/elon-musk-memphis-ai-data-center/ -->
+        </p>
+    </div>
+
     <div id="treemap-container"></div>
     <div id="map-container" style="position: absolute; width: 100%; height: 100%; z-index: 1"></div>
     
