@@ -68,39 +68,9 @@ map.on('load', () => {
 
     map.addSource('openfreemap', {
         url: `https://tiles.openfreemap.org/planet`,
+        // url: `https://github.com/openmaptiles/positron-gl-style/blob/master/style.json`,
         type: 'vector',
     });
-
-    // map.addSource('datacenter_points', {
-    //     'type':'geojson',
-    //     'data': points_geojson
-    // });
-    map.addSource('tuscon', {
-        'type':'geojson',
-        'data': tuscon_shape
-    });
-    map.addLayer(
-    {
-        'id':'tusconlayer',
-        'type':'fill',
-        'source':'tuscon',
-        'layout':{},
-        'paint': {
-            'fill-color': '#088',
-            'fill-opacity': 0.0
-        }
-    })
-    // map.addLayer(
-    // {
-    //     'id':'datacenter_points',
-    //     'type':'symbol',
-    //     'source':'datacenter_points',
-    //     // 'layout':{
-
-    //     // }
-    // }
-    // )
-
     map.addLayer(
         {
             'id': '3d-buildings',
@@ -132,6 +102,70 @@ map.on('load', () => {
         },
         labelLayerId
     );
+    // map.addSource('datacenter_points', {
+    //     'type':'geojson',
+    //     'data': points_geojson
+    // });
+    map.addSource('tuscon', {
+        'type':'geojson',
+        'data': tuscon_shape
+    });
+    map.addLayer(
+    {
+        'id':'tusconlayer',
+        'type':'fill',
+        'source':'tuscon',
+        'layout':{},
+        'paint': {
+            'fill-color': '#088',
+            'fill-opacity': 0.0
+        }
+    })
+    // map.addSource('tuscon', {
+    //     'type':'geojson',
+    //     'data': tuscon_shape
+    // });
+    // map.addLayer(
+    // {
+    //     'id':'tusconlayer',
+    //     'type':'fill',
+    //     'source':'tuscon',
+    //     'layout':{},
+    //     'paint': {
+    //         'fill-color': '#088',
+    //         'fill-opacity': 0.0
+    //     }
+    // });
+
+    map.addSource('tuscon_city_limits', {
+        'type':'geojson',
+        'data': tuscon_city_limits
+    });
+
+    map.addLayer(
+    {
+        'id':'tusconcitylayer',
+        'type':'fill',
+        'source':'tuscon_city_limits',
+        'layout':{},
+        'paint': {
+            'fill-color': '#003',
+            'fill-opacity': 0.0,
+            // 'fill'
+        }
+    });
+    // map.addLayer(
+    // {
+    //     'id':'datacenter_points',
+    //     'type':'symbol',
+    //     'source':'datacenter_points',
+    //     // 'layout':{
+
+    //     // }
+    // }
+    // )
+
+   
 });
 
 

@@ -29,6 +29,13 @@
             z-index: 2;
             background-color: grey;
         }
+
+        #sidebar1 > p {
+            margin-left: 5px;
+            color: white;
+            font-family: sans-serif;
+            margin-bottom: 2em;
+        }
     </style>
 
     <script src="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.js"></script>
@@ -41,43 +48,37 @@
         <!-- <div style="top: 50%; bottom: 50%;"> -->
             <p id="b_t1" class="b_text" style="left: 25%">In 2023, AI occupied a small fraction of the tech industry.</p>
             <p id="b_t2" class="b_text">By 2025, the industry's largest players total a market cap of $20 trillion.</p>
-            <p id="b_t3" class="b_text">With companies like OpenAI making double and evne triple-digit billion dollar deals for data centers,</p>
+            <p id="b_t3" class="b_text">With companies like OpenAI making double and even triple-digit billion dollar deals for data centers,
+                expected to reach almost 13% of the US's electricity consumption by 2028,</p>
             <p id="b_t4" class="b_text">What is all this money really doing?</p>
         </div>
     </div>
-    <div id="sidebar" style="position: absolute; width: 30%; left: 0; height: 100%; background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5;">
-        <p>The city of Tuscon, AZ has been, for the last several months, in battle with the 
+    <div id="sidebar1" style="position: absolute; width: 30%; left: 0; height: 100%; 
+    background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5; opacity: 0.0;">
+        <p id="p1" style="position: relative; top: -100%;">The city of Tuscon, AZ has been, for the last several months, in battle with the 
             interests of these private corporations about a proposed data center within their
-            city limits.
-        </p>
-        <p>This is Project Blue -- 290 acres set aside by the county to build a powerful data center.</p>
-        <p>After city residents voted against the data center, 
+            city limits.</p>
+        <p id="p2" style="position: relative; top: -100%;">This is Project Blue -- 290 acres set aside by the county for a company called Built
+            to build a powerful data center.</p>
+        <p id="p3" style="position: relative; top: -100%;">After city residents voted against the construction of the data center, 
             citing environmental, water use, and energy concerns, 
-            the municipality simply decided to let the company build the data center outside city limits. 
+            the municipality simply decided to let the company build the data center <b style="color:#003">right outside</b> city limits.
+        </p>
+        <p id="p4" style="position: relative; top: -100%;">
+            Outside of the city and residents' jurisdiction, but well within range 
+            to take advantage of the city's water, energy, and labor resources.
         </p>
     </div>
     <div id="treemap-container"></div>
     <div id="map-container" style="position: absolute; width: 100%; height: 100%; z-index: 1"></div>
-        
-    <!-- <div id="top-container" style="position: absolute; z-index: 52;">
-            <svg id="top-svg" width="1920" height="1080" viewBox="0, 0, 1920, 1080" 
-            style="max-width: 100%; height: auto; font: 10px;
-            font-family: Source Sans 3;"></svg>
-        </div> -->
-        <!-- <div id="treeice-container" style="position: absolute; z-index: 51;"></div> -->
-        <!-- <div id="treecbp-container" style="position: absolute; z-index: 50;"></div> -->
-        <!-- ;background-image: url(python/base_resized.png);"></div> -->
-
-    <!-- <div id="map" style="width: 100%; height:100%;"></div> -->
-    <!-- <script src="treemap_info.txt"></script> -->
-    <!-- <script src="treemap - cbp.txt"></script> -->
+    
     <script src="largest_ai_companies.txt"></script>
     
     <script>
         const map = new maplibregl.Map({
-            style: `https://tiles.openfreemap.org/styles/bright`,
+            style: `https://api.maptiler.com/maps/019a35bb-6fd5-7219-9f9e-51b16ae44f98/style.json?key=mkHS0GRHWVUIL3ykWsLX`,
             center: [-96.0066, 38.7135],
-            zoom: 4.0,
+            zoom: 3.0,
             pitch: 0,
             bearing: 0,
             container: 'map-container',

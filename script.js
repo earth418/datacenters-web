@@ -3,11 +3,19 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 
-let num_presses = 5;
-update(4);
-update(5);
+let num_presses = 0;
+// update(4, true);
+// update(5, true);
 
-function update(stage) {
+function animate_map_property(layer, property, func_of_time, duration, delay=300) {
+    const t = d3.timer((ti) => {
+        map.setPaintProperty(layer, property, func_of_time(Math.min(1,ti / duration)));
+        if (ti > duration) t.stop();
+    }, delay);
+}
+
+function update(stage, instant = false) {
+    const duration = instant ? 0 : 1000;
     switch (stage) {
         case 1:
         case 2:
@@ -15,43 +23,43 @@ function update(stage) {
             // console.log("Hi!!");
             // console.log(d3.select("#b_t" + num_presses));
             d3.select("#b_t" + stage).transition()
-                .duration(1000)
+                .duration(duration)
                 // .attr("opacity", 0.0)
                 .style("left", "125%")
                 // .on("end", () => {
                 //     d3.select(this).attr("visibility","hidden");}
                 //     );
             d3.select("#b_t" + (stage + 1)).transition()
-                .duration(1000)
+                .duration(duration)
                 // .attr("opacity", 1.0)
                 .style("left", "25%")
-                // .on("start", () => {
-                    // d3.select(this)
-                    //     .style("visibility","visible")
-                    //     // .style("transform","translateY(50px)");
-                    // }
-                // );
             break;
         
         case 4:
             // update(3);
             d3.select("#block").transition()
-                .duration(1000)
+                .duration(duration)
                 .style("opacity", 0.0)
                 break;
         case 5:
             // update(4);
             // transition();
             d3.select("#treemap-container").transition()
-                .duration(1000)
+                .duration(duration)
                 .style("opacity", 0.0)
             break;
 
         case 6:
-            // update(5);
+
+            d3.select("#sidebar1").transition()
+                .duration(duration)
+                .style("opacity",1.0);
+            
+            d3.select('#p1').transition().duration(duration).style("top","10%");
+
             map.flyTo({
-                center: [-110.9,32.2],
-                zoom : 12
+                center: [-110.99,32.21],
+                zoom : 11
             })
             break;
         
@@ -61,42 +69,65 @@ function update(stage) {
                 center: [-110.7875,32.052],
                 zoom : 15
             })
-            // map.
-            //     map.addSource('tuscon', {
-            //     'type':'geojson',
-            //     'data': tuscon_shape
-            // });
-            const t = d3.timer((ti) => {
-                map.setPaintProperty('tusconlayer', 'fill-opacity', Math.min(1,ti / 1000.0));
-                console.log(ti);
-                if (ti > 1000) t.stop();
-            }, 100);
-            // map.addLayer(
-            // {
-            //     'id':'tuscon',
-            //     'type':'fill',
-            //     'source':'tuscon',
-            //     'layout':{},
-            //     'paint': {
-            //         'fill-color': '#088',
-            //         'fill-opacity': 0.7,
-            //         'fill-opacity-transition':{duration:2000}
-            //     }
-            // });
-            // map.addLayer(
-            // {
-            //     'id':'tuscon',
-            //     'type':'line',
-            //     'source':'tuscon',
-            //     'layout':{},
-            //     'paint': {
-            //         'line-color': '#000',
-            //         'line-opacity': 1.0,
-            //         'line-opacity-transition':{duration:2000}
-            //     }
-            // })
+
+            d3.select('#p2').transition().duration(duration).style("top","10%");
+            // d3.select('#p3').transition().duration(duration).style("top","25%");
+
+            animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);                
             break;
 
+         case 8:
+            // update(6);
+            map.flyTo({
+                center: [-110.8875,32.152],
+                zoom : 10.5
+            })
+
+            // d3.select('#p2').transition().duration(duration).style("top","25%");
+            d3.select('#p3').transition().duration(duration).style("top","10%");
+
+            animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
+            break;
+        
+        case 9:
+            d3.select('#p4').transition().duration(duration).style("top","10%");
+            break;
+
+        case 10:
+
+            d3.select("#sidebar1").transition().duration(duration).style("opacity",0.0);
+            // update(6);
+            // map.flyTo({
+            //     center: [-110.8875,32.152],
+            //     zoom : 10
+            // })
+
+
+            animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration);
+            break;
+        
+        case 11:
+            
+            // map.flyTo({
+            //         center: [-77.8875,39.152],
+            //         zoom : 8
+            //     })
+            map.flyTo({
+                    center: [-90.8875,32.152],
+                    zoom : 6
+                })
+            break;
+
+         case 12:
+            
+            map.flyTo({
+                    center: [-90.8875,32.152],
+                    zoom : 6
+                })
+            break;
+
+
+            
     }
 }
 
