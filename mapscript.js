@@ -121,10 +121,39 @@ map.on('load', () => {
             'fill-opacity': 0.0
         }
     })
-    // map.addSource('tuscon', {
-    //     'type':'geojson',
-    //     'data': tuscon_shape
-    // });
+
+    map.addSource('xAIcolossus', {
+        'type':'geojson',
+        'data': memphis_colossus
+    });
+    map.addLayer(
+    {
+        'id':'xAIcolossuslayer',
+        'type':'fill-extrusion',
+        'source':'xAIcolossus',
+        'layout':{},
+        'paint': {
+            'fill-extrusion-color': 'rgba(53, 1, 42, 1)',
+            'fill-extrusion-height': 5.0,
+            'fill-extrusion-opacity': 0.0,
+        }
+    });
+
+    map.addSource('boxtown', {
+        'type':'geojson',
+        'data': boxtown_shape
+    });
+    map.addLayer(
+    {
+        'id':'boxtownlayer',
+        'type':'fill',
+        'source':'boxtown',
+        'layout':{},
+        'paint': {
+            'fill-color': 'rgba(0, 37, 51, 1)',
+            'fill-opacity': 0.0,
+        }
+    });
     // map.addLayer(
     // {
     //     'id':'tusconlayer',
@@ -151,7 +180,6 @@ map.on('load', () => {
         'paint': {
             'fill-color': '#003',
             'fill-opacity': 0.0,
-            // 'fill'
         }
     });
     // map.addLayer(

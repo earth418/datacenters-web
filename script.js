@@ -16,6 +16,12 @@ function animate_map_property(layer, property, func_of_time, duration, delay=300
 
 let stop_rotating = false;
 
+
+function transition_top(element, duration) {
+    const top_gap = "5%";
+    return d3.select(element).transition().duration(duration).style("top",top_gap);
+}
+
 function update(stage, instant = false) {
     const duration = instant ? 0 : 1000;
     switch (stage) {
@@ -53,7 +59,8 @@ function update(stage, instant = false) {
                 .duration(duration)
                 .style("opacity",1.0);
             
-            d3.select('#s1p1').transition().duration(duration).style("top","10%");
+            transition_top("#s1p1", duration);
+            // d3.select('#s1p1').transition().duration(duration).style("top",top_gap);
 
             map.flyTo({
                 center: [-110.99,32.21],
@@ -68,7 +75,9 @@ function update(stage, instant = false) {
                 zoom : 15
             })
 
-            d3.select('#s1p2').transition().duration(duration).style("top","10%");
+            d3.select("#s1p1").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s1p2", duration);
+            // d3.select('#s1p2').transition().duration(duration).style("top",top_gap);
             // d3.select('#p3').transition().duration(duration).style("top","25%");
 
             animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);                
@@ -82,32 +91,39 @@ function update(stage, instant = false) {
             })
 
             // d3.select('#p2').transition().duration(duration).style("top","25%");
-            d3.select('#s1p3').transition().duration(duration).style("top","10%");
+            d3.select("#s1p2").transition().duration(duration).style("color","#707070ff");
+            transition_top('#s1p3', duration);
+            // d3.select('#s1p3').transition().duration(duration).style("top","10%");
 
             animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
             break;
         
         case 9:
-            d3.select('#s1p4').transition().duration(duration).style("top","10%");
+            d3.select("#s1p3").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s1p4", duration);
+            // d3.select('#s1p4').transition().duration(duration).style("top","10%");
             break;
 
         case 10:
             d3.select("#sidebar1").transition().duration(duration).style("opacity",0.0);
             animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration);
+            
+            map.flyTo({
+                center: [-110.8875,32.152],
+                zoom : 5
+            })
             break;
         
         case 11:
             
-            // map.flyTo({
-            //         center: [-77.8875,39.152],
-            //         zoom : 8
-            //     })
             d3.select("#sidebar2").transition().duration(duration).style("opacity",1.0);
             map.flyTo({
                     center: [-90.04,35.14],
                     zoom : 8
                 })
-                d3.select('#s2p1').transition().duration(duration).style("top","10%");
+                transition_top("#s2p1", duration);
+                animate_map_property("xAIcolossuslayer", "fill-extrusion-opacity", (t) => 0.8*t, duration);
+                // d3.select('#s2p1').transition().duration(duration).style("top","10%");
             break;
 
         case 12:
@@ -115,7 +131,20 @@ function update(stage, instant = false) {
                     center: [-90.15627488376435,35.05966538381292],
                     zoom : 12
                 });
-                d3.select('#s2p2').transition().duration(duration).style("top","10%");
+
+                d3.select("#s2p1").transition().duration(duration).style("color","#707070ff");
+                transition_top("#s2p2", duration);
+                
+                d3.timeout(() => map.addLayer({
+                    'id':'boxtownText',
+                    'type':'symbol',
+                    'source':'boxtown',
+                    'layout':{
+                        'text-field':'Boxtown'
+                    }
+                }), duration / 2.0);
+                // animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.8*t, duration);
+                // d3.select('#s2p2').transition().duration(duration).style("top","5%");
             break;
 
         case 13:
@@ -124,37 +153,63 @@ function update(stage, instant = false) {
                 center: [-90.15627488376435,35.05966538381292],
                 zoom : 15,
                 pitch: 45.0,
+                bearing: 0.0,
+                duration: duration,
             });
-            
-            rotateCamera(0);
 
-            d3.select('#s2p3').transition().duration(duration).style("top","10%");
+            d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
+            
+            // new Promise(r => setTimeout(r, duration)).then(rotateCamera(0.0));
+
+            d3.select("#s2p2").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s2p3", duration);
+            animate_map_property("xAIcolossuslayer", "fill-extrusion-height", (t) => 50.0*t, duration);
+            // d3.select('#s2p3').transition().duration(duration).style("top","5%");
             break;
             
         case 14:
-                // map.flyTo({
-                //     center: [-90.15627488376435,35.05966538381292],
-                //     zoom : 15,
-                //     pitch: 45
-                // })
+                stop_rotating = true;
+                
+                d3.timeout(() => {
+                    map.flyTo({
+                        center: [-90.15627488376435,35.05966538381292],
+                        zoom : 12,
+                        pitch: 15.0,
+                        bearing: 0.0,
+                        duration: duration,
+                    });
 
+                    d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
+                    
+                    d3.select("#s2p3").transition().duration(duration).style("color","#707070ff");
+                    transition_top("#s2p4", duration);
 
-                d3.select('#s2p4').transition().duration(duration).style("top","10%");  
+                    
+                    animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * t, duration); 
+                }, 50);
             break;
 
         case 16:
-            // stop_rotating = true;
+            stop_rotating = true;
             break;
     }
 }
 
+let zero;
 function rotateCamera(time) {
-    map.rotateTo((time / 100) % 360, {duration: 0});
+    zero = time;
+    animateRotateCamera(zero);
+}
+function animateRotateCamera(time) {
+
+    map.setBearing(((time - zero) / 100) % 360, {duration: 0});
     if (stop_rotating)
         stop_rotating = false;
     else
-        requestAnimationFrame(rotateCamera);
+        requestAnimationFrame(animateRotateCamera);
 }
+
+
 
 document.addEventListener("keydown", (e) => {
     if (e.key == " ") {
@@ -163,6 +218,9 @@ document.addEventListener("keydown", (e) => {
     update(num_presses);
 });
 
+document.addEventListener("touchstart", (e) => {
+    update(++num_presses);
+})
 
 
 function parseCSV(str) {
