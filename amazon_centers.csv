@@ -1,0 +1,424 @@
+company,address,longitude,latitude,status,link_to_page,note
+Amazon,,-1,-1,Active,https://www.datacentermap.com,
+Amazon,54-80 Ferris Rd Cobblebank  Australia,144.5985988408571,-37.7010792,Land Banked,https://www.datacentermap.com/australia/melbourne/amazon-aws-54-80-ferris-rd/,
+Amazon,"Merrifield Business Park, 55 Donnybrook Rd Mickleham Australia",-1,-1,Land Banked,https://www.datacentermap.com/australia/melbourne/amazon-aws-55-donnybrook-rd/,
+Amazon,22 Delivery Dr Truganina Australia,144.7560436,-37.8388077,Active,https://www.datacentermap.com/australia/melbourne/amazon-aws-mel-22-delivery/,
+Amazon,1 William Dean Street Smeaton Grange Australia,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/aws-syd-bluett-turner-campus/,
+Amazon,1 William Dean Street Eastern Creek Australia,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/aws-syd-william-dean-campus/,
+Amazon,11-17 Khartoum Rd Macquarie Park Australia,151.12563088934593,-33.77934865,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-11-17-khartoum-rd/,
+Amazon,1 William Dean Street Smeaton Grange Australia  ,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-syd-146-turner/,Part of Amazon AWS SYD - Bluett &amp; Turner Campus
+Amazon,1 William Dean Street Smeaton Grange Australia  ,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-syd-148-turner/,Part of Amazon AWS SYD - Bluett &amp; Turner Campus
+Amazon,1 William Dean Street Eastern Creek Australia  ,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-syd-1-william-a/,Part of Amazon AWS SYD - William Dean Campus
+Amazon,1 William Dean Street Eastern Creek Australia  ,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-syd-1-william-b/,Part of Amazon AWS SYD - William Dean Campus
+Amazon,1 William Dean Street Smeaton Grange Australia  ,150.8695691199099,-33.79479725,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-syd-42a-bluett/,Part of Amazon AWS SYD - Bluett &amp; Turner Campus
+Amazon,10 Eastern Creek Dr Eastern Creek Australia,150.83890055688937,-33.80980325,Active,https://www.datacentermap.com/australia/sydney/amazon-aws-syd-eastern-creek/,
+Amazon,Road 5156 Askar Bahrain,50.60486797008756,26.062542843501927,Active,https://www.datacentermap.com/bahrain/askar/amazon-aws-bah-askar/,
+Amazon,1440 Road 1429 Saar Bahrain,50.507144378737664,26.078289889024553,Active,https://www.datacentermap.com/bahrain/saar/amazon-aws-bah-saar/,
+Amazon,Road 5428 Zallaq Bahrain,50.5000523,26.048043149999998,Active,https://www.datacentermap.com/bahrain/zallaq/amazon-aws-bah-zallaq/,
+Amazon,"1790 Boulevard Lionel-Boulet Varennes Quebec, Canada",-73.42597515669956,45.673577102140335,Active,https://www.datacentermap.com/canada/montreal/amazon-aws-yul-lionel-boulet-campus/,
+Amazon,"1790 Boulevard Lionel-Boulet Varennes Quebec, Canada  ",-73.42597515669956,45.673577102140335,Active,https://www.datacentermap.com/canada/montreal/amazon-aws-yul-1790-lionel-boulet-a/,Part of Amazon AWS YUL - Lionel-Boulet Campus
+Amazon,"1790 Boulevard Lionel-Boulet Varennes Quebec, Canada  ",-73.42597515669956,45.673577102140335,Under Construction,https://www.datacentermap.com/canada/montreal/amazon-aws-yul-1790-lionel-boulet-b/,Part of Amazon AWS YUL - Lionel-Boulet Campus
+Amazon,Av. Américo Vespucio &amp; Camino el Guanaco Huechuraba Chile,-1,-1,Planned,https://www.datacentermap.com/chile/santiago/amazon-aws-scl-huechuraba/,
+Amazon,"TBD, Padre Hurtado District Santiago Chile",-70.8020467,-33.5673051,Planned,https://www.datacentermap.com/chile/santiago/amazon-aws-scl-hurtado/,
+Amazon,Temple Circuit Rd Zhongwei China,-1,-1,Active,https://www.datacentermap.com/china/zhongwei/amazon-aws-sikouzi/,
+Amazon,Yingda Line Zhongwei China,116.44809768299369,39.75125581758926,Active,https://www.datacentermap.com/china/zhongwei/amazon-aws-yingshuiqiao/,
+Amazon,"Zhongwei Industrial Park, Huaiyun Road Zhongwei China",120.70015692150164,31.32917545,Active,https://www.datacentermap.com/china/zhongwei/amazon-aws-zhongwei-industrial-park/,
+Amazon,"26, FAB City Kongar Khurd B India",77.6516841,12.9131111,Active,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-fab-campus/,
+Amazon,Vavillakunta Thanda Vailkunta Tanda India,79.2819657,17.9964319,Active,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-kandukur-campus/,
+Amazon,Hyathabad - Shahabad Rd Shahabad India,77.1194361,28.7474738,Active,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-shahabad-campus/,
+Amazon,"26, FAB City Kongar Khurd B India  ",77.6516841,12.9131111,Active,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-fab-a/,Part of Amazon AWS HYD - FAB Campus
+Amazon,"26, FAB City Kongar Khurd B India  ",77.6516841,12.9131111,Under Construction,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-fab-b/,Part of Amazon AWS HYD - FAB Campus
+Amazon,Vavillakunta Thanda Vailkunta Tanda India  ,79.2819657,17.9964319,Active,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-kandukur-a/,Part of Amazon AWS HYD - Kandukur Campus
+Amazon,Vavillakunta Thanda Vailkunta Tanda India  ,79.2819657,17.9964319,Under Construction,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-kandukur-b/,Part of Amazon AWS HYD - Kandukur Campus
+Amazon,Hyathabad - Shahabad Rd Shahabad India  ,77.1194361,28.7474738,Active,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-shahabad-a/,Part of Amazon AWS HYD - Shahabad Campus
+Amazon,Hyathabad - Shahabad Rd Shahabad India  ,77.1194361,28.7474738,Under Construction,https://www.datacentermap.com/india/hyderabad/amazon-aws-hyd-shahabad-b/,Part of Amazon AWS HYD - Shahabad Campus
+Amazon,MIDC Industrial Area Rabale India,74.63945745986379,16.85006775,Active,https://www.datacentermap.com/india/navi-mumbai/amazon-aws-bom-midc-industrial/,
+Amazon,,-1,-1,Under Construction,https://www.datacentermap.com/india/navi-mumbai/amazon-aws-bom-ttc-industrial/,within TTC Industrial Area</i> Airoli India
+Amazon,Jalan Surya Utama Kutanegara Indonesia,114.57619086877752,-3.2943596,Active,https://www.datacentermap.com/indonesia/jakarta/amazon-aws-cgk-kutanegara/,
+Amazon,Karawang International Industrial City Margamulya Indonesia,107.2730857038793,-6.3717599,Active,https://www.datacentermap.com/indonesia/jakarta/amazon-aws-cgk-margamulya/,
+Amazon,Greenland International Industrial Center Sukamahi Indonesia,107.19114476055202,-6.3835583499999995,Active,https://www.datacentermap.com/indonesia/jakarta/amazon-aws-cgk-sukamahi/,
+Amazon,"IDA Business Park, Donore Rd Rathmullan Ireland",-1,-1,Active,https://www.datacentermap.com/ireland/drogheda/amazon-aws-ida-business-park/,
+Amazon,"Blanchardstown Industrial Park, Snugborough Road Blanchardstown Ireland",-6.366487978326507,53.404298,Active,https://www.datacentermap.com/ireland/dublin/aws-dub-blanchardstown-campus/,
+Amazon,Clonshaugh Business &amp; Technology Park Priorswood Ireland,-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-clonshaugh-campus/,
+Amazon,"Hibernian Industrial Estate, 30A Greenhills Road Kilnamanagh Ireland",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-hibernian-campus/,
+Amazon,Cruiserath Road Mulhuddart Ireland,-6.386607507826351,53.41341382033228,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-campus/,
+Amazon,Airton Road / Belgard Road Tallaght Ireland,-6.363056549117647,53.2909893,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-tallaght-campus/,
+Amazon,Airton Road / Belgard Road Tallaght Ireland  ,-6.363056549117647,53.2909893,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-airton-1/,Part of Amazon AWS DUB - Tallaght Campus
+Amazon,Airton Road / Belgard Road Tallaght Ireland  ,-6.363056549117647,53.2909893,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-airton-2/,Part of Amazon AWS DUB - Tallaght Campus
+Amazon,"Blanchardstown Industrial Park, Snugborough Road Blanchardstown Ireland  ",-6.366487978326507,53.404298,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-blanchardstown-1/,Part of Amazon AWS DUB - Blanchardstown Campus
+Amazon,"Blanchardstown Industrial Park, Snugborough Road Blanchardstown Ireland  ",-6.366487978326507,53.404298,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-blanchardstown-2/,Part of Amazon AWS DUB - Blanchardstown Campus
+Amazon,"Blanchardstown Industrial Park, Snugborough Road Blanchardstown Ireland  ",-6.366487978326507,53.404298,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-blanchardstown-3/,Part of Amazon AWS DUB - Blanchardstown Campus
+Amazon,"Blanchardstown Industrial Park, Snugborough Road Blanchardstown Ireland  ",-6.366487978326507,53.404298,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-blanchardstown-4/,Part of Amazon AWS DUB - Blanchardstown Campus
+Amazon,Clonshaugh Business &amp; Technology Park Priorswood Ireland  ,-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-clonshaugh-1/,Part of Amazon AWS DUB - Clonshaugh Campus
+Amazon,Clonshaugh Business &amp; Technology Park Priorswood Ireland  ,-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-clonshaugh-2/,Part of Amazon AWS DUB - Clonshaugh Campus
+Amazon,Clonshaugh Business &amp; Technology Park Priorswood Ireland  ,-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-clonshaugh-3/,Part of Amazon AWS DUB - Clonshaugh Campus
+Amazon,Clonshaugh Business &amp; Technology Park Priorswood Ireland  ,-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-clonshaugh-4/,Part of Amazon AWS DUB - Clonshaugh Campus
+Amazon,"Hibernian Industrial Estate, 30A Greenhills Road Kilnamanagh Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-hibernian-1/,Part of Amazon AWS DUB - Hibernian Campus
+Amazon,"Hibernian Industrial Estate, 30A Greenhills Road Kilnamanagh Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-hibernian-2/,Part of Amazon AWS DUB - Hibernian Campus
+Amazon,"Hibernian Industrial Estate, 30A Greenhills Road Kilnamanagh Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-hibernian-3/,Part of Amazon AWS DUB - Hibernian Campus
+Amazon,"Hibernian Industrial Estate, 30A Greenhills Road Kilnamanagh Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-hibernian-4/,Part of Amazon AWS DUB - Hibernian Campus
+Amazon,"Hibernian Industrial Estate, 30A Greenhills Road Kilnamanagh Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-hibernian-5/,Part of Amazon AWS DUB - Hibernian Campus
+Amazon,Cruiserath Road Mulhuddart Ireland  ,-6.386607507826351,53.41341382033228,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-1/,Part of Amazon AWS DUB - Mulhuddart Campus
+Amazon,Cruiserath Road Mulhuddart Ireland  ,-6.386607507826351,53.41341382033228,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-2/,Part of Amazon AWS DUB - Mulhuddart Campus
+Amazon,Cruiserath Road Mulhuddart Ireland  ,-6.386607507826351,53.41341382033228,Active,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-3/,Part of Amazon AWS DUB - Mulhuddart Campus
+Amazon,Cruiserath Road Mulhuddart Ireland  ,-6.386607507826351,53.41341382033228,Planned,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-4/,Part of Amazon AWS DUB - Mulhuddart Campus
+Amazon,Cruiserath Road Mulhuddart Ireland  ,-6.386607507826351,53.41341382033228,Planned,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-5/,Part of Amazon AWS DUB - Mulhuddart Campus
+Amazon,Cruiserath Road Mulhuddart Ireland  ,-6.386607507826351,53.41341382033228,Planned,https://www.datacentermap.com/ireland/dublin/amazon-aws-dub-mulhuddart-6/,Part of Amazon AWS DUB - Mulhuddart Campus
+Amazon,"Ha-Har St, Har Tuv A Industrial Zone Beit Shemesh Israel",34.865070277334084,32.10417505,Active,https://www.datacentermap.com/israel/tel-aviv/amazon-aws-tlv-hartuv/,
+Amazon,1 Rakefet Shoham Israel,34.96030129998794,32.01955525060352,Active,https://www.datacentermap.com/israel/tel-aviv/amazon-aws-tlv-shoham/,
+Amazon,2 Nirim St Tnuvot Israel,-1,-1,Active,https://www.datacentermap.com/israel/tel-aviv/amazon-aws-tlv-truvot/,
+Amazon,Technology Park Malaysia Bukit Jalil Malaysia,101.6892466,3.0479178,Planned,https://www.datacentermap.com/malaysia/kuala-lumpur/amazon-aws-kul-bukit-jalil/,
+Amazon,Maju Expressway Dengkil Malaysia,101.6682596,2.8730963999999997,Planned,https://www.datacentermap.com/malaysia/kuala-lumpur/amazon-aws-kul-dengkil/,
+Amazon,293 Jalan Laman Azalea 4/2 Setul Malaysia,101.81461407240106,2.839005303811723,Planned,https://www.datacentermap.com/malaysia/kuala-lumpur/amazon-aws-kul-setul/,
+Amazon,Calle Productividad Querétaro City Mexico,-100.9537584,22.1484482,Under Construction,https://www.datacentermap.com/mexico/queretaro/amazon-aws-qro-productividad/,
+Amazon,Fred Taylor Dr / Kakano Rd Westgate New Zealand,174.5970195646069,-36.809327912173444,Under Construction,https://www.datacentermap.com/new-zealand/auckland/amazon-aws-akl-westgate/,
+Amazon,12 Sunview Drive Singapore Singapore,103.70136652676575,1.3155811000000002,Active,https://www.datacentermap.com/singapore/singapore/amazon-aws-sin-12-sunview/,
+Amazon,"20 Loyang Drive, Loyang Industrial Park Singapore Singapore",103.99605546603934,1.352975,Active,https://www.datacentermap.com/singapore/singapore/amazon-aws-sin-20-loyang/,
+Amazon, Atlantic Dr Cape Town South Africa,18.447680599999998,-33.732844799999995,Planned,https://www.datacentermap.com/south-africa/cape-town/amazon-aws-cpt-atlantic/,
+Amazon,585-49/585-1 Gajwa-dong Seo-gu South Korea,129.0120406,35.1108608,Planned,https://www.datacentermap.com/south-korea/incheon/amazon-aws-incheon/,
+Amazon,"Mipo National Industrial Complex, Yongyeon-dong Nam-gu South Korea",126.6811593,37.4739903,Under Construction,https://www.datacentermap.com/south-korea/ulsan/amazon-aws-ulsan/,
+Amazon,"Ronda De Valdabra, 23 Huesca Spain",-0.44749680590685437,42.1002756,Active,https://www.datacentermap.com/spain/huesca/amazon-aws-mad-huesca/,
+Amazon,Ctra A-1102 km 2 Villanueva de Gállego Spain,-4.0503966,40.4319481,Active,https://www.datacentermap.com/spain/zaragoza/amazon-aws-mad-gallego/,
+Amazon,Polígono El Burgo Zaragoza Spain,-0.74244,41.5722233,Active,https://www.datacentermap.com/spain/zaragoza/amazon-aws-mad-zaragoza/,
+Amazon,Propellervägen 19 Eskilstuna Sweden,-1,-1,Active,https://www.datacentermap.com/sweden/eskilstuna/amazon-aws-arn-eskilstuna/,
+Amazon,Terminalgatan 4 Katrineholm Sweden,16.235244841203038,58.99540399525034,Active,https://www.datacentermap.com/sweden/katrineholm/amazon-aws-arn-katrineholm/,
+Amazon,Kvastbruksgatan 8 Västerås Sweden,-75.6898155,45.4277257,Active,https://www.datacentermap.com/sweden/vasteras/amazon-aws-arn-vasteras/,
+Amazon,,-1,-1,Under Construction,https://www.datacentermap.com/thailand/pattaya/amazon-aws-bkk-bo-win/,"within Bo Win, Si Racha District</i> Bo Win Thailand"
+Amazon,WHA Eastern Seaboard Industrial Estate 4 Maenam Khu Mai Thailand,101.26274364591055,12.9096301,Under Construction,https://www.datacentermap.com/thailand/pattaya/amazon-aws-bkk-maenam-khu-mai/,
+Amazon,Eastern Seaboard Industrial Estate Rayong Ta Sit Thailand,101.17674264785767,13.01431605,Under Construction,https://www.datacentermap.com/thailand/pattaya/amazon-aws-bkk-ta-sit/,
+Amazon,Abu Dhabi Industrial City Abu Dhabi United Arab Emirates,54.46483935612041,24.279237350000002,Active,https://www.datacentermap.com/united-arab-emirates/abu-dhabi/amazon-aws-dxb-abu-dhabi/,
+Amazon,Al Mantaqah As Sina'iyah 6 St Al Ma'mourah United Arab Emirates,55.584506346831645,24.0341251,Active,https://www.datacentermap.com/united-arab-emirates/abu-dhabi/amazon-aws-dxb-al-mamourah/,
+Amazon,Madinat Al Mataar Dubai South United Arab Emirates,55.138780507618506,24.86088865,Active,https://www.datacentermap.com/united-arab-emirates/dubai/amazon-aws-dxb-dubai/,
+Amazon,Cain Road Bracknell United Kingdom,-0.7743568295799346,51.41863746832103,Active,https://www.datacentermap.com/united-kingdom/berkshire/amazon-aws-lhr-bracknell/,
+Amazon,"Ridgeway Distribution Center, The Ridgeway Iver United Kingdom",-0.5082094675363813,51.51390275,Planned,https://www.datacentermap.com/united-kingdom/london/amazon-aws-lhr-ridgeway/,
+Amazon,Chantry Way Houghton Regis United Kingdom,-0.4991200382002148,51.91851538858207,Active,https://www.datacentermap.com/united-kingdom/luton/amazon-aws-houghton-regis-campus/,
+Amazon,Chantry Way Houghton Regis United Kingdom  ,-0.4991200382002148,51.91851538858207,Planned,https://www.datacentermap.com/united-kingdom/luton/amazon-aws-houghton-regis-dc1/,Part of Amazon AWS - Houghton Regis Campus
+Amazon,Chantry Way Houghton Regis United Kingdom  ,-0.4991200382002148,51.91851538858207,Planned,https://www.datacentermap.com/united-kingdom/luton/amazon-aws-houghton-regis-dc2/,Part of Amazon AWS - Houghton Regis Campus
+Amazon,1 Milton Road Didcot United Kingdom,-1.2597545663953136,51.61622750384911,Active,https://www.datacentermap.com/united-kingdom/oxfordshire/amazon-aws-lhr-didcot/,
+Amazon,Brimble Hill / Burderop Swindon United Kingdom,-1.7688577,51.5215895,Active,https://www.datacentermap.com/united-kingdom/swindon/amazon-aws-lhr-swindon/,
+Amazon,"Loop 202 and W Dobbins Road Laveen Arizona, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-loop-202-dobbins-road/,
+Amazon,"S Harrison Rd / E Brekke Rd / S Houghton Rd Tucson Arizona, USA",-110.9278829123817,32.17594415,Planned,https://www.datacentermap.com/usa/arizona/tucson/project-blue/,
+Amazon,"Camino Arroyo / Arroyo Circle Gilroy California, USA",-121.56245288904582,37.02239540954763,Planned,https://www.datacentermap.com/usa/california/san-jose/amazon-aws-sfo-arroyo/,
+Amazon,"2305 Mission College Blvd Santa Clara California, USA",-1,-1,Active,https://www.datacentermap.com/usa/california/santa-clara/aws-sfo-mission-college-campus/,
+Amazon,"2305 Mission College Blvd Santa Clara California, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/california/santa-clara/amazon-aws-sfo-2305-mission-a/,Part of Amazon AWS SFO - Mission College Campus
+Amazon,"2305 Mission College Blvd Santa Clara California, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/california/santa-clara/amazon-aws-sfo-2305-mission-b/,Part of Amazon AWS SFO - Mission College Campus
+Amazon,"960 Central Expy Santa Clara California, USA",-121.9544622,37.3733541,Land Banked,https://www.datacentermap.com/usa/california/santa-clara/amazon-aws-sfo-960-central/,
+Amazon,"2250 Rock House Rd Lithia Springs Georgia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/georgia/atlanta/2250-rockhouse-rd/,
+Amazon,"7800 W Strickland St Douglasville Georgia, USA",-84.75226313443893,33.750133604231834,Land Banked,https://www.datacentermap.com/usa/georgia/atlanta/7800-w-strickland-st/,
+Amazon,"Interstate 75 &amp; Highfalls Park Rd Barnesville Georgia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/georgia/atlanta/amazon-aws-legacy-75-trade-center/,
+Amazon,"2335 Echo Rd Lithia Springs Georgia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/amazon-aws-rock-house-road/,
+Amazon,"63050 Prairie Dr Portage Indiana, USA",-87.17046904128712,41.6090532,Under Construction,https://www.datacentermap.com/usa/indiana/portage/amazon-aws-ord-63050-prairie/,
+Amazon,"Huckleberry Rd &amp; Gordon Rd New Carlisle Indiana, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/indiana/south-bend/amazon-aws-new-carlisle/,
+Amazon,,-1,-1,Land Banked,https://www.datacentermap.com/usa/minnesota/minneapolis/amazon-aws-sherco-power-plant/,"within Sherco Power Plant</i> Becker Minnesota, USA"
+Amazon,"2890-2970 Beech Road Johnstown Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-north-campus/,
+Amazon,"2540-2580 Beech Rd Johnstown Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-south-campus/,
+Amazon,"4600-4636 Cosgray Rd Hillard Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-cosgray-campus/,
+Amazon,"6645-6685 Crosby Court Dublin Ohio, USA",-83.0955435,40.1042672,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-crosby-campus/,
+Amazon,"5109-5125 Hayden Run Rd Hillard Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-hayden-campus/,
+Amazon,"8619 Industrial Parkway Plain City Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/aws-cmh-industrial-parkway-campus/,
+Amazon,"2575-2875 Newton Court Johnstown Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-newton-campus/,
+Amazon,"14684 Industrial Pkwy Marysville Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-project-cosmos-campus/,
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-campus/,
+Amazon,"8567 Warner Road Plain City Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-warner-campus/,
+Amazon,"11793 Vans Valley Rd Galena Ohio, USA",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-11793-vans-valley/,
+Amazon,"2540 Beech Rd Johnstown Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2540-beech/,Part of Amazon AWS CMH - Beech South Campus
+Amazon,"2550 Beech Rd Johnstown Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2550-beech/,Part of Amazon AWS CMH - Beech South Campus
+Amazon,"2560 Beech Rd Johnstown Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2560-beech/,Part of Amazon AWS CMH - Beech South Campus
+Amazon,"2570 Beech Rd Johnstown Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2570-beech/,Part of Amazon AWS CMH - Beech South Campus
+Amazon,"2575 Newton Court Johnstown Ohio, USA  ",-82.7241187,40.0936182,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2575-newton/,Part of Amazon AWS CMH - Newton Campus
+Amazon,"2580 Beech Rd Johnstown Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2580-beech/,Part of Amazon AWS CMH - Beech South Campus
+Amazon,"2675 Newton Court Johnstown Ohio, USA  ",-82.7241187,40.0936182,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2675-newton/,Part of Amazon AWS CMH - Newton Campus
+Amazon,"2775 Newton Court Johnstown Ohio, USA  ",-82.7241187,40.0936182,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2775-newton/,Part of Amazon AWS CMH - Newton Campus
+Amazon,"2875 Newton Court Johnstown Ohio, USA  ",-84.09564327484975,39.179804000000004,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-2875-newton/,Part of Amazon AWS CMH - Newton Campus
+Amazon,"4600 Cosgray Rd Hillard Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-4600-cosgray/,Part of Amazon AWS CMH - Cosgray Campus
+Amazon,"4612 Cosgray Rd Hillard Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-4612-cosgray/,Part of Amazon AWS CMH - Cosgray Campus
+Amazon,"4624 Cosgray Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-4624-cosgray/,Part of Amazon AWS CMH - Cosgray Campus
+Amazon,"4636 Cosgray Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-4636-cosgray/,Part of Amazon AWS CMH - Cosgray Campus
+Amazon,"5109 Hayden Run Rd Hillard Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-5109-hayden/,Part of Amazon AWS CMH - Hayden Campus
+Amazon,"5113 Hayden Run Rd Hillard Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-5113-hayden/,Part of Amazon AWS CMH - Hayden Campus
+Amazon,"5117 Hayden Run Rd Hillard Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-5117-hayden/,Part of Amazon AWS CMH - Hayden Campus
+Amazon,"5121 Hayden Run Rd Hillard Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-5121-hayden/,Part of Amazon AWS CMH - Hayden Campus
+Amazon,"5125 Hayden Run Rd Hillard Ohio, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-5125-hayden/,Part of Amazon AWS CMH - Hayden Campus
+Amazon,"6645 Crosby Court Dublin Ohio, USA  ",-83.0955435,40.1042672,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-6645-crosby/,Part of Amazon AWS CMH - Crosby Campus
+Amazon,"6655 Crosby Court Dublin Ohio, USA  ",-83.1067941,40.1032421,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-6655-crosby/,Part of Amazon AWS CMH - Crosby Campus
+Amazon,"6665 Crosby Court Dublin Ohio, USA  ",-83.1068045,40.1031017,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-6665-crosby/,Part of Amazon AWS CMH - Crosby Campus
+Amazon,"6675 Crosby Court Dublin Ohio, USA  ",-83.1068149,40.1029613,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-6675-crosby/,Part of Amazon AWS CMH - Crosby Campus
+Amazon,"6685 Crosby Court Dublin Ohio, USA  ",-83.0966993,40.1050467,Active,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-6685-crosby/,Part of Amazon AWS CMH - Crosby Campus
+Amazon,"8567 Warner Road Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8567-warner-a/,Part of Amazon AWS CMH - Warner Campus
+Amazon,"8567 Warner Road Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8567-warner-b/,Part of Amazon AWS CMH - Warner Campus
+Amazon,"8567 Warner Road Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8567-warner-c/,Part of Amazon AWS CMH - Warner Campus
+Amazon,"8567 Warner Road Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8567-warner-d/,Part of Amazon AWS CMH - Warner Campus
+Amazon,"8619 Industrial Parkway Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8619-industrial-a/,Part of Amazon AWS CMH - Industrial Parkway Campus
+Amazon,"8619 Industrial Parkway Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8619-industrial-b/,Part of Amazon AWS CMH - Industrial Parkway Campus
+Amazon,"8619 Industrial Parkway Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8619-industrial-c/,Part of Amazon AWS CMH - Industrial Parkway Campus
+Amazon,"8619 Industrial Parkway Plain City Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-8619-industrial-d/,Part of Amazon AWS CMH - Industrial Parkway Campus
+Amazon,"2890-2970 Beech Road Johnstown Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-north-a/,Part of Amazon AWS CMH - Beech North Campus
+Amazon,"2890-2970 Beech Road Johnstown Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-north-b/,Part of Amazon AWS CMH - Beech North Campus
+Amazon,"2890-2970 Beech Road Johnstown Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-north-c/,Part of Amazon AWS CMH - Beech North Campus
+Amazon,"2890-2970 Beech Road Johnstown Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-north-d/,Part of Amazon AWS CMH - Beech North Campus
+Amazon,"2890-2970 Beech Road Johnstown Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-beech-north-e/,Part of Amazon AWS CMH - Beech North Campus
+Amazon,"14684 Industrial Pkwy Marysville Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-project-cosmos-bldg-a/,Part of Amazon AWS CMH - Project Cosmo Campus
+Amazon,"14684 Industrial Pkwy Marysville Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-project-cosmos-bldg-b/,Part of Amazon AWS CMH - Project Cosmo Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-a/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-b/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-c/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-d/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-e/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-f/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"4120-4188 Scioto Darby Creek Rd Hillard Ohio, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/amazon-aws-cmh-scioto-g/,Part of Amazon AWS CMH - Scioto Campus
+Amazon,"77860-77866 Bombing Range Rd Boardman Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-bombing-campus/,
+Amazon,"75242-75254 Gar Swanson Dr Boardman Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-gar-swanson-campus/,
+Amazon,"75282-75300 Lewis and Clark Dr Boardman Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-lewis-east-campus/,
+Amazon,"73575-73579 Lewis and Clark Dr Boardman Oregon, USA",-119.6305237,45.85088075,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-lewis-west-campus/,
+Amazon,"79386-79392 Olson Rd Boardman Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-olson-campus/,
+Amazon,"79536-79553 Rippee Rd Boardman Oregon, USA",-119.6550502,45.8408132,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-rippee-campus/,
+Amazon,"73575 Lewis and Clark Dr Boardman Oregon, USA  ",-119.6305237,45.85088075,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-73575-lewis/,Part of Amazon AWS PDX - Lewis West Campus
+Amazon,"73577 Lewis and Clark Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-73577-lewis/,Part of Amazon AWS PDX - Lewis West Campus
+Amazon,"73579 Lewis and Clark Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-73579-lewis/,Part of Amazon AWS PDX - Lewis West Campus
+Amazon,"75242 Gar Swanson Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75242-gar-swanson/,Part of Amazon AWS PDX - Gar Swanson Campus
+Amazon,"75246 Gar Swanson Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75246-gar-swanson/,Part of Amazon AWS PDX - Gar Swanson Campus
+Amazon,"75250 Gar Swanson Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75250-gar-swanson/,Part of Amazon AWS PDX - Gar Swanson Campus
+Amazon,"75254 Gar Swanson Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75254-gar-swanson/,Part of Amazon AWS PDX - Gar Swanson Campus
+Amazon,"75282 Lewis and Clark Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75282-lewis/,Part of Amazon AWS PDX - Lewis East Campus
+Amazon,"75288 Lewis and Clark Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75288-lewis/,Part of Amazon AWS PDX - Lewis East Campus
+Amazon,"75294 Lewis and Clark Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75294-lewis/,Part of Amazon AWS PDX - Lewis East Campus
+Amazon,"75300 Lewis and Clark Dr Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-75300-lewis/,Part of Amazon AWS PDX - Lewis East Campus
+Amazon,"77860 Bombing Range Rd Boardman Oregon, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-77860-bombing/,Part of Amazon AWS PDX - Bombing Campus
+Amazon,"77866 Bombing Range Rd Boardman Oregon, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-77866-bombing/,Part of Amazon AWS PDX - Bombing Campus
+Amazon,"79386 Olson Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79386-olson/,Part of Amazon AWS PDX - Olson Campus
+Amazon,"79388 Olson Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79388-olson/,Part of Amazon AWS PDX - Olson Campus
+Amazon,"79390 Olson Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79390-olson/,Part of Amazon AWS PDX - Olson Campus
+Amazon,"79392 Olson Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79392-olson/,Part of Amazon AWS PDX - Olson Campus
+Amazon,"79536 Rippee Rd Boardman Oregon, USA  ",-119.6550502,45.8408132,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79536-rippee/,Part of Amazon AWS PDX - Rippee Campus
+Amazon,"79539 Rippee Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79539-rippee/,Part of Amazon AWS PDX - Rippee Campus
+Amazon,"79540 Rippee Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79540-rippee/,Part of Amazon AWS PDX - Rippee Campus
+Amazon,"79541 Rippee Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79541-rippee/,Part of Amazon AWS PDX - Rippee Campus
+Amazon,"79553 Rippee Rd Boardman Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-79553-rippee/,Part of Amazon AWS PDX - Rippee Campus
+Amazon,"TBD Bombing Range Rd Boardman Oregon, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-bombing-c/,Part of Amazon AWS PDX - Bombing Campus
+Amazon,"TBD Bombing Range Rd Boardman Oregon, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/oregon/boardman/amazon-aws-pdx-bombing-d/,Part of Amazon AWS PDX - Bombing Campus
+Amazon,"81712-81718 Lind Rd Hermiston Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-lind-campus/,
+Amazon,"28803 NW Livestock Rd Hermiston Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-livestock-campus/,
+Amazon,"976-994 E Penney Ave Hermiston Oregon, USA",-119.26656243666514,45.813201860657735,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-penney-campus/,
+Amazon,"28803 NW Livestock Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-28803a-livestock/,Part of Amazon AWS PDX - Livestock Campus
+Amazon,"28803 NW Livestock Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-28803b-livestock/,Part of Amazon AWS PDX - Livestock Campus
+Amazon,"28803 NW Livestock Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-28803c-livestock/,Part of Amazon AWS PDX - Livestock Campus
+Amazon,"28803 NW Livestock Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-28803d-livestock/,Part of Amazon AWS PDX - Livestock Campus
+Amazon,"81712 Lind Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-81712-lind/,Part of Amazon AWS PDX - Lind Campus
+Amazon,"81714 Lind Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-81714-lind/,Part of Amazon AWS PDX - Lind Campus
+Amazon,"81716 Lind Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-81716-lind/,Part of Amazon AWS PDX - Lind Campus
+Amazon,"81718 Lind Rd Hermiston Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-81718-lind/,Part of Amazon AWS PDX - Lind Campus
+Amazon,"976 E Penney Ave Hermiston Oregon, USA  ",-119.29344093137897,45.84110832418308,Planned,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-976-penney/,Part of Amazon AWS PDX - Penney Campus
+Amazon,"982 E Penney Ave Hermiston Oregon, USA  ",-119.26656243666514,45.813201860657735,Planned,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-982-penney/,Part of Amazon AWS PDX - Penney Campus
+Amazon,"988 E Penney Ave Hermiston Oregon, USA  ",-119.26656243666514,45.813201860657735,Planned,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-988-penney/,Part of Amazon AWS PDX - Penney Campus
+Amazon,"994 E Penney Ave Hermiston Oregon, USA  ",-119.26656243666514,45.813201860657735,Under Construction,https://www.datacentermap.com/usa/oregon/hermiston/amazon-aws-pdx-994-penney/,Part of Amazon AWS PDX - Penney Campus
+Amazon,"1600-3250 Beach Access Rd Umatilla Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-beach-campus/,
+Amazon,"80817-80939 Powerline Rd Umatilla Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-powerline-campus/,
+Amazon,"34820-34850 Wanapa Rd Umatilla Oregon, USA",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-wanapa-campus/,
+Amazon,"1600 Beach Access Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-1600-beach/,Part of Amazon AWS PDX - Beach Campus
+Amazon,"1650 Beach Access Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-1650-beach/,Part of Amazon AWS PDX - Beach Campus
+Amazon,"2400 Beach Access Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-2400-beach/,Part of Amazon AWS PDX - Beach Campus
+Amazon,"3200 Beach Access Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-3200-beach/,Part of Amazon AWS PDX - Beach Campus
+Amazon,"3250 Beach Access Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-3250-beach/,Part of Amazon AWS PDX - Beach Campus
+Amazon,"34820 Wanapa Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-34820-wanapa/,Part of Amazon AWS PDX - Wanapa Campus
+Amazon,"34830 Wanapa Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-34830-wanapa/,Part of Amazon AWS PDX - Wanapa Campus
+Amazon,"34840 Wanapa Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-34840-wanapa/,Part of Amazon AWS PDX - Wanapa Campus
+Amazon,"34850 Wanapa Rd Umatilla Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-34850-wanapa/,Part of Amazon AWS PDX - Wanapa Campus
+Amazon,"80817 Powerline Rd Umatilla Oregon, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-80817-powerline/,Part of Amazon AWS PDX - Powerline Campus
+Amazon,"80937 Powerline Rd Umatilla Oregon, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-80937-powerline/,Part of Amazon AWS PDX - Powerline Campus
+Amazon,"80939 Powerline Rd Umatilla Oregon, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/oregon/umatilla/amazon-aws-pdx-80939-powerline/,Part of Amazon AWS PDX - Powerline Campus
+Amazon,"1125 Electron Ave Berwick Pennsylvania, USA",-1,-1,Active,https://www.datacentermap.com/usa/pennsylvania/wilkes-barre/amazon-aws-phl-1125-electron/,
+Amazon,"12807 Donop Rd Elmendorf Texas, USA",-1,-1,Active,https://www.datacentermap.com/usa/texas/san-antonio/amazon-aws-sat-12807-donop/,
+Amazon,"7400 Potranco Rd San Antonio Texas, USA",-98.7668885,29.4208923,Active,https://www.datacentermap.com/usa/texas/san-antonio/amazon-aws-sat-7400-potranco/,
+Amazon,"21310-21320 Beaumeade Cir Ashburn Virginia, USA",-77.47259234072556,39.026347,Active,https://www.datacentermap.com/usa/virginia/ashburn/aws-iad-21310-21320-beaumeade-cir/,
+Amazon,"44351-44254 Import Plaza Ashburn Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-import-campus/,
+Amazon,"44854-44862 Interconnection Plz Ashburn Virginia, USA",-77.4495202253672,39.0263681,Active,https://www.datacentermap.com/usa/virginia/ashburn/aws-iad-interconnection-campus/,
+Amazon,"20935-20934 Lodoun County Pkwy Ashburn Virginia, USA",-77.46419140192572,39.03672265,Active,https://www.datacentermap.com/usa/virginia/ashburn/aws-iad-loudoun-county-campus/,
+Amazon,"21263-21271 Smith Switch Rd Ashburn Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-smith-campus/,
+Amazon,"41789 Cochran Mill Rd Leesburg Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-41789-cochran-mill-rd/,
+Amazon,"20935 Loudoun County Pkwy Ashburn Virginia, USA  ",-77.46464955502177,39.036568200000005,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-20935-loudoun/,Part of Amazon AWS IAD - Loudoun County Campus
+Amazon,"20945 Loudoun County Pkwy Ashburn Virginia, USA  ",-77.49307174971167,39.03653335,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-20945-loudoun/,Part of Amazon AWS IAD - Loudoun County Campus
+Amazon,"21263 Smith Switch Rd Ashburn Virginia, USA  ",-77.45966508539769,39.029577450000005,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-21263-smith/,Part of Amazon AWS IAD - Smith Campus
+Amazon,"21267 Smith Switch Rd Ashburn Virginia, USA  ",-77.4582461,39.0287737,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-21267-smith/,Part of Amazon AWS IAD - Smith Campus
+Amazon,"21271 Smith Switch Rd Ashburn Virginia, USA  ",-77.45749705034054,39.027912650000005,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-21271-smith/,Part of Amazon AWS IAD - Smith Campus
+Amazon,"21310 Beaumeade Cir Ashburn Virginia, USA  ",-77.45648818454544,39.020044057367954,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-21310-beaumeade-cir/,Part of Amazon AWS IAD - 21310-21320 Beaumeade Cir
+Amazon,"21320 Beaumeade Cir Ashburn Virginia, USA  ",-77.45648818454544,39.020044057367954,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-aws-iad-21320-beaumeade-cir/,Part of Amazon AWS IAD - 21310-21320 Beaumeade Cir
+Amazon,"44854 Interconnection Plz Ashburn Virginia, USA  ",-77.4495202253672,39.0263681,Active,https://www.datacentermap.com/usa/virginia/ashburn/aws-iad-44854-interconnection/,Part of Amazon AWS IAD - Interconnection Campus
+Amazon,"44858 Interconnection Plz Ashburn Virginia, USA  ",-77.4508703496484,39.02635735,Active,https://www.datacentermap.com/usa/virginia/ashburn/aws-iad-44858-interconnection/,Part of Amazon AWS IAD - Interconnection Campus
+Amazon,"44862 Interconnection Plz Ashburn Virginia, USA  ",-77.45282885,39.02710865,Active,https://www.datacentermap.com/usa/virginia/ashburn/aws-iad-44862-interconnection/,Part of Amazon AWS IAD - Interconnection Campus
+Amazon,"44254 Import Plaza Ashburn Virginia, USA  ",-77.47036644824759,39.0172477,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-iad-44254-import/,Part of Amazon AWS IAD - Import Campus
+Amazon,"44305 Import Plaza Ashburn Virginia, USA  ",-77.4761723,39.0447079,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-iad-44305-import/,Part of Amazon AWS IAD - Import Campus
+Amazon,"44351 Import Plaza Ashburn Virginia, USA  ",-77.4761723,39.0447079,Active,https://www.datacentermap.com/usa/virginia/ashburn/amazon-iad-44351-import/,Part of Amazon AWS IAD - Import Campus
+Amazon,"5845-5915 Wellington Rd Bristow Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/bristow/amazon-aws-iad-wellington-campus1/,
+Amazon,"5845 Wellington Rd Bristow Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/bristow/amazon-aws-iad-5845-wellington/,Part of Amazon AWS IAD - Wellington Campus (Bristow)
+Amazon,"5945 Wellington Rd Bristow Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/bristow/amazon-aws-iad-5945-wellington/,Part of Amazon AWS IAD - Wellington Campus (Bristow)
+Amazon,"Clubber Ln / Prediction Ln Chantilly Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/chantilly/aws-clubber-prediction-campus/,
+Amazon,"3980 Mallory Dr Chantilly Virginia, USA",-77.45157474161181,38.905230919643486,Active,https://www.datacentermap.com/usa/virginia/chantilly/aws-iad-virginia-mallory-campus/,
+Amazon,"4100 Westfax Dr Chantilly Virginia, USA",-77.45352935410324,38.899537699999996,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-westfax-campus/,
+Amazon,"44150 Wade Dr Chantilly Virginia, USA",-77.4395514,38.8860348,Land Banked,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-44150-wade-dr/,
+Amazon,"25020 Willard Rd Chantilly Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-25020-willard/,
+Amazon,"25311 Prediction Ln Chantilly Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-25311-prediction/,Part of Amazon AWS IAD - Clubber &amp; Prediction Campus
+Amazon,"25316 Prediction Ln Chantilly Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-25316-prediction/,Part of Amazon AWS IAD - Clubber &amp; Prediction Campus
+Amazon,"4100B Westfax Dr Chantilly Virginia, USA  ",-77.45589294433347,38.90031429355888,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-4100-westfax/,Part of Amazon AWS IAD - Westfax Campus
+Amazon,"4101A Westfax Dr Chantilly Virginia, USA  ",-77.45589294433347,38.90031429355888,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-4101-westfax/,Part of Amazon AWS IAD - Westfax Campus
+Amazon,"43701 Clubber Ln Chantilly Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-43701-clubber/,Part of Amazon AWS IAD - Clubber &amp; Prediction Campus
+Amazon,"43736 Clubber Ln Chantilly Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-43736-clubber/,Part of Amazon AWS IAD - Clubber &amp; Prediction Campus
+Amazon,"43764 Clubber Ln Chantilly Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-43764-clubber/,Part of Amazon AWS IAD - Clubber &amp; Prediction Campus
+Amazon,"43920 Lone Cedar Ln Chantilly Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-43920-lone-cedar/,
+Amazon,"3980 Mallory Dr Chantilly Virginia, USA  ",-77.45157474161181,38.905230919643486,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-virginia-mallory-1/,Part of Amazon AWS IAD - Virginia Mallory Campus
+Amazon,"3980 Mallory Dr Chantilly Virginia, USA  ",-77.45157474161181,38.905230919643486,Active,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-virginia-mallory-2/,Part of Amazon AWS IAD - Virginia Mallory Campus
+Amazon,"3980 Mallory Dr Chantilly Virginia, USA  ",-77.45157474161181,38.905230919643486,Under Construction,https://www.datacentermap.com/usa/virginia/chantilly/amazon-aws-iad-virginia-mallory-3/,Part of Amazon AWS IAD - Virginia Mallory Campus
+Amazon,"20420 Germanna Hwy Stevensburg Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/culpeper/amazon-aws-iad-20420-germanna/,
+Amazon,"Fadeley Ln / Woodside Ln Dulles Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-fadeley-woodside-campus/,
+Amazon,"22370-22420 Kipper Dr Dulles Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-kipper-campus/,
+Amazon,"43649-43975 Light Speed Plz Dulles Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-light-speed-plz-campus/,
+Amazon,"Platform Plz / Old Ox Rd Dulles Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-platform-old-ox-campus/,
+Amazon,"24214-24244 Quail Ridge Ln Aldie Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-quail-campus/,
+Amazon,"22370 Kipper Dr Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-22370-kipper/,Part of Amazon AWS IAD - Kipper Campus
+Amazon,"22420 Kipper Dr Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-22420-kipper/,Part of Amazon AWS IAD - Kipper Campus
+Amazon,"22890 Platform Plz Dulles Virginia, USA  ",-77.48242540309394,38.99736885,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-22890-platform/,Part of Amazon AWS IAD - Platform &amp; Old Ox Campus
+Amazon,"22900 Platform Plz Dulles Virginia, USA  ",-77.4175502418966,38.981455249999996,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-22900-platform/,Part of Amazon AWS IAD - Platform &amp; Old Ox Campus
+Amazon,"22940 Platform Plz Dulles Virginia, USA  ",-77.48148356492148,38.99716835,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-22940-platform/,Part of Amazon AWS IAD - Platform &amp; Old Ox Campus
+Amazon,"24178 Upper Woodside Ln Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-24178-upper-woodside/,Part of Amazon AWS IAD - Fadeley &amp; Woodside Campus
+Amazon,"24185 Upper Woodside Ln Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-24185-upper-woodside/,Part of Amazon AWS IAD - Fadeley &amp; Woodside Campus
+Amazon,"24214 Quail Ridge Ln Aldie Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-24214-quail/,Part of Amazon AWS IAD - Quail Campus
+Amazon,"24224 Quail Ridge Ln Aldie Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-24224-quail/,Part of Amazon AWS IAD - Quail Campus
+Amazon,"24234 Quail Ridge Ln Aldie Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-24234-quail/,Part of Amazon AWS IAD - Quail Campus
+Amazon,"24244 Quail Ridge Ln Aldie Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-24244-quail/,Part of Amazon AWS IAD - Quail Campus
+Amazon,"41992 John Mosby Hwy Aldie Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-41992-john-mosby/,
+Amazon,"42090 Reeds Farm Ln Stone Ridge Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-42090-reeds-farm-ln/,
+Amazon,"42800 Fadeley Ln Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-42800-fadeley/,Part of Amazon AWS IAD - Fadeley &amp; Woodside Campus
+Amazon,"42948 Fadeley Ln Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-42948-fadeley/,Part of Amazon AWS IAD - Fadeley &amp; Woodside Campus
+Amazon,"42949 Fadeley Ln Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-42949-fadeley/,Part of Amazon AWS IAD - Fadeley &amp; Woodside Campus
+Amazon,"43649 Light Speed Plz Dulles Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-43649-light-speed-plz-b/,Part of Amazon AWS IAD - Light Speed Plz Campus
+Amazon,"43764 Light Speed Plz Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-43764-light-speed-plz/,Part of Amazon AWS IAD - Light Speed Plz Campus
+Amazon,"43765 Light Speed Plz Dulles Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-43765-light-speed-plz-d/,Part of Amazon AWS IAD - Light Speed Plz Campus
+Amazon,"43855 Light Speed Plz Dulles Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-43855-light-speed-plz-c/,Part of Amazon AWS IAD - Light Speed Plz Campus
+Amazon,"43975 Light Speed Plz Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/aws-iad-43649-light-speed-plz-a/,Part of Amazon AWS IAD - Light Speed Plz Campus
+Amazon,"45775 Old Ox Rd Dulles Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-45775-old-ox/,Part of Amazon AWS IAD - Platform &amp; Old Ox Campus
+Amazon,"45795 Old Ox Rd Dulles Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/dulles/amazon-aws-iad-45795-old-ox/,Part of Amazon AWS IAD - Platform &amp; Old Ox Campus
+Amazon,"10900 Birchwood Dr King George Virginia, USA",-77.31551212789199,38.26700235,Planned,https://www.datacentermap.com/usa/virginia/fredericksburg/amazon-aws-iad-birchwood-drive-campus/,
+Amazon,"8432 Flippo Drive Fredericksburg Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/fredericksburg/amazon-aws-carters-store-tech-campus/,
+Amazon,"4110 Overview Drive Cosner's Corner Virginia, USA",-77.49812190832168,38.22501528454989,Planned,https://www.datacentermap.com/usa/virginia/fredericksburg/amazon-aws-iad-hunters-ridge-campus/,
+Amazon,"Orrock Road Thornburg Virginia, USA",-77.50948229796457,38.12082993197158,Planned,https://www.datacentermap.com/usa/virginia/fredericksburg/amazon-aws-iad-orrock-tech-campus/,
+Amazon,"123-125 Old Potomac Church Rd Stafford Virginia, USA",-77.40817955354899,38.40895765,Active,https://www.datacentermap.com/usa/virginia/fredericksburg/aws-iad-potomac-church-tech-center/,
+Amazon,"123 Old Potomac Church Rd Stafford Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/fredericksburg/aws-iad-123-old-potomac-church-rd/,Part of Amazon AWS IAD - Potomac Church Tech Center
+Amazon,"125 Old Potomac Church Rd Stafford Virginia, USA  ",-77.40817955354899,38.40895765,Planned,https://www.datacentermap.com/usa/virginia/fredericksburg/aws-iad-125-old-potomac-church-rd/,Part of Amazon AWS IAD - Potomac Church Tech Center
+Amazon,"15395-15475 John Marshall Hwy Haymarket Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-john-marshall-campus/,
+Amazon,"15395 John Marshall Hwy Haymarket Virginia, USA  ",-77.64888000389527,38.8148784,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-15395-john-marshall/,Part of Amazon AWS IAD - John Marshall Campus
+Amazon,"15435 John Marshall Hwy Haymarket Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-john-marshall-campus1/,Part of Amazon AWS IAD - John Marshall Campus
+Amazon,"15445 John Marshall Hwy Haymarket Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-15455-john-marshall/,Part of Amazon AWS IAD - John Marshall Campus
+Amazon,"15455 John Marshall Hwy Haymarket Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-15455-john-marshall1/,Part of Amazon AWS IAD - John Marshall Campus
+Amazon,"15465 John Marshall Hwy Haymarket Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-15465-john-marshall/,Part of Amazon AWS IAD - John Marshall Campus
+Amazon,"15475 John Marshall Hwy Haymarket Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/gainesville-va/aws-iad-15475-john-marshall/,Part of Amazon AWS IAD - John Marshall Campus
+Amazon,"5915 Wellington Rd Gainesville Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/gainesville-va/amazon-aws-iad-5915-wellington/,Part of Amazon AWS IAD - Wellington Campus (Bristow)
+Amazon,"719 Blackwell Rd Warrenton Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/gainesville-va/amazon-aws-iad-719-blackwell-road/,
+Amazon,"13600 EDS Dr Herndon Virginia, USA",-76.23181255,36.6544322,Active,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-eds-campus/,
+Amazon,"13860-13876 Redskin Dr Herndon Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-renaissance-park/,
+Amazon,"13600 EDS Dr Herndon Virginia, USA  ",-76.23181255,36.6544322,Under Construction,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-13600-eds-c/,Part of Amazon AWS IAD - EDS Campus
+Amazon,"13600 EDS Drive Herndon Virginia, USA  ",-76.23181255,36.6544322,Under Construction,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-13600-eds/,Part of Amazon AWS IAD - EDS Campus
+Amazon,"13600 EDS Dr Herndon Virginia, USA  ",-76.23181255,36.6544322,Under Construction,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-13600-eds-b/,Part of Amazon AWS IAD - EDS Campus
+Amazon,"13860 Redskin Dr Herndon Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-500-13860-redskin-drive/,Part of Amazon AWS IAD - Renaissance Park
+Amazon,"13876 Redskin Dr Herndon Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/herndon/amazon-aws-iad-501-13876-redskin-drive/,Part of Amazon AWS IAD - Renaissance Park
+Amazon,"8148-8210 Bethlehem Rd Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-bethlehem-campus/,
+Amazon,"Doane Dr / Brewers Spring Rd Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-doane-campus/,
+Amazon,"9020-9040 Freedom Center Blvd Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-freedom-campus/,
+Amazon,"9680-9740 Innovation Dr Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-innovation-campus/,
+Amazon,"7505-7610 Mason King Ct Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-mason-campus/,
+Amazon,"10301-1321 Tanner Way Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-tanner-campus/,
+Amazon,"11150-11200 Thomasson Barn Rd Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-thomasson-campus/,
+Amazon,"7060-7080 Wellington Rd Manassas Virginia, USA",-77.55909918432391,38.7779795,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-wellington-campus/,
+Amazon,"11901 Sudley Manor Dr Manassas Virginia, USA",-77.5099995,38.7890017,Active,https://www.datacentermap.com/usa/virginia/manassas/aws-iad-wellington-glen-tech-park/,
+Amazon,"10261 Tanner Way Manassas Virginia, USA  ",-77.50330561674477,38.777318050000005,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-10281-tanner1/,Part of Amazon AWS IAD - Tanner Campus
+Amazon,"10281 Tanner Way Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-10281-tanner/,Part of Amazon AWS IAD - Tanner Campus
+Amazon,"10301 Tanner Way Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-10301-tanner/,Part of Amazon AWS IAD - Tanner Campus
+Amazon,"10321 Tanner Way Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-10321-tanner/,Part of Amazon AWS IAD - Tanner Campus
+Amazon,"11150 Thomasson Barn Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-11150-thomasson/,Part of Amazon AWS IAD - Thomasson Campus
+Amazon,"11200 Thomasson Barn Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-11200-thomasson/,Part of Amazon AWS IAD - Thomasson Campus
+Amazon,"11800 Brewers Spring Rd Manassas Virginia, USA  ",-77.5483863220428,38.79106485,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-11800-brewers/,Part of Amazon AWS IAD - Doane Campus
+Amazon,"11801 Brewers Spring Rd Manassas Virginia, USA  ",-77.54822868704906,38.78993595,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-11801-brewers/,Part of Amazon AWS IAD - Doane Campus
+Amazon,"11901 Sudley Manor Dr Manassas Virginia, USA  ",-77.5099995,38.7890017,Planned,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-11901-sudley-manor-dr-a/,Part of Amazon AWS IAD - Wellington Glen Tech Park
+Amazon,"11901 Sudley Manor Dr Manassas Virginia, USA  ",-77.5099995,38.7890017,Planned,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-11901-sudley-manor-dr-b/,Part of Amazon AWS IAD - Wellington Glen Tech Park
+Amazon,"14209 Dumfries Rd Manassas Virginia, USA",-77.44363624644483,38.6464607,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-14209-dumfries/,
+Amazon,"14237 Dumfries Rd Manassas Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-14237-dumfries/,
+Amazon,"7060 Wellington Rd Manassas Virginia, USA  ",-77.55909918432391,38.7779795,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7060-wellington/,Part of Amazon AWS IAD - Wellington Campus (Manassas)
+Amazon,"7070 Wellington Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7070-wellington/,Part of Amazon AWS IAD - Wellington Campus (Manassas)
+Amazon,"7080 Wellington Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7080-wellington/,Part of Amazon AWS IAD - Wellington Campus (Manassas)
+Amazon,"7151 Century Park Dr Manassas Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7151-century-park-dr/,
+Amazon,"7350 Century Park Dr Manassas Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7350-century-park-dr/,
+Amazon,"7500 Bethlehem Rd Manassas Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7500-bethlehem/,
+Amazon,"7505 Mason King Ct Manassas Virginia, USA  ",-77.53826854781123,38.7912098,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7505-mason/,Part of Amazon AWS IAD - Mason Campus
+Amazon,"7510 Mason King Ct Manassas Virginia, USA  ",-77.54111083173377,38.79049895,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7510-mason/,Part of Amazon AWS IAD - Mason Campus
+Amazon,"7600 Doane Dr Manassas Virginia, USA  ",-77.54846951808406,38.79223155,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7600-doane/,Part of Amazon AWS IAD - Doane Campus
+Amazon,"7610 Mason King Ct Manassas Virginia, USA  ",-77.5400060399839,38.790348449999996,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-7610-mason/,Part of Amazon AWS IAD - Mason Campus
+Amazon,"8158 Sudley Rd Manassas Virginia, USA",-77.50768104999999,38.776514750000004,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8158-sudley/,
+Amazon,"8180 Bethlehem Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8180-bethlehem/,Part of Amazon AWS IAD - Bethlehem Campus
+Amazon,"8190 Bethlehem Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8190-bethlehem/,Part of Amazon AWS IAD - Bethlehem Campus
+Amazon,"8200 Bethlehem Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8200-bethlehem/,Part of Amazon AWS IAD - Bethlehem Campus
+Amazon,"8210 Bethlehem Rd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8210-bethlehem/,Part of Amazon AWS IAD - Bethlehem Campus
+Amazon,"8401 Vulcan Ln Manassas Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8401-vulcan-lane/,
+Amazon,"8501 Vulcan Ln Manassas Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-8501-vulcan-lane/,
+Amazon,"9020 Freedom Center Blvd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-9020-freedom/,Part of Amazon AWS IAD - Freedom Campus
+Amazon,"9040 Freedom Center Blvd Manassas Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-9040-freedom/,Part of Amazon AWS IAD - Freedom Campus
+Amazon,"9680 Innovation Dr Manassas Virginia, USA  ",-77.51084561534361,38.75302165,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-9680-innovation/,Part of Amazon AWS IAD - Innovation Campus
+Amazon,"9700 Innovation Dr Manassas Virginia, USA  ",-77.4878333051958,38.7953679,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-9700-innovation/,Part of Amazon AWS IAD - Innovation Campus
+Amazon,"9720 Innovation Dr Manassas Virginia, USA  ",-77.44500511542789,38.743650349999996,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-9720-innovation/,Part of Amazon AWS IAD - Innovation Campus
+Amazon,"9740 Innovation Dr Manassas Virginia, USA  ",-77.53331512490172,38.744371150000006,Active,https://www.datacentermap.com/usa/virginia/manassas/amazon-aws-iad-9740-innovation/,Part of Amazon AWS IAD - Innovation Campus
+Amazon,"Dumfries Rd &amp; Colchester Park Dr Manassas Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/manassas/amazon-dumfries-rd-colchester-park/,
+Amazon,"2097 Harpers Rd Virginia Beach Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/norfolk/amazon-aws-iad-2097-harpers-rd/,
+Amazon,"Jefferson Hwy Louisa Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/aws-desper-creek-technology-campus/,
+Amazon,"4049 Massaponax Church Rd / 9300 Cosner Dr Carters Store Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/amazon-aws-iad-cosner-tech-campus/,
+Amazon,"Massaponax Church Rd Carters Store Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/amazon-aws-iad-massaponax-church-rd/,
+Amazon,"Orrock Ln Woodford Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/amazon-aws-iad-mattermeade-campus/,
+Amazon,"Kentucky Springs Rd &amp; Haley Dr Mineral Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/amazon-aws-lake-anna-tech-campus/,
+Amazon,"Jefferson Hwy Louisa Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/aws-northeast-creek-technology-campus/,
+Amazon,"25410-25430 Sutton Bay Plz South Riding Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/south-riding/amazon-aws-iad-sutton-campus/,
+Amazon,"24359 Racefield Ln Aldie Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/south-riding/amazon-aws-iad-24359-racefield-ln/,
+Amazon,"25410 Sutton Bay Plz South Riding Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/south-riding/amazon-aws-iad-25410-sutton/,Part of Amazon AWS IAD - Sutton Bay Campus
+Amazon,"25420 Sutton Bay Plz South Riding Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/south-riding/amazon-aws-iad-25420-sutton/,Part of Amazon AWS IAD - Sutton Bay Campus
+Amazon,"25430 Sutton Bay Plz South Riding Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/south-riding/amazon-aws-iad-25430-sutton/,Part of Amazon AWS IAD - Sutton Bay Campus
+Amazon,"7951-7961 Loisdale Rd Springfield Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/springfield-va/amazon-aws-7951-7961-loisdale-rd/,
+Amazon,"21195-21215 Atlantic Blvd Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-atlantic-blvd-campus/,
+Amazon,"21641-21710 Charles View Dr Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-charles-v-campus/,
+Amazon,"22630-22651 Dulles Summit Ct Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-dulles-campus/,
+Amazon,"23825-23845 Erins Run Dr Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-erins-run-campus/,
+Amazon,"22868-22945 International Dr Sterling Virginia, USA",-77.42736939375345,38.98158205,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-international-campus/,
+Amazon,"45110-45111 Loudoun Downs Ln Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-loudoun-downs-campus/,
+Amazon,"45900-45950 Pathfinder Plz Sterling Virginia, USA",-77.4116518853442,38.98860285,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-pathfinder-campus/,
+Amazon,"45210-45220 Prologis Plz Sterling Virginia, USA",-77.4355637664377,39.01077305,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-prologis-campus/,
+Amazon,"22745-22755 Relocation Dr Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-relocation-campus/,
+Amazon,"Squire Ct / West Severn Way Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-severn-squire-campus/,
+Amazon,"21660 Ridgetop Cir Sterling Virginia, USA",-77.40962460779997,39.025410550000004,Planned,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-21660-ridgetop-circle/,
+Amazon,"21670-21680 Ridgetop Cir Sterling Virginia, USA",-77.41028543559156,39.024383799999995,Planned,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-21670-ridgetop-circle/,
+Amazon,"45965-45975 Nokes Blvd Sterling Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-45965-nokes-blvd/,
+Amazon,"46000-46020 Manekin Plz Sterling Virginia, USA",-77.40846579689051,39.03059865,Planned,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-46020-manekin-plaza/,
+Amazon,"1304 Squire Ct Sterling Virginia, USA  ",-77.4347944501243,39.02156935,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-1304-squire/,Part of Amazon AWS IAD - Severn &amp; Squire Campus
+Amazon,"21195 Atlantic Blvd Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-21195-atlantic-blvd/,Part of Amazon AWS IAD - Atlantic Blvd Campus
+Amazon,"21205 Atlantic Blvd Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-21205-atlantic-blvd/,Part of Amazon AWS IAD - Atlantic Blvd Campus
+Amazon,"21215 Atlantic Blvd Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-21215-atlantic-blvd/,Part of Amazon AWS IAD - Atlantic Blvd Campus
+Amazon,"21641 Charles View Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-21641-charles-view/,Part of Amazon AWS IAD - Charles View Campus
+Amazon,"21645 Charles View Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-21645-charles-view/,Part of Amazon AWS IAD - Charles View Campus
+Amazon,"21660 Charles View Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-21660-charles-view/,Part of Amazon AWS IAD - Charles View Campus
+Amazon,"21710 Charles View Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-21710-charles-view/,Part of Amazon AWS IAD - Charles View Campus
+Amazon,"22520 Randolph Drive Sterling Virginia, USA",-77.45050930013156,38.9937865,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22520-randolph/,
+Amazon,"22630 Dulles Summit Ct Sterling Virginia, USA  ",-77.4476618513777,38.98872415,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22630-dulles/,Part of Amazon AWS IAD - Dulles Campus
+Amazon,"22631 Dulles Summit Ct Sterling Virginia, USA  ",-77.44870612877443,38.99173735,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22631-dulles/,Part of Amazon AWS IAD - Dulles Campus
+Amazon,"22651 Dulles Summit Ct Sterling Virginia, USA  ",-77.44888163344737,38.99072985,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22651-dulles/,Part of Amazon AWS IAD - Dulles Campus
+Amazon,"22745 Relocation Dr Sterling Virginia, USA  ",-77.4348093883778,38.99397414662921,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22745-relocation/,Part of Amazon AWS IAD - Relocation Campus
+Amazon,"22755 Relocation Dr Sterling Virginia, USA  ",-77.4348093883778,38.99397414662921,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22755-relocation/,Part of Amazon AWS IAD - Relocation Campus
+Amazon,"22760 Pacific Blvd Sterling Virginia, USA",-77.43517749976499,38.986522750000006,Land Banked,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-22760-pacific/,
+Amazon,"22868 International Dr Sterling Virginia, USA  ",-77.42502568807843,38.98441466574959,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-22868-international/,Part of Amazon AWS IAD - International Campus
+Amazon,"22945 International Dr Sterling Virginia, USA  ",-77.42736939375345,38.98158205,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-22945-international/,Part of Amazon AWS IAD - International Campus
+Amazon,"23005 International Dr Sterling Virginia, USA  ",-77.42502568807843,38.98441466574959,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-23005-international/,Part of Amazon AWS IAD - International Campus
+Amazon,"23825 Erins Run Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-23825-erins/,Part of Amazon AWS IAD - Erins Run Campus
+Amazon,"23835 Erins Run Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-23835-erins/,Part of Amazon AWS IAD - Erins Run Campus
+Amazon,"23845 Erins Run Dr Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-23845-erins/,Part of Amazon AWS IAD - Erins Run Campus
+Amazon,"45110 Loudoun Downs Ln Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45110-loudoun/,Part of Amazon AWS IAD - Loudoun Downs Campus
+Amazon,"45111 Loudoun Downs Ln Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45111-loudoun/,Part of Amazon AWS IAD - Loudoun Downs Campus
+Amazon,"45210 Prologis Plaza Sterling Virginia, USA  ",-77.44015081398565,38.98904135043799,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45210-prologis/,Part of Amazon AWS IAD - Prologis Campus
+Amazon,"45220 Prologis Plaza Sterling Virginia, USA  ",-77.44015081398565,38.98904135043799,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45220-prologis/,Part of Amazon AWS IAD - Prologis Campus
+Amazon,"45259 West Severn Way Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-45259-severn/,Part of Amazon AWS IAD - Severn &amp; Squire Campus
+Amazon,"45305 West Severn Way Sterling Virginia, USA  ",-77.43402985191301,39.0191689,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-45305-severn/,Part of Amazon AWS IAD - Severn &amp; Squire Campus
+Amazon,"45360 West Severn Way Sterling Virginia, USA  ",-77.4327903566861,39.021933250000004,Active,https://www.datacentermap.com/usa/virginia/sterling/aws-iad-45360-severn/,Part of Amazon AWS IAD - Severn &amp; Squire Campus
+Amazon,"45900 Pathfinder Plz Sterling Virginia, USA  ",-77.4116518853442,38.98860285,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45900-pathfinder/,Part of Amazon AWS IAD - Pathfinder Campus
+Amazon,"45930 Pathfinder Plz Sterling Virginia, USA  ",-77.41111916396069,38.98784715,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45930-pathfinder/,Part of Amazon AWS IAD - Pathfinder Campus
+Amazon,"45950 Pathfinder Plz Sterling Virginia, USA  ",-77.4104754,38.9869426,Active,https://www.datacentermap.com/usa/virginia/sterling/amazon-aws-iad-45950-pathfinder/,Part of Amazon AWS IAD - Pathfinder Campus

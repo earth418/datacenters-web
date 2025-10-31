@@ -22,6 +22,16 @@ function transition_top(element, duration) {
     return d3.select(element).transition().duration(duration).style("top",top_gap);
 }
 
+function spinGlobe() {
+    const center = map.getCenter();
+    center.lng += 10.0;
+    map.easeTo({center, duration: 1000, easing: (n) => n});
+}
+
+let keep_spinning = true;
+
+map.on("moveend", () => {if (keep_spinning) spinGlobe();});
+
 function update(stage, instant = false) {
     const duration = instant ? 0 : 1000;
     switch (stage) {
@@ -50,11 +60,15 @@ function update(stage, instant = false) {
             // transition();
             d3.select("#treemap-container").transition()
                 .duration(duration)
-                .style("opacity", 0.0)
+                .style("opacity", 0.0);
+
+            spinGlobe();
             break;
+            // requestAnimationFrame(rotateCamera);
 
         case 6:
-
+            keep_spinning = false;
+            
             d3.select("#sidebar1").transition()
                 .duration(duration)
                 .style("opacity",1.0);
@@ -213,6 +227,12 @@ function animateRotateCamera(time) {
 
 document.addEventListener("keydown", (e) => {
     if (e.key == " ") {
+        num_presses++;
+    } else if (e.key == 37) {
+        // left
+        // num_presses--;   
+    } else if (e.key == 39) {
+        // right
         num_presses++;
     }
     update(num_presses);

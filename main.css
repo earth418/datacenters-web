@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* p {
+    font-size: 1.5em;
+} */
+
+.b_text {
+    color:white;
+    font-family: sans-serif;
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: -125%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#treemap-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: grey;
+}
+
+.sidebar > p {
+    margin-left: 1em;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 2em;
+    position: relative;
+    top: -100%;
+}
+
+.sidebar {
+    position: absolute;
+    width: 30%;
+    left: 0;
+    height: 100%; 
+    background-color: rgba(0.0, 0.0, 0.0, 0.7);
+    z-index:5;
+    opacity: 0.0;
+}

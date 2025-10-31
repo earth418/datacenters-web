@@ -4,41 +4,7 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
-    <style>
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        .b_text {
-            color:white;
-            font-family: sans-serif;
-            display: block;
-            position: absolute;
-            width: 50%;
-            left: -125%;
-            font-size: 1.5em;
-            text-align: center;
-        }
-
-        #treemap-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            background-color: grey;
-        }
-
-        .sidebar > p {
-            margin-left: 5px;
-            color: white;
-            font-family: sans-serif;
-            font-size: 0.75em;
-            margin-bottom: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
 
     <script src="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.css" rel="stylesheet" />
@@ -56,44 +22,42 @@
         </div>
     </div>
 
-    <div id="sidebar1" class="sidebar" style="position: absolute; width: 30%; left: 0; height: 100%; 
-    background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5; opacity: 0.0;">
-        <p id="s1p1" style="position: relative; top: -100%;">The city of Tuscon, AZ has been, for the last several months, in battle with the 
+    <div id="sidebar1" class="sidebar">
+        <p id="s1p1">The city of Tuscon, AZ has been, for the last several months, in battle with the 
             interests of these private corporations about a proposed data center within their
             city limits.</p>
-        <p id="s1p2" style="position: relative; top: -100%;">This is Project Blue -- a 290 acre powerful data center campus, 
+        <p id="s1p2">This is Project Blue -- a 290 acre powerful data center campus, 
             being built by a company called Beale Infrastructure, a datacenter building subsidary of asset manager Blue
             Owl and reportedly tied to Amazon. The campus has at least three data centers and currently has a 286MW energy agreement, but with rumors that the final number of 
             buildings
             <a href="https://www.datacenterdynamics.com/en/news/amazon-named-as-company-behind-290-acre-data-center-campus-in-tuscson-arizona/">
             could go up to ten</a>, with 600 MW of data center power. And this is one of two data centers Beale is planning to build in this county. </p>
-        <p id="s1p3" style="position: relative; top: -100%;">Hundreds of city residents protested and voted against
+        <p id="s1p3">Hundreds of city residents protested and voted against
             the construction of the data center, citing environmental, water use, and energy concerns, and 
             the city of Tuscon blocked water access for the project.
             But the company is building the data center anyway, <b style="color:#003">right outside</b> city limits.
         </p>
-        <p id="s1p4" style="position: relative; top: -100%;">
+        <p id="s1p4">
             Outside of the city and residents' jurisdiction and water availability, but well within range 
             to take advantage of the region's energy, and labor resources.
         </p>
     </div>
 
-    <div id="sidebar2" class="sidebar" style="position: absolute; width: 30%; left: 0; height: 100%; 
-    background-color: rgba(0.0, 0.0, 0.0, 0.7); z-index:5; opacity: 0.0;">
-        <p id="s2p1" style="position: relative; top: -100%;">In Memphis, TN, Elon Musk's xAI has built an enormous data center --
+    <div id="sidebar2" class="sidebar">
+        <p id="s2p1">In Memphis, TN, Elon Musk's xAI has built an enormous data center --
             one of the biggest in the world. xAI has dubbed it the "world's largest supercomputer," running over 230,000 NVidia GPUs.</p>
-        <p id="s2p2" style="position: relative; top: -100%;">The data center of course, has an enormous energy footprint -- 
+        <p id="s2p2">The data center of course, has an enormous energy footprint -- 
             and, to power the site, xAI built 35 small-scale methane gas turbines. The resulting air pollutants 
             and carbon emissions have come to effect the nearby predominantly-black community of Boxton.
         </p>
         <!-- https://www.nbcnews.com/news/us-news/musk-xai-colossus-supercomputer-boxtown-memphis-tennessee-rcna206242 -->
-        <p id="s2p3" style="position: relative; top: -100%;">
+        <p id="s2p3">
             The company has largely kept its plans under wraps, but there are known plans to expand. Musk says 
             this is just the start for this AI data center, dubbed "Colossus." The billionaire promises this will
             transform the region into a tech hub, already having purchased a nearby property and expanding talks with the 
             municipality to install his turbines permanently.
         </p>
-        <p id="s2p4" style="position: relative; top: -100%;">
+        <p id="s2p4">
             The county already has the highest levels of Athsma in the state, and its air pollution and cancer risks are 
             significantly higher than average due to pollution from companies previously present in the area. The EPA has been unable to investigate, and the mayor of Memphis allows
             Musk to continue -- without any permits -- because he's promised the turbines are temporary.
@@ -127,6 +91,7 @@
         });
     </script>
     
+    <script src="amazon_centers.js"></script>
     <script src="datacenters.js"></script>
     <script src="tuscon.js"></script>
     <script src="memphis.js"></script>

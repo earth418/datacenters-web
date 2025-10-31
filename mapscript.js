@@ -66,6 +66,22 @@ map.on('load', () => {
         }
     }
 
+    map.addSource("amazondatacenters", {
+        'type':'geojson',
+        'data': amazon_datacenters
+    });
+    map.addLayer(
+    {
+        'id':'amazondatacenters_layer',
+        'type':'circle',
+        'source':'amazondatacenters',
+        // 'layout':{},
+        'paint': {
+            'circle-radius': 8,
+            'circle-color': '#cb6200ff',
+        }
+    });
+
     map.addSource('openfreemap', {
         url: `https://tiles.openfreemap.org/planet`,
         // url: `https://github.com/openmaptiles/positron-gl-style/blob/master/style.json`,
