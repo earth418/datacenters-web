@@ -20,6 +20,10 @@
 </a>
 '''
 
+# XAI because it's only two
+xai = '''<a class="ui card card1" href="/usa/tennessee/memphis/5400-tulane-road/"><div class="content"><div style="font-size: 15px;" class="header">5400 Tulane Road</div><div class="description">5400 Tulane Rd<br>Whitehaven<br>Tennessee, USA</div></div><div class="extra content darkgrey"><img alt="Tennessee, USA" class="ui rounded image" src="https://static.datacentermap.com/img/flags/w20/us.png">&nbsp;Memphis, TN<div style="float: right;" class="ui red small label">Planned</div></div></a><a class="ui card card1" href="/usa/tennessee/memphis/xai-memphis-supercluster/"><div class="content"><div style="font-size: 15px;" class="header">xAI Memphis Supercluster</div><div class="description">3231 Riverport Rd<br>Memphis<br>Tennessee, USA</div></div><div class="extra content darkgrey"><img alt="Tennessee, USA" class="ui rounded image" src="https://static.datacentermap.com/img/flags/w20/us.png">&nbsp;Memphis, TN</div></a>'''
+
+
 from time import sleep
 import requests
 import csv
@@ -55,6 +59,10 @@ gj = {"type": "FeatureCollection",
   "features": []}
 
 
+
+
+
+
 with open("amazon_centers.csv",'r') as awsc:
     
     
@@ -73,7 +81,10 @@ with open("amazon_centers.geojson", 'w', newline='') as aws_gj:
     
 
 
-if False:
+def convert_scrape_to_data(filename_in, filename_out, company_name):
+    if type(filename_in) == str:
+        pass
+         
     with open("testing.txt") as tx:
         with open("amazon_centers.csv", 'a+', newline='') as awsc:
             csw = csv.writer(awsc)

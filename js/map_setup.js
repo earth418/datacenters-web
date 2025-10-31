@@ -41,14 +41,14 @@ function geojson_point(latlon) {
 //         // return [];
 // }
 // const datacenters_data = fetchJSONData();
-console.log(datacenters_data);
+// console.log(datacenters_data);
 
 // const datacenter_data = parseCSV(datacenters_file);
 
-for (let i = 0; i < datacenters_data.length; ++i) {
-    const val = datacenters_data[i];
-    points_geojson.features.push(geojson_point([val.latitude, val.longitude]));
-}
+// for (let i = 0; i < datacenters_data.length; ++i) {
+//     const val = datacenters_data[i];
+//     points_geojson.features.push(geojson_point([val.latitude, val.longitude]));
+// }
 
 
 
@@ -75,7 +75,8 @@ map.on('load', () => {
         'id':'amazondatacenters_layer',
         'type':'circle',
         'source':'amazondatacenters',
-        // 'layout':{},
+        'minzoom':2,
+        'maxzoom':10,
         'paint': {
             'circle-radius': 8,
             'circle-color': '#cb6200ff',
@@ -84,7 +85,6 @@ map.on('load', () => {
 
     map.addSource('openfreemap', {
         url: `https://tiles.openfreemap.org/planet`,
-        // url: `https://github.com/openmaptiles/positron-gl-style/blob/master/style.json`,
         type: 'vector',
     });
     map.addLayer(
@@ -118,10 +118,7 @@ map.on('load', () => {
         },
         labelLayerId
     );
-    // map.addSource('datacenter_points', {
-    //     'type':'geojson',
-    //     'data': points_geojson
-    // });
+
     map.addSource('tuscon', {
         'type':'geojson',
         'data': tuscon_shape

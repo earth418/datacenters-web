@@ -1,8 +1,10 @@
-"Rank","Name","Symbol","marketcap","price (USD)","country"
+let ai_companies = 
+`"Rank","Name","Symbol","marketcap","price (USD)","country"
 "1","NVIDIA","NVDA","4360306950144","179.09","United States"
 "2","Microsoft","MSFT","3804368732160","511.81","United States"
 "3","Apple","AAPL","3687391690752","248.47","United States"
 "4","Alphabet (Google)","GOOG","3026944262144","250.7","United States"
+"4.5","Amazon", "AMZN", "2640000000000", "244.22", "United States"
 "5","Meta Platforms (Facebook)","META","1797613158400","715.57","United States"
 "6","Tesla","TSLA","1440023183360","433.07","United States"
 "7","Oracle","ORCL","862022729728","302.38","United States"
@@ -63,3 +65,4 @@
 "62","Fr8Tech 
  (Freight Technologies)","FRGT","3550495","1.29","United States"
 "63","Presto Automation","PRST","41852","0.0001","United States"
+`;

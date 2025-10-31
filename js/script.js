@@ -57,7 +57,7 @@ function update(stage, instant = false) {
                 break;
         case 5:
             // update(4);
-            // transition();
+            transition();
             d3.select("#treemap-container").transition()
                 .duration(duration)
                 .style("opacity", 0.0);
@@ -330,7 +330,7 @@ const svg = d3.create("svg")
 
 const leaf = svg.selectAll("g")
     .data(root.leaves())
-    .attr("id", (d) => d.data.county)
+    .attr("id", (d) => d.data.name)
     .join("a")
         .attr("x", (d) => d.x0+10)
         .attr("y", (d) => d.y0+20)
@@ -356,8 +356,9 @@ leaf.append("rect")
     .attr("height", (d) => d.y1 - d.y0)
     .style("stroke","black")
     .style("stroke-width",0.5)
-    .style("fill", (d) => ["#ffe3c8", "#ffecd7"][Math.floor(Math.random() * 2)])
+    .style("fill", "#ffe3c8")
     .style("fill-opacity", 1.0)
+    // .style("fill", (d) => ["#ffe3c8", "#ffecd7"][Math.floor(Math.random() * 2)])
 
 
 function font_sizepx(d) {return ((d.value / 1e12) * 4 + 3);}
@@ -391,11 +392,17 @@ leaf.filter(d => d.value > 195000000).append("text")
 
 document.getElementById("treemap-container").append(svg.node());
 
-const projection1 = d3.geoMercator()
+const proj = d3.geoMercator()
     // .center([-97.42011851400741, 38.56265081052521])
-    .center([-96.7, 38.5])
+    // .center([-96.7, 38.5])
+    .center([-96.0066, 38.7135])
     .translate([total_width / 2, total_height / 2])
-    .scale(1770)
+    .scale(2500)
+
+// const proj = d3.geoSatellite()
+//     .center([-96.0066, 38.7135])
+//     .translate([total_width / 2, total_height / 2])
+//     .scale(100)
 
 
 function d_to_radius(d) {
@@ -420,8 +427,37 @@ function transition() {
         
     leaf.selectAll("text").remove();
 
-    leaf.transition().duration(duration)
-        .attr("transform", d => `translate(${projection1([d.data.lon, d.data.lat])})`)      
+
+    // let a_d_located = [];
+    // for (let i = 0; i < amazon_datacenters.features.length; ++i) {
+    //     let cc = amazon_datacenters.features[i].geometry.coordinates;
+    //     if (cc[1] == -1 && cc[0] == -1) {}
+    //     else a_d_located.push(cc);
+    // }
+
+    // d3.
+    // const num = 20;
+    // for (let i = 0; i < num; ++i) {
+    //     for (let j = 0; j < num; ++j) {
+    //         // const p = amazon_datacenters.features[i * num + j].geometry.coordinates;
+    //         const p = a_d_located[i*num + j];
+    //         leaf.filter(d => d.data.name == "Amazon").append("rect")
+    //             .attr("x", d => d.x0 + (d.x1 - d.x0) * i / num)
+    //             .attr("y", d => d.y0 + (d.y1 - d.y0) * j / num)
+    //             .attr("width", d => (d.x1 - d.x0) / num)
+    //             .attr("height", d => (d.y1 - d.y0) / num)
+    //             .style("stroke","black")
+    //             .style("stroke-width",0.5)
+    //             .style("fill", "#ffe3c8")
+    //             .style("fill-opacity", 1.0)
+    //             .transition().duration(2.0*duration)
+    //             // .attr("opacity", 1.0)
+    //             .attr("transform", `translate(${proj(p[0], p[1])})`)
+    //     }
+    // }
+
+    // leaf.transition().duration(duration)
+    //     .attr("transform", d => `translate(${proj([d.data.lon, d.data.lat])})`)      
 }
 
 
