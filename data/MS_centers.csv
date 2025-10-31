@@ -1,0 +1,283 @@
+company,address,longitude,latitude,status,link_to_page,note
+Microsoft,,-1,-1,Active,https://www.datacentermap.com,
+Microsoft,20-28 Cawley Rd Yarraville Australia,144.8588547798862,-37.82242934999999,Under Construction,https://www.datacentermap.com/australia/melbourne/microsoft-cawley-road/,
+Microsoft,70-90 Garden Drive Tullamarine Australia,144.8747148,-37.6878687,Under Construction,https://www.datacentermap.com/australia/melbourne/microsoft-garden-drive/,
+Microsoft,281 Woods Rd Truganina Australia,-1,-1,Active,https://www.datacentermap.com/australia/melbourne/microsoft-woods-road/,
+Microsoft,769 Mamre Rd Kemps Creek Australia,150.7965437,-33.8696971,Under Construction,https://www.datacentermap.com/australia/sydney/microsoft-kemps-creek/,
+Microsoft,57 Station Road Seven Hills Australia,153.0690632,-27.4780663,Under Construction,https://www.datacentermap.com/australia/sydney/microsoft-seven-hills/,
+Microsoft,"Rua Uirapuru, 340, Chácara Recreio Alvorada Hortolândia Brazil",-1,-1,Under Construction,https://www.datacentermap.com/brazil/sao-paulo/microsoft-hortolandia/,
+Microsoft,"Rua Santa Teresa, 64 Sao Paulo Brazil",-46.6500781125263,-23.54270965,Active,https://www.datacentermap.com/brazil/sao-paulo/microsoft-sao-paulo/,
+Microsoft,"Estr. Mun. Pedrina Guilherme, 1995 - Jardim Res. Firenze Hortolândia Brazil",-1,-1,Under Construction,https://www.datacentermap.com/brazil/sao-paulo/microsoft-taquara-branca/,
+Microsoft,171 Commerce Valley Drive E Markham Canada,-79.38531737533674,43.84214794419008,Active,https://www.datacentermap.com/canada/toronto/microsoft-yto14/,
+Microsoft,48 Lowe's Pl Etobicoke Canada,15.926072853534848,50.94398525,Under Construction,https://www.datacentermap.com/canada/toronto/microsoft-etobicoke/,
+Microsoft,171 Commerce Valley Drive E Markham Canada  ,-79.38531737533674,43.84214794419008,Planned,https://www.datacentermap.com/canada/toronto/microsoft-yto14-building-1/,Part of Microsoft YTO14
+Microsoft,171 Commerce Valley Drive E Markham Canada  ,-79.38531737533674,43.84214794419008,Planned,https://www.datacentermap.com/canada/toronto/microsoft-yto14-building-2/,Part of Microsoft YTO14
+Microsoft,Caupolicán s/n Quilicura Chile,-70.6968211,-33.3361558,Planned,https://www.datacentermap.com/chile/santiago/microsoft-quilicura-scl03/,
+Microsoft,Bohus Boulevard 2 Taastrup Denmark,12.257849,55.643415,Under Construction,https://www.datacentermap.com/denmark/copenhagen/microsoft-hoje-taastrup-cph02/,
+Microsoft,Egedesvej 17 Køge Denmark,12.256256,55.56818,Under Construction,https://www.datacentermap.com/denmark/copenhagen/microsoft-koge-cph03/,
+Microsoft,Finervej 8 Roskilde Denmark,12.102487,55.578775,Under Construction,https://www.datacentermap.com/denmark/copenhagen/microsoft-roskilde-cph01/,
+Microsoft,,-1,-1,Planned,https://www.datacentermap.com/germany/cologne/microsoft-beb61-industrial-estate/,within BEB61 Industrial Estate</i> Bedburg Germany
+Microsoft,,-1,-1,Planned,https://www.datacentermap.com/germany/cologne/microsoft-terra-nova-industrial-park/,within INKA :terra nova Industrial Park</i> Bergheim Germany
+Microsoft,,-1,-1,Planned,https://www.datacentermap.com/germany/cologne/microsoft-elsdorf/,within around 1km south of Heppendorf</i> Elsdorf Germany
+Microsoft,100 Feet Industrial Rd Chandenvelly India,72.6535458576781,23.061604346165595,Active,https://www.datacentermap.com/india/hyderabad/microsoft-hyd11/,
+Microsoft,,-1,-1,Under Construction,https://www.datacentermap.com/india/hyderabad/microsoft-mekaguda/,within Mekaguda Industrial Area</i> Mekaguda India
+Microsoft,Pargi Road Shadnagar India,78.18618148217973,17.070365444305498,Active,https://www.datacentermap.com/india/hyderabad/microsoft-hyd04/,
+Microsoft,100 Feet Industrial Rd Chandenvelly India  ,72.6535458576781,23.061604346165595,Under Construction,https://www.datacentermap.com/india/hyderabad/microsoft-hyd11-building-1/,Part of Microsoft HYD11
+Microsoft,100 Feet Industrial Rd Chandenvelly India  ,72.6535458576781,23.061604346165595,Planned,https://www.datacentermap.com/india/hyderabad/microsoft-hyd11-building-2/,Part of Microsoft HYD11
+Microsoft,"Mukta Park, 81/B/54, MIDC Pimpri-Chinchwad India",-1,-1,Under Construction,https://www.datacentermap.com/india/pune/microsoft-pune-bhosari/,
+Microsoft,"Morawadi Rd, Telco Quality Aid Center Pimpri-Chinchwad India",-1,-1,Under Construction,https://www.datacentermap.com/india/pune/microsoft-pune-pimpri/,
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-dublin/,
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub03/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub04/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub05/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub06/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub07/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub08/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub09/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub10/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub11/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub12/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub13/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub14/,Part of Microsoft Grange Castle Campus
+Microsoft,"Grange Castle Business Park, Nangor Rd Kilmahuddrick Ireland  ",-1,-1,Active,https://www.datacentermap.com/ireland/dublin/microsoft-grange-castle-dub15/,Part of Microsoft Grange Castle Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland",-1,-1,Active,https://www.datacentermap.com/ireland/naas/microsoft-naas-campus/,
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-1/,Part of Microsoft Naas Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-2/,Part of Microsoft Naas Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-3/,Part of Microsoft Naas Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-4/,Part of Microsoft Naas Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-5/,Part of Microsoft Naas Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-6/,Part of Microsoft Naas Campus
+Microsoft,"Wentworth Pl, Jigginstown Naas Ireland  ",-1,-1,Planned,https://www.datacentermap.com/ireland/naas/microsoft-naas-building-7/,Part of Microsoft Naas Campus
+Microsoft,Strada Provinciale 415 Settala Italy,9.3796639,45.428695399999995,Active,https://www.datacentermap.com/italy/milan/microsoft-settala-campus/,
+Microsoft,Via dei Pioppi &amp; Via Rimembranze Bornasco Italy,-1,-1,Planned,https://www.datacentermap.com/italy/milan/microsoft-bornasco/,
+Microsoft,"Via Trieste, 24 Peschiera Borromeo Italy",9.3100228,45.4633413,Planned,https://www.datacentermap.com/italy/milan/microsoft-san-bovio/,
+Microsoft,Strada Provinciale 415 Settala Italy  ,9.3796639,45.428695399999995,Active,https://www.datacentermap.com/italy/milan/microsoft-settala-mil01/,Part of Microsoft Settala Campus
+Microsoft,Strada Provinciale 415 Settala Italy  ,9.3796639,45.428695399999995,Active,https://www.datacentermap.com/italy/milan/microsoft-settala/,Part of Microsoft Settala Campus
+Microsoft,Rotu Dr Westgate New Zealand,174.60812050417024,-36.81922006480635,Active,https://www.datacentermap.com/new-zealand/auckland/microsoft-westgate/,
+Microsoft,"Whenuapai Business Park, Lot 20 Whenuapai New Zealand",174.6278203653921,-36.7988878,Planned,https://www.datacentermap.com/new-zealand/auckland/microsoft-whenuapai/,
+Microsoft,Dronning Eufemias gate 71 Oslo Norway,10.760908,59.906863,Active,https://www.datacentermap.com/norway/oslo/microsoft-oslo/,
+Microsoft,1 Woodlands Industrial Park E9 Singapore Singapore,103.80192404139342,1.4508542,Active,https://www.datacentermap.com/singapore/singapore/microsoft-singapore/,
+Microsoft,8-9 Woodlands Industrial Park E9 Singapore Singapore,103.7939847,1.4482990500000001,Active,https://www.datacentermap.com/singapore/singapore/microsoft-singapore-woodlands-2-sg2/,
+Microsoft,"1278-5 Gurang-dong, Gangseo-gu Busan South Korea",128.9062648710074,35.1164785,Active,https://www.datacentermap.com/south-korea/busan/microsoft-busan-pus05/,
+Microsoft,"Av. de Madrid, 15 Alcalá de Henares Spain",-3.3511153,40.4841699,Planned,https://www.datacentermap.com/spain/madrid/microsoft-alcal-de-henares/,
+Microsoft,"C. de La Torrecilla, 28 Algete Spain",-3.5605132700270383,40.59157305855944,Active,https://www.datacentermap.com/spain/madrid/microsoft-madrid-mad1/,
+Microsoft,Pol. Ind. Centrovía Fase 5 La Muela Spain,-1.0831900001566932,41.60677955,Planned,https://www.datacentermap.com/spain/zaragoza/microsoft-la-muela/,
+Microsoft,Pol. Ind. Malpica Villamayor de Gállego Spain,-6.314806335540767,37.2479634,Planned,https://www.datacentermap.com/spain/zaragoza/microsoft-villamayor-de-gallego/,
+Microsoft,Rda. Externa Anillar (Z-40) Zaragoza Spain,-1,-1,Planned,https://www.datacentermap.com/spain/zaragoza/microsoft-zaragoza/,
+Microsoft,Bakvretsgatan Gävle Sweden,17.14188143046359,60.6311240558126,Active,https://www.datacentermap.com/sweden/gavle/microsoft-gavle/,
+Microsoft,Järbovägen 103 Sandviken Sweden,16.678066000000005,60.6686698,Active,https://www.datacentermap.com/sweden/gavle/microsoft-sandviken-gvx11/,
+Microsoft,Farfarsvägen 1 Valbo Sweden,17.0090772,60.6008961,Active,https://www.datacentermap.com/sweden/gavle/microsoft-valbo-campus/,
+Microsoft,Bakvretsgatan Gävle Sweden  ,17.14188143046359,60.6311240558126,Active,https://www.datacentermap.com/sweden/gavle/microsoft-gavle-gvx01/,Part of Microsoft Gävle Campus
+Microsoft,Bakvretsgatan Gävle Sweden  ,17.14188143046359,60.6311240558126,Active,https://www.datacentermap.com/sweden/gavle/microsoft-gavle-gvx02/,Part of Microsoft Gävle Campus
+Microsoft,Farfarsvägen 1 Valbo Sweden  ,17.0090772,60.6008961,Active,https://www.datacentermap.com/sweden/gavle/microsoft-valbo-gvx21/,Part of Microsoft Valbo Campus
+Microsoft,Farfarsvägen 1 Valbo Sweden  ,17.0090772,60.6008961,Under Construction,https://www.datacentermap.com/sweden/gavle/microsoft-valbo-gvx22/,Part of Microsoft Valbo Campus
+Microsoft,Västanvägen 86 Staffanstorp Sweden,12.3846506,57.787543,Active,https://www.datacentermap.com/sweden/malmo/microsoft-staffanstorp/,
+Microsoft,"Lane 23, Nangong Rd Taoyuan Taiwan",121.2833615,24.9035994,Active,https://www.datacentermap.com/taiwan/taoyuan/microsoft-luzhu/,
+Microsoft,"Lane 525, Taoying Rd Taoyuan Taiwan",121.3135753,25.0133712,Active,https://www.datacentermap.com/taiwan/taoyuan/microsoft-taoyuan/,
+Microsoft,Cultuurweg 11 Middenmeer The Netherlands,-1,-1,Active,https://www.datacentermap.com/the-netherlands/amsterdam/microsoft-middenmeer/,
+Microsoft,Agriport 570 Middenmeer The Netherlands,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-campus/,
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams05/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams06-a/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams06-south/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams071/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams07/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams08/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams09/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams11/,Part of Microsoft Middenmeer Campus
+Microsoft,Agriport 570 Middenmeer The Netherlands  ,5.0380879,52.7654861,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams12/,Part of Microsoft Middenmeer Campus
+Microsoft,Cultuurweg 11 Middenmeer The Netherlands  ,-1,-1,Active,https://www.datacentermap.com/the-netherlands/middenmeer/microsoft-middenmeer-ams14/,Part of Microsoft Middenmeer Campus
+Microsoft,"NP10, Dyffryn Lane, Marshfield, Newport  Marshfield United Kingdom",-2.9662207,51.5810887,Active,https://www.datacentermap.com/united-kingdom/cardiff/microsoft-newport-imperial-park-cwl01/,
+Microsoft,Loverose Wy Eggborough United Kingdom,-3.015609202926121,53.89142560440814,Active,https://www.datacentermap.com/united-kingdom/leeds/microsoft-eggborough-campus/,
+Microsoft,Loverose Wy Eggborough United Kingdom  ,-3.015609202926121,53.89142560440814,Planned,https://www.datacentermap.com/united-kingdom/leeds/microsoft-eggborough-building-1/,Part of Microsoft Eggborough Campus
+Microsoft,Loverose Wy Eggborough United Kingdom  ,-3.015609202926121,53.89142560440814,Planned,https://www.datacentermap.com/united-kingdom/leeds/microsoft-eggborough-building-2/,Part of Microsoft Eggborough Campus
+Microsoft,West Rd &amp; Central Parade Leeds United Kingdom,-1,-1,Planned,https://www.datacentermap.com/united-kingdom/leeds/microsoft-leeds/,
+Microsoft,Volt Ave / Bashley Rd London United Kingdom,-0.2040451,51.5074703,Under Construction,https://www.datacentermap.com/united-kingdom/london/microsoft-park-royal-lon01/,
+Microsoft,"12901 W Olive Ave El Mirage Arizona, USA",-112.33713595044156,33.6066,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-el-mirage-campus/,
+Microsoft,"W Broadway Rd Goodyear Arizona, USA",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-airpark-campus/,
+Microsoft,"3785 N Citrus Rd Goodyear Arizona, USA",-112.43843259889262,33.49147765,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-campus/,
+Microsoft,"12901 W Olive Ave El Mirage Arizona, USA  ",-112.33713595044156,33.6066,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-el-mirage/,Part of Microsoft El Mirage Campus
+Microsoft,"12901 W Olive Ave El Mirage Arizona, USA  ",-112.33713595044156,33.6066,Under Construction,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-el-mirage-phx81/,Part of Microsoft El Mirage Campus
+Microsoft,"12901 W Olive Ave El Mirage Arizona, USA  ",-112.33713595044156,33.6066,Planned,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-el-mirage-phx82/,Part of Microsoft El Mirage Campus
+Microsoft,"12901 W Olive Ave El Mirage Arizona, USA  ",-112.33713595044156,33.6066,Planned,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-el-mirage-phx83/,Part of Microsoft El Mirage Campus
+Microsoft,"W Broadway Rd Goodyear Arizona, USA  ",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-1/,Part of Microsoft Goodyear Airpark Campus
+Microsoft,"W Broadway Rd Goodyear Arizona, USA  ",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-phx11/,Part of Microsoft Goodyear Airpark Campus
+Microsoft,"W Broadway Rd Goodyear Arizona, USA  ",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-phx12/,Part of Microsoft Goodyear Airpark Campus
+Microsoft,"W Broadway Rd Goodyear Arizona, USA  ",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-phx13/,Part of Microsoft Goodyear Airpark Campus
+Microsoft,"W Broadway Rd Goodyear Arizona, USA  ",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-phx14/,Part of Microsoft Goodyear Airpark Campus
+Microsoft,"W Broadway Rd Goodyear Arizona, USA  ",-112.43975118191935,33.40660034457519,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-phx15/,Part of Microsoft Goodyear Airpark Campus
+Microsoft,"3785 N Citrus Rd Goodyear Arizona, USA  ",-112.43843259889262,33.49147765,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-2/,Part of Microsoft Goodyear Campus
+Microsoft,"3785 N Citrus Rd Goodyear Arizona, USA  ",-112.43843259889262,33.49147765,Active,https://www.datacentermap.com/usa/arizona/phoenix/microsoft-goodyear-phx71/,Part of Microsoft Goodyear Campus
+Microsoft,"1657 Alviso Milpitas Rd San Jose California, USA",-1,-1,Active,https://www.datacentermap.com/usa/california/san-jose/microsoft-alviso-milpitas-campus/,
+Microsoft,"370 W Trimble Rd San Jose California, USA",-121.9326012,37.3792057,Active,https://www.datacentermap.com/usa/california/san-jose/microsoft-sjc04-campus/,
+Microsoft,"1657 Alviso Milpitas Rd San Jose California, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/california/san-jose/microsoft-alviso-milpitas-building-1/,Part of Microsoft Alviso-Milpitas Campus
+Microsoft,"1657 Alviso Milpitas Rd San Jose California, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/california/san-jose/microsoft-alviso-milpitas-building-2/,Part of Microsoft Alviso-Milpitas Campus
+Microsoft,"2515 Orchard Pkwy San Jose California, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/california/san-jose/microsoft-sjc04/,Part of Microsoft Orchard Pkwy Campus
+Microsoft,"2515 Orchard Pkwy San Jose California, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/california/san-jose/microsoft-sjc06/,Part of Microsoft Orchard Pkwy Campus
+Microsoft,"1601 N River Rd Lithia Springs Georgia, USA",-1,-1,Active,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-douglasville-campus/,
+Microsoft,"4165 Ben Hill Rd Atlanta Georgia, USA",-1,-1,Active,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-east-point-campus/,
+Microsoft,"1960-2044 Georgia State Route 74 Tyrone Georgia, USA",-1,-1,Active,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-project-rita-campus/,
+Microsoft,"4810 Stonewall Tell Rd Union City Georgia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-union-city/,
+Microsoft,"1601 N River Rd Lithia Springs Georgia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-douglasville-building-1/,Part of Microsoft Douglasville Campus
+Microsoft,"1601 N River Rd Lithia Springs Georgia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-douglasville-building-2/,Part of Microsoft Douglasville Campus
+Microsoft,"1601 N River Rd Lithia Springs Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-douglasville-building-3/,Part of Microsoft Douglasville Campus
+Microsoft,"1601 N River Rd Lithia Springs Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-douglasville-building-4/,Part of Microsoft Douglasville Campus
+Microsoft,"4165 Ben Hill Rd Atlanta Georgia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-east-point-atl06/,Part of Microsoft East Point Campus
+Microsoft,"4165 Ben Hill Rd Atlanta Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-east-point-atl07/,Part of Microsoft East Point Campus
+Microsoft,"8527 Williams Rd Palmetto Georgia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-palmetto/,
+Microsoft,"2044 Georgia State Route 74 Tyrone Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-project-rita-building-1/,Part of Microsoft Project Rita Campus
+Microsoft,"1960 Georgia State Route 74 Tyrone Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-project-rita-building-2/,Part of Microsoft Project Rita Campus
+Microsoft,"4810 Stonewall Tell Rd Union City Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-union-city-building-1/,Part of Microsoft Union City Campus
+Microsoft,"4810 Stonewall Tell Rd Union City Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-union-city-building-2/,Part of Microsoft Union City Campus
+Microsoft,"4810 Stonewall Tell Rd Union City Georgia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/georgia/atlanta/microsoft-union-city-building-3/,Part of Microsoft Union City Campus
+Microsoft,"Elk Grove Technology Park, Innovation Dr &amp; Oakton St Elk Grove Village Illinois, USA",-1,-1,Active,https://www.datacentermap.com/usa/illinois/chicago/microsoft-elk-grove-campus/,
+Microsoft,"Lakewood Blvd Hoffman Estates Illinois, USA",-1,-1,Active,https://www.datacentermap.com/usa/illinois/chicago/microsoft-hoffman-estates-campus/,
+Microsoft,"Elk Grove Technology Park, Innovation Dr &amp; Oakton St Elk Grove Village Illinois, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/illinois/chicago/microsoft-elk-grove-building-1/,Part of Microsoft Elk Grove Campus
+Microsoft,"Elk Grove Technology Park, Innovation Dr &amp; Oakton St Elk Grove Village Illinois, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/illinois/chicago/microsoft-elk-grove-building-2/,Part of Microsoft Elk Grove Campus
+Microsoft,"Elk Grove Technology Park, Innovation Dr &amp; Oakton St Elk Grove Village Illinois, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/illinois/chicago/microsoft-elk-grove-building-3/,Part of Microsoft Elk Grove Campus
+Microsoft,"Lakewood Blvd Hoffman Estates Illinois, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/illinois/chicago/microsoft-hoffman-estates-building-1/,Part of Microsoft Hoffman Estates Campus
+Microsoft,"Lakewood Blvd Hoffman Estates Illinois, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/illinois/chicago/microsoft-hoffman-estates-building-2/,Part of Microsoft Hoffman Estates Campus
+Microsoft,"Lakewood Blvd Hoffman Estates Illinois, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/illinois/chicago/microsoft-hoffman-estates-building-3/,Part of Microsoft Hoffman Estates Campus
+Microsoft,"Lakewood Blvd Hoffman Estates Illinois, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/illinois/chicago/microsoft-hoffman-estates-building-4/,Part of Microsoft Hoffman Estates Campus
+Microsoft,"601-605 Northwest Ave Northlake Illinois, USA",-87.91858195067726,41.931237579138724,Active,https://www.datacentermap.com/usa/illinois/chicago/microsoft-northlake/,
+Microsoft,"Eldamain Rd &amp; Corneils Rd Plano Illinois, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/illinois/chicago/microsoft-plano-il/,
+Microsoft,"300 E Boyd Blvd La Porte Indiana, USA",-1,-1,Planned,https://www.datacentermap.com/usa/indiana/la-porte/microsoft-la-porte/,
+Microsoft,"Cleveland Rd &amp; Bittersweet Rd Granger Indiana, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/indiana/south-bend/microsoft-mishawaka/,
+Microsoft,"550 White Crane Rd Des Moines Iowa, USA",-1,-1,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion/,
+Microsoft,"1475 SE Maffitt Lake Ct West Des Moines Iowa, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-ginger-east/,
+Microsoft,"11100 Booneville Rd West Des Moines Iowa, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-ginger-west/,
+Microsoft,"8855 Grand Avenue Des Moines Iowa, USA",-93.60320789933573,41.59102625,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-mountain/,
+Microsoft,"5855 SW Kerry St Cumming Iowa, USA",-93.78703013741821,41.4979038,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-osmium/,
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-1/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-2/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-3/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-4/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-5/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-6/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-7/,Part of Microsoft Project Alluvion
+Microsoft,"550 White Crane Rd West Des Moines Iowa, USA  ",-93.70830341938382,41.51437180469912,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-alluvion-building-8/,Part of Microsoft Project Alluvion
+Microsoft,"1475 SE Maffitt Lake Ct West Des Moines Iowa, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-east-building-1/,Part of Microsoft Project Ginger East
+Microsoft,"1475 SE Maffitt Lake Ct West Des Moines Iowa, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-east-building-2/,Part of Microsoft Project Ginger East
+Microsoft,"1475 SE Maffitt Lake Ct West Des Moines Iowa, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-east-building-3/,Part of Microsoft Project Ginger East
+Microsoft,"1475 SE Maffitt Lake Ct West Des Moines Iowa, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-east-building-4/,Part of Microsoft Project Ginger East
+Microsoft,"11100 Booneville Rd West Des Moines Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-west-building-1/,Part of Microsoft Project Ginger West
+Microsoft,"11100 Booneville Rd West Des Moines Iowa, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-west-building-2/,Part of Microsoft Project Ginger West
+Microsoft,"11100 Booneville Rd West Des Moines Iowa, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-west-building-3/,Part of Microsoft Project Ginger West
+Microsoft,"11100 Booneville Rd West Des Moines Iowa, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-west-building-4/,Part of Microsoft Project Ginger West
+Microsoft,"11100 Booneville Rd West Des Moines Iowa, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-ginger-west-building-5/,Part of Microsoft Project Ginger West
+Microsoft,"8855 Grand Ave West Des Moines Iowa, USA  ",-93.63110947215677,41.5861261,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-mountain-building-1/,Part of Microsoft Project Mountain
+Microsoft,"8855 Grand Ave West Des Moines Iowa, USA  ",-93.63110947215677,41.5861261,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-mountain-building-2/,Part of Microsoft Project Mountain
+Microsoft,"5855 SW Kerry St Cumming Iowa, USA  ",-93.78703013741821,41.4979038,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-osmium-building-1/,Part of Microsoft Project Osmium
+Microsoft,"5855 SW Kerry St Cumming Iowa, USA  ",-93.78703013741821,41.4979038,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-osmium-building-2/,Part of Microsoft Project Osmium
+Microsoft,"5855 SW Kerry St Cumming Iowa, USA  ",-93.78703013741821,41.4979038,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-osmium-building-3/,Part of Microsoft Project Osmium
+Microsoft,"5855 SW Kerry St Cumming Iowa, USA  ",-93.78703013741821,41.4979038,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-osmium-building-4/,Part of Microsoft Project Osmium
+Microsoft,"5855 SW Kerry St Cumming Iowa, USA  ",-93.78703013741821,41.4979038,Active,https://www.datacentermap.com/usa/iowa/des-moines/microsoft-project-osmium-building-5/,Part of Microsoft Project Osmium
+Microsoft,"1521 N NC 16 Hwy Conover North Carolina, USA",-81.218227,35.729567,Under Construction,https://www.datacentermap.com/usa/north-carolina/hickory/microsoft-lyle-creek/,
+Microsoft,"1521 N NC 16 Hwy Conover North Carolina, USA  ",-81.218227,35.729567,Under Construction,https://www.datacentermap.com/usa/north-carolina/hickory/microsoft-lyle-creek-building-1/,Part of Microsoft Lyle Creek Campus
+Microsoft,"1521 N NC 16 Hwy Conover North Carolina, USA  ",-81.218227,35.729567,Planned,https://www.datacentermap.com/usa/north-carolina/hickory/microsoft-lyle-creek-building-2/,Part of Microsoft Lyle Creek Campus
+Microsoft,"1521 N NC 16 Hwy Conover North Carolina, USA  ",-81.218227,35.729567,Planned,https://www.datacentermap.com/usa/north-carolina/hickory/microsoft-lyle-creek-building-3/,Part of Microsoft Lyle Creek Campus
+Microsoft,"1521 N NC 16 Hwy Conover North Carolina, USA  ",-81.218227,35.729567,Planned,https://www.datacentermap.com/usa/north-carolina/hickory/microsoft-lyle-creek-building-4/,Part of Microsoft Lyle Creek Campus
+Microsoft,"1521 N NC 16 Hwy Conover North Carolina, USA  ",-81.218227,35.729567,Planned,https://www.datacentermap.com/usa/north-carolina/hickory/microsoft-lyle-creek-building-5/,Part of Microsoft Lyle Creek Campus
+Microsoft,"Zeb Haynes Rd &amp; Old Maiden Rd Maiden North Carolina, USA",-1,-1,Active,https://www.datacentermap.com/usa/north-carolina/maiden/microsoft-boyd-farms-campus/,
+Microsoft,"1260 Old Maiden Rd Maiden North Carolina, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/north-carolina/maiden/microsoft-boyd-farms-data-center-1/,Part of Microsoft Boyd Farms Campus
+Microsoft,"State Rd 1333 Roxboro North Carolina, USA",-78.96027278569996,36.4364646,Land Banked,https://www.datacentermap.com/usa/north-carolina/roxboro/microsoft-person-county-mega-park/,
+Microsoft,"3000-3007 Etna Pkwy Pataskala Ohio, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/ohio/columbus/3000-3007-etna-pkwy/,
+Microsoft,"129 N High St Hebron Ohio, USA",-73.2706805,43.286974,Planned,https://www.datacentermap.com/usa/ohio/columbus/microsoft-129-n-high-st/,
+Microsoft,"Beech Rd NW &amp; Fitzwilliam Ln New Albany Ohio, USA",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/microsoft-beech-rd-nw-fitzwilliam-ln/,
+Microsoft,"Thornwood Dr SW &amp; Hallie Ln Rd Heath Ohio, USA",-1,-1,Planned,https://www.datacentermap.com/usa/ohio/columbus/microsoft-thornwood-dr-sw/,
+Microsoft,"Refugee Rd SW Pataskala Ohio, USA",-82.6828767,39.9625205,Land Banked,https://www.datacentermap.com/usa/ohio/columbus/refugee-rd-sw/,
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-texas-research-park/,
+Microsoft,"5150 Rogers Rd San Antonio Texas, USA",-98.69275447677299,29.4798727,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio/,
+Microsoft,"3555 Westover Link San Antonio Texas, USA",-98.69897443448167,29.468672712740684,Under Construction,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat15/,
+Microsoft,"18844 Fm1957 Castroville Texas, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat80-sat81/,
+Microsoft,"18844 Fm1957 Castroville Texas, USA",-1,-1,Planned,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat82/,
+Microsoft,"2995 US Hwy 90 W Castroville Texas, USA",-1,-1,Planned,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat89/,
+Microsoft,"2995 US Hwy 90 W Castroville Texas, USA",-1,-1,Planned,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat90/,
+Microsoft,,-1,-1,Planned,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat93/,"within Medina, Texas, along County Road 381</i> Medina Texas, USA"
+Microsoft,,-1,-1,Planned,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat94/,"within Medina, Texas, along County Road 381</i> Medina Texas, USA"
+Microsoft,"5200 Rogers Rd San Antonio Texas, USA",-98.69662770704156,29.48105375,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sn7/,
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Planned,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat40/,Part of Microsoft Texas Research Park
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-san-antonio-sat46/,Part of Microsoft Texas Research Park
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-texas-research-park-trp1/,Part of Microsoft Texas Research Park
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-texas-research-park-trp2/,Part of Microsoft Texas Research Park
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-texas-research-park-trp4/,Part of Microsoft Texas Research Park
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-texas-research-park-trp5/,Part of Microsoft Texas Research Park
+Microsoft,"15000 Lambda Dr San Antonio Texas, USA  ",-98.6395651,29.3814816,Active,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-texas-research-park-trp6/,Part of Microsoft Texas Research Park
+Microsoft,"3545 Wiseman Blvd San Antonio Texas, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/texas/san-antonio/microsoft-wiseman-boulevard/,
+Microsoft,"19515-19540 Compass Creek Pkwy Leesburg Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-compass-creek-campus/,
+Microsoft,"19515 Compass Creek Pkwy Leesburg Virginia, USA  ",-77.56412898958979,39.07478685,Active,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-19515-compass-creek/,Part of Microsoft Compass Creek Campus
+Microsoft,"19525 Compass Creek Pkwy Leesburg Virginia, USA  ",-77.56303535981841,39.0755079,Active,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-19525-compass-creek/,Part of Microsoft Compass Creek Campus
+Microsoft,"41700 Inclusion Ln Leesburg Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-41700-inclusion-ln/,Part of Microsoft Compass Creek Campus
+Microsoft,"41700 Inclusion Ln Leesburg Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-41700-inclusion-ln-bldg-2/,Part of Microsoft Compass Creek Campus
+Microsoft,"41720 Inclusion Ln Leesburg Virginia, USA  ",-77.55943622851859,39.069718300000005,Active,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-41720-inclusion-ln/,Part of Microsoft Compass Creek Campus
+Microsoft,"41730 Inclusion Ln Leesburg Virginia, USA  ",-77.56077384261958,39.0697043,Active,https://www.datacentermap.com/usa/virginia/ashburn/microsoft-41730-inclusion-ln/,Part of Microsoft Compass Creek Campus
+Microsoft,"8008 Devlin Rd Bristow Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/bristow/microsoft-8008-devlin-rd/,
+Microsoft,"13490 University Blvd Gainesville Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/gainesville-va/microsoft-13490-university-blvd/,
+Microsoft,"5941 Wellington Rd Gainesville Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/gainesville-va/microsoft-13490-university-blvd1/,
+Microsoft,"11314 Balls Ford Rd Manassas Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/manassas/microsoft-jacksonville-road-campus/,
+Microsoft,"13050 Hansen Farm Rd Manassas Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/manassas/microsoft-hansen-farm/,
+Microsoft,"11314 Balls Ford Rd Manassas Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/manassas/microsoft-mnz01/,Part of Microsoft Jacksonville Road Campus
+Microsoft,"11314 Balls Ford Rd Manassas Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/manassas/microsoft-mnz02/,Part of Microsoft Jacksonville Road Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton/,
+Microsoft,"960 Prison Rd Boydton Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-prison-road-campus/,
+Microsoft,"925&nbsp;Ridge Rd Boydton Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-ridge-road-campus/,
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-1/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-10/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-11/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-2/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-3/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-4/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-5/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-6/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-7/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-8/,Part of Microsoft Boydton Campus
+Microsoft,"101 Herbert Dr Boydton Virginia, USA  ",-78.1654129796595,39.0923529,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-boydton-building-9/,Part of Microsoft Boydton Campus
+Microsoft,"210 Tunstall Rd South Hill, Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/richmond/microsoft-hillcrest-avc01/,
+Microsoft,"210 Tunstall Rd South Hill, Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/richmond/microsoft-hillcrest-avc02/,
+Microsoft,"210 Tunstall Rd South Hill, Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/richmond/microsoft-hillcrest-avc03/,
+Microsoft,"210 Tunstall Road South Hill Virginia, USA",-78.10210103728951,36.747753309994565,Under Construction,https://www.datacentermap.com/usa/virginia/richmond/microsoft-hillcrest/,
+Microsoft,"960 Prison Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-prison-road-building-1/,Part of Microsoft Prison Road Campus
+Microsoft,"960 Prison Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-prison-road-building-2/,Part of Microsoft Prison Road Campus
+Microsoft,"960 Prison Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-prison-road-building-3/,Part of Microsoft Prison Road Campus
+Microsoft,"960 Prison Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-prison-road-building-4/,Part of Microsoft Prison Road Campus
+Microsoft,"960 Prison Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-prison-road-building-5/,Part of Microsoft Prison Road Campus
+Microsoft,"925&nbsp;Ridge Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-ridge-road-building-1/,Part of Microsoft Ridge Road Campus
+Microsoft,"925&nbsp;Ridge Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-ridge-road-building-2/,Part of Microsoft Ridge Road Campus
+Microsoft,"925&nbsp;Ridge Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-ridge-road-building-3/,Part of Microsoft Ridge Road Campus
+Microsoft,"925&nbsp;Ridge Rd Boydton Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/richmond/microsoft-ridge-road-building-4/,Part of Microsoft Ridge Road Campus
+Microsoft,"41840-42010 Growth Mindset Ln Aldie Virginia, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/sterling/microsoft-growth-mindset-campus/,
+Microsoft,"23540 Pebble Run Pl Sterling Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/sterling/23540-pebble-run-pl/,
+Microsoft,"41840 Growth Mindset Ln Aldie Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/microsoft-41840-growth-mindset-ln/,Part of Microsoft Growth Mindset Campus
+Microsoft,"42010 Growth Mindset Ln Aldie Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/sterling/microsoft-42010-growth-mindset-ln/,Part of Microsoft Growth Mindset Campus
+Microsoft,"42031 Growth Mindset Ln Aldie Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/sterling/microsoft-42031-growth-mindset-ln/,Part of Microsoft Growth Mindset Campus
+Microsoft,"501-600 Port Industrial Way Quincy Washington, USA",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-columbia-campus/,
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy/,
+Microsoft,"501 Port Industrial Way Quincy Washington, USA  ",-127.495227,50.4405104,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-columbia-co1/,Part of Microsoft Columbia Campus
+Microsoft,"501 Port Industrial Way Quincy Washington, USA  ",-127.495227,50.4405104,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-columbia-co2/,Part of Microsoft Columbia Campus
+Microsoft,"501-600 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-columbia-co3/,Part of Microsoft Columbia Campus
+Microsoft,"600 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-columbia-co4/,Part of Microsoft Columbia Campus
+Microsoft,"600 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-columbia-co5/,Part of Microsoft Columbia Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh01-north/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh01-south/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh02-north/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh02-south/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh03/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh04-north/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh04-south/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh05/,Part of Microsoft Quincy Campus
+Microsoft,"1515 Port Industrial Way Quincy Washington, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/washington/quincy/microsoft-quincy-mwh06/,Part of Microsoft Quincy Campus
+Microsoft,"5375 Malaga Alcoa Hwy Malaga Washington, USA",-120.1582598,47.359134,Active,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-malaga-campus/,
+Microsoft,"875 Urban Industrial Wy East Wenatchee Washington, USA",-120.2102717,47.4176757,Under Construction,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-east-wenatchee/,
+Microsoft,"875 Urban Industrial Wy East Wenatchee Washington, USA  ",-120.2102717,47.4176757,Active,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-east-wenatchee-eat02/,Part of Microsoft East Wenatchee Campus
+Microsoft,"875 Urban Industrial Wy East Wenatchee Washington, USA  ",-120.2102717,47.4176757,Active,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-east-wenatchee-eat03/,Part of Microsoft East Wenatchee Campus
+Microsoft,"875 Urban Industrial Wy East Wenatchee Washington, USA  ",-120.2102717,47.4176757,Active,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-east-wenatchee-eat04/,Part of Microsoft East Wenatchee Campus
+Microsoft,"5375 Malaga Alcoa Hwy Malaga Washington, USA  ",-120.1582598,47.359134,Under Construction,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-malaga-phase-1/,Part of Microsoft Malaga Campus
+Microsoft,"5351/5309 Malaga Alcoa Hwy Malaga Washington, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-malaga-phase-2/,Part of Microsoft Malaga Campus
+Microsoft,"5375 Malaga Alcoa Hwy Malaga Washington, USA  ",-120.1582598,47.359134,Active,https://www.datacentermap.com/usa/washington/wenatchee/microsoft-malaga-eat14/,Part of Microsoft Malaga Campus
+Microsoft,"12123/12800/12827 Louis Sorenson Rd Sturtevant Wisconsin, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/wisconsin/kenosha/microsoft-12123-12827-louis-sorenson/,
+Microsoft,"12734 Louis Sorenson Rd Mt Pleasant Wisconsin, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/wisconsin/kenosha/microsoft-12734-louis-sorenson-rd/,
+Microsoft,"County Rd KR &amp; 90th St Mt Pleasant Wisconsin, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/wisconsin/kenosha/microsoft-mount-pleasant/,
+Microsoft,"Douglas Ave &amp; Botting Rd Caledonia Wisconsin, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/wisconsin/milwaukee/project-nova/,
+Microsoft,,-1,-1,Active,https://www.datacentermap.com/usa/wyoming/cheyenne/microsoft-bison-business-park/,"within Bison Business Park, along Highway 85</i> Cheyenne Wyoming, USA"
+Microsoft,"644 Logistics Dr Cheyenne Wyoming, USA",-1,-1,Active,https://www.datacentermap.com/usa/wyoming/cheyenne/microsoft-cheyenne/,
+Microsoft,,-1,-1,Active,https://www.datacentermap.com/usa/wyoming/cheyenne/microsoft-cheyenne-business-parkway/,"within Cheyenne Business Parkway by the Christensen overpass</i> Cheyenne Wyoming, USA"
+Microsoft,,-1,-1,Under Construction,https://www.datacentermap.com/usa/wyoming/cheyenne/microsoft-hr-ranch-road/,"within east of Cheyenne, along HR Ranch Road</i> Cheyenne Wyoming, USA"
