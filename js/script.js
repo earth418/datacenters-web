@@ -19,7 +19,7 @@ let stop_rotating = false;
 
 function transition_top(element, duration) {
     const top_gap = "5%";
-    return d3.select(element).transition().duration(duration).style("top",top_gap);
+    return d3.select(element).transition("t_"+element).duration(duration).style("top",top_gap);
 }
 
 function spinGlobe() {
@@ -38,13 +38,11 @@ function update(stage, instant = false) {
         case 1:
         case 2:
         case 3:
-            d3.select("#b_t" + stage).transition()
+            d3.select("#b_t" + stage).transition("bt" + stage)
                 .duration(duration)
                 .style("left", "125%")
-                // .on("end", () => {
-                //     d3.select(this).attr("visibility","hidden");}
-                //     );
-            d3.select("#b_t" + (stage + 1)).transition()
+                
+            d3.select("#b_t" + (stage + 1)).transition("bt" + (stage + 1))
                 .duration(duration)
                 .style("left", "25%")
             break;
@@ -54,13 +52,21 @@ function update(stage, instant = false) {
             d3.select("#block").transition()
                 .duration(duration)
                 .style("opacity", 0.0)
+                .on("end", () => {
+                    d3.select(this).style("display","none");
+                    console.log("done!")
+                }
+                );
                 break;
         case 5:
             // update(4);
             transition();
             d3.select("#treemap-container").transition()
                 .duration(duration)
-                .style("opacity", 0.0);
+                .style("opacity", 0.0)
+                .on("end", () => {
+                    d3.select(this).style("display","none");}
+                    );
 
             spinGlobe();
             break;
