@@ -204,7 +204,7 @@ function update(stage, instant = false) {
             break;
 
         case 16:
-            stop_rotating = true;
+            // stop_rotating = true;
             break;
     }
 }

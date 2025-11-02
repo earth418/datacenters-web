@@ -66,22 +66,29 @@ map.on('load', () => {
         }
     }
 
-    map.addSource("amazondatacenters", {
-        'type':'geojson',
-        'data': amazon_datacenters
-    });
-    map.addLayer(
-    {
-        'id':'amazondatacenters_layer',
-        'type':'circle',
-        'source':'amazondatacenters',
-        'minzoom':2,
-        'maxzoom':10,
-        'paint': {
-            'circle-radius': 8,
-            'circle-color': '#cb6200ff',
-        }
-    });
+    function add_dcs(data, name, color) {
+        map.addSource(name, {
+            'type':'geojson',
+            'data': data
+        });
+        map.addLayer(
+        {
+            'id':(name + "_layer"),
+            'type':'circle',
+            'source': name,
+            'minzoom':2,
+            'maxzoom':10,
+            'paint': {
+                'circle-radius': 8,
+                'circle-color': color,
+            }
+        });
+    }
+
+    add_dcs(amazon_datacenters, "amazondatacenters", "#cb6200");
+    add_dcs(xai_centers, "xaicenters", "#1d194a");
+    add_dcs(ms_centers, "mscenters", "#2eb9f4ff");
+    // xai_centers.features[0].geometry.coordinates
 
     map.addSource('openfreemap', {
         url: `https://tiles.openfreemap.org/planet`,
