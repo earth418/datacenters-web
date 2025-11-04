@@ -19,7 +19,8 @@ let stop_rotating = false;
 
 function transition_top(element, duration) {
     const top_gap = "5%";
-    return d3.select(element).transition("t_"+element).duration(duration).style("top",top_gap);
+    // return d3.select(element).transition("t_"+element).duration(duration).style("top",top_gap);
+    return d3.select(element).transition("t_"+element).duration(duration).style("margin-bottom",top_gap);
 }
 
 function spinGlobe() {
@@ -32,12 +33,111 @@ let keep_spinning = true;
 
 map.on("moveend", () => {if (keep_spinning) spinGlobe();});
 
+
+
+const stages = function() {
+    const duration = instant ? 0 : 1000;
+    let stage_list = [];
+
+    let f123 = (stage) => {
+        d3.select("#start").transition().duration(duration).style("opacity",0.0);
+
+        d3.select("#b_t" + stage).transition("bt" + stage)
+            .duration(duration)
+            .style("left", "125%");
+            
+        d3.select("#b_t" + (stage + 1)).transition("bt" + (stage + 1))
+            .duration(duration)
+            .style("left", "25%");
+    };
+    
+    stage_list.push(f123(1), f123(2), f123(3));
+
+    // 4
+    stage_list.push(() => {
+        d3.select("#block").transition()
+            .duration(duration)
+            .style("opacity", 0.0)
+            .on("end", () => {
+                d3.select(this).style("display","none");
+            }
+        );
+    });
+
+    // 5
+    stage_list.push(() => {
+        transition();
+        d3.select("#treemap-container").transition()
+            .duration(duration)
+            .style("opacity", 0.0)
+            .on("end", () => {
+                d3.select(this).style("display","none");
+        });
+
+        spinGlobe();
+    });
+
+    // 6
+    stage_list.push(() => {
+        keep_spinning = false;
+            
+        d3.select("#sidebar1").transition()
+            .duration(duration)
+            .style("opacity",1.0);
+        
+        transition_top("#s1p1", duration);
+        // d3.select('#s1p1').transition().duration(duration).style("top",top_gap);
+
+        map.flyTo({
+            center: [-110.99,32.21],
+            zoom : 11
+        })
+    });
+
+    // 7
+    stage_list.push(() => {
+        map.flyTo({
+            center: [-110.7875,32.052],
+            zoom : 15
+        });
+
+        d3.select("#s1p1").transition().duration(duration).style("color","#707070ff");
+        transition_top("#s1p2", duration);
+        // d3.select('#s1p2').transition().duration(duration).style("top",top_gap);
+        // d3.select('#p3').transition().duration(duration).style("top","25%");
+
+        animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);
+    });
+
+    // 8
+    stage_list.push(() => {
+        // update(6);
+            map.flyTo({
+                center: [-110.8875,32.152],
+                zoom : 10.5
+            })
+
+            // d3.select('#p2').transition().duration(duration).style("top","25%");
+            d3.select("#s1p2").transition().duration(duration).style("color","#707070ff");
+            transition_top('#s1p3', duration);
+            // d3.select('#s1p3').transition().duration(duration).style("top","10%");
+
+            animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
+    });
+
+    return stage_list;
+};
+
 function update(stage, instant = false) {
     const duration = instant ? 0 : 1000;
+
+
     switch (stage) {
         case 1:
         case 2:
         case 3:
+            d3.select("#start").transition().duration(duration).style("opacity",0.0);
+
             d3.select("#b_t" + stage).transition("bt" + stage)
                 .duration(duration)
                 .style("left", "125%")
@@ -89,7 +189,6 @@ function update(stage, instant = false) {
             break;
         
         case 7:
-            // update(6);
             map.flyTo({
                 center: [-110.7875,32.052],
                 zoom : 15
@@ -103,7 +202,7 @@ function update(stage, instant = false) {
             animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);                
             break;
 
-         case 8:
+        case 8:
             // update(6);
             map.flyTo({
                 center: [-110.8875,32.152],
@@ -188,29 +287,105 @@ function update(stage, instant = false) {
             break;
             
         case 14:
-                stop_rotating = true;
+            stop_rotating = true;
+            
+            d3.timeout(() => {
+                map.flyTo({
+                    center: [-90.15627488376435,35.05966538381292],
+                    zoom : 12,
+                    pitch: 15.0,
+                    bearing: 0.0,
+                    duration: duration,
+                });
+
+                // d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
                 
-                d3.timeout(() => {
-                    map.flyTo({
-                        center: [-90.15627488376435,35.05966538381292],
-                        zoom : 12,
-                        pitch: 15.0,
-                        bearing: 0.0,
-                        duration: duration,
-                    });
+                d3.select("#s2p3").transition().duration(duration).style("color","#707070ff");
+                transition_top("#s2p4", duration);
 
-                    d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
-                    
-                    d3.select("#s2p3").transition().duration(duration).style("color","#707070ff");
-                    transition_top("#s2p4", duration);
-
-                    
-                    animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * t, duration); 
-                }, 50);
+                
+                animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * t, duration); 
+            }, 50);
             break;
 
+        case 15:
+
+            d3.select("#sidebar2").transition().duration(duration).style("opacity",0.0);
+            animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration); 
+           
+            map.flyTo({
+                center: [-90.15627488376435,35.05966538381292],
+                zoom : 8,
+                pitch: 0.0,
+                bearing: 0.0,
+                duration: duration,
+            });
+            
+            break;
+        
         case 16:
-            // stop_rotating = true;
+            d3.select("#sidebar3").transition().duration(duration).style("opacity",1.0);
+            transition_top("#s3p1", duration);
+
+            map.flyTo({
+                center: [-90.18594924055635,35.146547415054584],
+                zoom : 12,
+                pitch: 0.0,
+                bearing: 0.0,
+                duration: duration,
+            });
+            break;
+            
+        case 17:
+            d3.select("#s3p1").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s3p2", duration);
+            
+            map.flyTo({
+                center: [-90.216323,35.108877],
+                zoom : 15,
+                pitch: 0.0,
+                bearing: 0.0,
+                duration: duration,
+            });
+            break;
+        
+        case 18:
+            d3.select("#s3p2").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s3p3", duration);
+
+            break;
+
+        case 19:
+            d3.select("#s3p3").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s3p4", duration);
+
+            break;
+        
+        case 20:
+            d3.select("#sidebar3").transition().duration(duration).style("opacity",0.0);
+            break;
+
+        case 21:
+            d3.select("#sidebar4").transition().duration(duration).style("opacity",1.0);
+            transition_top("#s4p1", duration);
+            break;
+        case 22:
+            d3.select("#s4p1").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s4p2", duration);
+            break;
+        case 23:
+            d3.select("#s4p2").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s4p3", duration);
+            break;
+        case 24:
+            d3.select("#s4p3").transition().duration(duration).style("color","#707070ff");
+            transition_top("#s4p4", duration);
+            break;
+        case 25:
+            d3.select("#sidebar4").transition().duration(duration).style("opacity",0.0);
+            break;
+        case 26:
+            d3.select("#sidebar5").transition().duration(duration).style("opacity",1.0);
             break;
     }
 }
@@ -488,3 +663,16 @@ function transition() {
 //         }
 //     }
 // });
+
+window.isMobile = function(){
+  if(window.matchMedia("(any-hover:none)").matches) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+d3.select("#start").transition().duration(duration).style("opacity",1.0);
+
+if (window.isMobile())
+    document.getElementById("start").innerText = "(Tap screen to continue)";
