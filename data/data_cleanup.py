@@ -172,7 +172,7 @@ def convert_scrape_to_data(filename_in, filename_out, company_name, text_in=None
 # convert_csv_to_geojson("MS_centers.csv", "MS_centers.geojson")
 
 if True:
-    mcsv = "meta_centers.csv"
-    # convert_scrape_to_data("metacenters.txt", mcsv, "Meta")
+    mcsv = "goog_centers.csv"
+    convert_scrape_to_data("./google_datacentermap_raw.txt", mcsv, "Google")
     
-    convert_csv_to_geojson(mcsv,"meta_centers.geojson")
+    convert_csv_to_geojson(mcsv,"google_centers.geojson")

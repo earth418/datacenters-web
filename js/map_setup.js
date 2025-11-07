@@ -18,7 +18,7 @@ function geojson_point(latlon) {
     };
 }
 
-
+const google_centers = await d3.json("../data/google_centers.geojson");
 
 // CSV
 // name, latitude, longitude 
@@ -86,8 +86,30 @@ map.on('load', () => {
     }
 
     add_dcs(amazon_datacenters, "amazondatacenters", "#cb6200");
-    add_dcs(xai_centers, "xaicenters", "#1d194a");
-    add_dcs(ms_centers, "mscenters", "#2eb9f4ff");
+    add_dcs(xai_centers, "xaicenters", "#0f095aff");
+    add_dcs(ms_centers, "mscenters", "#25cbcbff");
+    add_dcs(meta_centers, "metacenters", "#0d0df6ff");
+    add_dcs(google_centers, "googlecenters", "#47cc22ff")
+
+    for (let i = 0; i < 50; ++i) {
+        // let h = indiana_cities[i].features[0].properties.houses;
+        map.addSource(`indiana_city${i}`, {
+            'type':'geojson',
+            'data': indiana_cities[i]
+        });
+        map.addLayer({
+            'id':`indiana_${i}`,
+            'source': `indiana_city${i}`,
+            'type':'circle',
+            'minzoom':1,
+            'maxzoom':13,
+            'paint': {
+                'circle-radius': 0.0,
+                'circle-color': '#b32613'
+            }
+        });
+    }
+
     // xai_centers.features[0].geometry.coordinates
 
     map.addSource('openfreemap', {
@@ -126,6 +148,23 @@ map.on('load', () => {
         labelLayerId
     );
 
+    map.addSource('west_memphis_google', {
+        'type':'geojson',
+        'data': west_memphis_google
+    })
+    map.addLayer(
+    {
+        'id':'westmemphisgoogle_layer',
+        'type':'fill',
+        'source':'west_memphis_google',
+        'layout':{},
+        'paint': {
+            'fill-color': '#088',
+            'fill-opacity': 0.0
+        }
+    })
+
+
     map.addSource('tuscon', {
         'type':'geojson',
         'data': tuscon_shape
@@ -135,6 +174,22 @@ map.on('load', () => {
         'id':'tusconlayer',
         'type':'fill',
         'source':'tuscon',
+        'layout':{},
+        'paint': {
+            'fill-color': '#088',
+            'fill-opacity': 0.0
+        }
+    })
+
+    map.addSource('indiana_state', {
+        'type':'geojson',
+        'data': indiana_shape
+    });
+    map.addLayer(
+    {
+        'id':'indiana_layer',
+        'type':'fill',
+        'source':'indiana_state',
         'layout':{},
         'paint': {
             'fill-color': '#088',

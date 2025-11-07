@@ -1,0 +1,135 @@
+company,address,longitude,latitude,status,link_to_page,note
+Google,,-1,-1,Active,https://www.datacentermap.com,
+Google,Stöffelbauerstraße Winkling Austria,14.45254805,48.07730425,Planned,https://www.datacentermap.com/austria/linz/google-kronstorf/,
+Google,Rue de Ghlin 100 Saint-Ghislain Belgium,3.8747410081379385,50.47146713535706,Active,https://www.datacentermap.com/belgium/mons/google-saint-ghislain/,
+Google,"Ecopole eco-business park, Rue de Moignelée Farciennes Belgium",4.5576124,50.44195115,Under Construction,https://www.datacentermap.com/belgium/namur/google-farciennes/,
+Google,El Molino 2130 Quilicura Chile,-70.6971158579212,-33.35842205,Active,https://www.datacentermap.com/chile/santiago/google-quilicura/,
+Google,Prinsessens Kvartér 10 Fredericia Denmark,9.653452,55.555402,Active,https://www.datacentermap.com/denmark/fredericia/google-fredericia/,
+Google,Kassøvej 26 Rødekro Denmark,12.177505,56.09695,Land Banked,https://www.datacentermap.com/denmark/aabenraa/google-aabenraa-data-center/,
+Google,Ensontie 1 Hamina Finland,26.927431,60.4646759,Active,https://www.datacentermap.com/finland/hamina/google-hamina/,
+Google,Ryynäsentie Otanmäki Finland,-1,-1,Land Banked,https://www.datacentermap.com/finland/kajaani/google-kajaani/,
+Google,,-1,-1,Land Banked,https://www.datacentermap.com/finland/oulu/google-muhos/,within 44km to Oulu</i> Tahvola Finland
+Google,Marie-Curie-Straße Hanau Germany,8.969553600000001,50.125563650000004,Active,https://www.datacentermap.com/germany/frankfurt/google-hanau-data-center/,
+Google,"Grange Castle Business Park South, 22 Baldonnel Rd Dublin Ireland",-6.450841383576344,53.3266341,Active,https://www.datacentermap.com/ireland/dublin/google-dublin-campus/,
+Google,Grange Castle Business Park Dublin Ireland  ,-6.4436437665560415,53.32846603405788,Active,https://www.datacentermap.com/ireland/dublin/google-dublin/,Part of Google Dublin Campus
+Google,"Grange Castle Business Park South, 22 Baldonnel Rd Dublin Ireland  ",-6.450841383576344,53.3266341,Active,https://www.datacentermap.com/ireland/dublin/google-dublin-ii-data-center/,Part of Google Dublin Campus
+Google,2 Chome-2-4 Kagurominami Inzai City Japan,133.934919,34.661752,Active,https://www.datacentermap.com/japan/inzai-city/google-inzai/,
+Google,,-1,-1,Under Construction,https://www.datacentermap.com/malaysia/kuala-lumpur/google-malaysia/,within Elmina Business Park</i> Sungai Buloh Malaysia
+Google,"Springhill Industrial Park, Persiaran Springhill Port Dickson Malaysia",101.86850044297107,2.607898136060585,Land Banked,https://www.datacentermap.com/malaysia/kuala-lumpur/google-port-dickson/,
+Google,"Tecnoparque da Lagoa, Lot 32B Lagoa Portugal",-31.188741846259845,39.42550805,Under Construction,https://www.datacentermap.com/portugal/azores/google-azores-cls/,
+Google,2 Jurong West Street 23 Singapore Singapore,103.70993827086286,1.3515839,Active,https://www.datacentermap.com/singapore/singapore/google-jurong-west-campus/,
+Google,2 Jurong West Street 23 Singapore Singapore  ,103.70993827086286,1.3515839,Active,https://www.datacentermap.com/singapore/singapore/google-singapore/,Part of Google Jurong West Campus
+Google,2 Jurong West Street 23 Singapore Singapore  ,103.70993827086286,1.3515839,Active,https://www.datacentermap.com/singapore/singapore/google-jurong-west-2-data-center/,Part of Google Jurong West Campus
+Google,1 Lok Yang Way Singapore Singapore,103.7900874,1.2982805,Active,https://www.datacentermap.com/singapore/singapore/google-lok-yang-data-center/,
+Google,"No. 85, Zhangbin West 2nd Rd Xianxi Taiwan",120.4274815,24.1398351,Active,https://www.datacentermap.com/taiwan/taichung/google-changhua-county/,
+Google,Tussenweg 8 Middenmeer The Netherlands,5.0292698,52.79206,Active,https://www.datacentermap.com/the-netherlands/amsterdam/google-middenmeer/,
+Google,Oostpolder 4 Eemshaven The Netherlands,6.8590056,53.424266,Active,https://www.datacentermap.com/the-netherlands/groningen/google-eemshaven/,
+Google,Westpoort industrial estate Groningen The Netherlands,-1,-1,Under Construction,https://www.datacentermap.com/the-netherlands/groningen/google-westpoort/,
+Google,Hoogebrug 3 Business Park Winschoten The Netherlands,4.433346609210073,51.94846575,Under Construction,https://www.datacentermap.com/the-netherlands/groningen/google-winschoten-data-center/,
+Google,"Merlin Way, North Weald Bassett Epping United Kingdom",0.1590058124031999,51.71490519946274,Planned,https://www.datacentermap.com/united-kingdom/essex/google-north-weald/,
+Google,"Theobalds Business Park, A10 &amp; Lieutenant Ellis Way Waltham Cross United Kingdom",-1,-1,Active,https://www.datacentermap.com/united-kingdom/london/google-waltham-cross/,
+Google,"C. Gonzalo ""Gonchi"" Rodriguez 101 Colonia Nicolich Uruguay",-57.62713236338441,-34.26070948189357,Under Construction,https://www.datacentermap.com/uruguay/canelones/google-canelones/,
+Google,"48809 Al Highway 277 Bridgeport Alabama, USA",-1,-1,Active,https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county/,
+Google,"48809 Al Highway 277 Bridgeport Alabama, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county-building-1/,Part of Google Jackson County Campus
+Google,"48809 Al Highway 277 Bridgeport Alabama, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county-building-2/,Part of Google Jackson County Campus
+Google,"E Elliot Rd &amp; S Sossaman Rd Mesa Arizona, USA",-1,-1,Active,https://www.datacentermap.com/usa/arizona/phoenix/google-mesa-campus/,
+Google,"E Elliot Rd &amp; S Sossaman Rd Mesa Arizona, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/arizona/phoenix/google-mesa-phase-1/,Part of Google Mesa Campus
+Google,"E Elliot Rd &amp; S Sossaman Rd Mesa Arizona, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/arizona/phoenix/google-mesa-phase-2/,Part of Google Mesa Campus
+Google,"E Elliot Rd &amp; S Sossaman Rd Mesa Arizona, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/arizona/phoenix/google-mesa-phase-3/,Part of Google Mesa Campus
+Google,"Bollinger Rd West Memphis Arkansas, USA",-90.21108050740996,35.12203278402244,Planned,https://www.datacentermap.com/usa/arkansas/west-memphis/google-west-memphis/,
+Google,"300 Riverside Pkwy Lithia Springs Georgia, USA",-1,-1,Active,https://www.datacentermap.com/usa/georgia/atlanta/google-douglas-county/,
+Google,"300 Riverside Pkwy Lithia Springs Georgia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/georgia/atlanta/google-douglas-county-data-center-1/,Part of Google Douglas County Campus
+Google,"300 Riverside Pkwy Lithia Springs Georgia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/georgia/atlanta/google-douglas-county-data-center-2/,Part of Google Douglas County Campus
+Google,"Rumble Rd Forsyth Georgia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/georgia/macon/google-rumble-road/,
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA",-85.05362612710196,41.0309293,Active,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-data-center/,
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Under Construction,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-1/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-10/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-11/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-12/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-2/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-3/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-4/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-5/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-6/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-7/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-8/,Part of Google Fort Wayne Campus
+Google,"6015 Adams Center Road Fort Wayne Indiana, USA  ",-85.05362612710196,41.0309293,Planned,https://www.datacentermap.com/usa/indiana/fort-wayne/google-fort-wayne-building-9/,Part of Google Fort Wayne Campus
+Google,"Keller Hill Rd &amp; N Union Church Rd Monroe Township Indiana, USA",-1,-1,Planned,https://www.datacentermap.com/usa/indiana/indianapolis/google-monroe-township/,
+Google,"I-74 &amp; S Post Road Indianapolis  Indiana, USA",-1,-1,Planned,https://www.datacentermap.com/usa/indiana/indianapolis/project-flo/,
+Google,"Edgewood Rd SW &amp; 76th Ave SW Cedar Rapids Iowa, USA",-1,-1,Planned,https://www.datacentermap.com/usa/iowa/cedar-rapids/google-cedar-rapids/,
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-campus/,
+Google,"1430 Veterans Memorial Hwy Council Bluffs Iowa, USA",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-council-bluffs/,
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-1/,Part of Google Southlands Campus
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-2/,Part of Google Southlands Campus
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-3/,Part of Google Southlands Campus
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-4/,Part of Google Southlands Campus
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-5/,Part of Google Southlands Campus
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-6/,Part of Google Southlands Campus
+Google,"10420 Bunge Ave Council Bluffs Iowa, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/iowa/council-bluffs/google-southlands-building-7/,Part of Google Southlands Campus
+Google,"11110 State St Omaha Nebraska, USA",-95.9383758,41.2587459,Active,https://www.datacentermap.com/usa/nebraska/omaha/google-omaha-campus/,
+Google,"11110 State St Omaha Nebraska, USA  ",-95.9383758,41.2587459,Active,https://www.datacentermap.com/usa/nebraska/omaha/google-omaha-building-1/,Part of Google Omaha Campus
+Google,"11110 State St Omaha Nebraska, USA  ",-95.9383758,41.2587459,Active,https://www.datacentermap.com/usa/nebraska/omaha/google-omaha-building-2/,Part of Google Omaha Campus
+Google,"11110 State St Omaha Nebraska, USA  ",-95.9383758,41.2587459,Planned,https://www.datacentermap.com/usa/nebraska/omaha/google-omaha-building-3/,Part of Google Omaha Campus
+Google,"11110 State St Omaha Nebraska, USA  ",-95.9383758,41.2587459,Planned,https://www.datacentermap.com/usa/nebraska/omaha/google-omaha-building-4/,Part of Google Omaha Campus
+Google,"14651-15249 Gold Coast Rd Papillion Nebraska, USA",-1,-1,Active,https://www.datacentermap.com/usa/nebraska/papillion/google-papillion/,
+Google,"14651 Gold Coast Rd Papillion Nebraska, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/nebraska/papillion/google-papillion-building-1/,Part of Google Papillion Campus
+Google,"14651 Gold Coast Rd Papillion Nebraska, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/nebraska/papillion/google-papillion-building-2/,Part of Google Papillion Campus
+Google,"15249 Gold Coast Rd Papillion Nebraska, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/nebraska/papillion/google-papillion-building-3/,Part of Google Papillion Campus
+Google,"15203 Gold Coast Rd Papillion Nebraska, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/nebraska/papillion/google-papillion-building-4/,Part of Google Papillion Campus
+Google,"560 W Warm Springs Rd Henderson Nevada, USA",-115.00880200322614,36.0587943,Active,https://www.datacentermap.com/usa/nevada/las-vegas/google-henderson-campus/,
+Google,"560 W Warm Springs Rd Henderson Nevada, USA  ",-115.00880200322614,36.0587943,Active,https://www.datacentermap.com/usa/nevada/las-vegas/google-henderson/,Part of Google Henderson Campus
+Google,"560 W Warm Springs Rd Henderson Nevada, USA  ",-115.00880200322614,36.0587943,Active,https://www.datacentermap.com/usa/nevada/las-vegas/google-henderson-data-center-2/,Part of Google Henderson Campus
+Google,"7400 USA Pkwy Sparks Nevada, USA",-119.4893660517809,39.55662675,Active,https://www.datacentermap.com/usa/nevada/reno/google-storey-county/,
+Google,"111 8th Avenue New York New York, USA",-73.99363226655242,40.752795,Active,https://www.datacentermap.com/usa/new-york/new-york/111-eight-avenue/,
+Google,"708 Lynhaven Dr Lenoir North Carolina, USA",-81.54684286164151,35.90009543416856,Active,https://www.datacentermap.com/usa/north-carolina/hickory/google-lenoir/,
+Google,"2565 Harrison Rd NW Johnstown Ohio, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/ohio/columbus/google-johnstown/,
+Google,"105 Whiley Rd Lancaster Ohio, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/ohio/columbus/google-lancaster-data-center/,
+Google,"5076 S High St Lockbourne Ohio, USA",-84.61244462636913,39.08989525,Active,https://www.datacentermap.com/usa/ohio/columbus/google-lockbourne-data-center/,
+Google,"1101 Beech Rd SW New Albany Ohio, USA",-1,-1,Active,https://www.datacentermap.com/usa/ohio/columbus/google-new-albany/,
+Google,"N Perkins Rd &amp; E Richmond Rd Stillwater Oklahoma, USA",-1,-1,Planned,https://www.datacentermap.com/usa/oklahoma/stillwater/google-stillwater-campus/,
+Google,"4581 Webb St / 3500-4175 Main St Pryor Oklahoma, USA",-1,-1,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county/,
+Google,"4581 Webb St Pryor Oklahoma, USA  ",-95.33004727501742,36.24117205,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-1/,Part of Google Mayes County Campus
+Google,"3500 Main St Pryor Oklahoma, USA  ",-95.3210313728371,36.28940319790195,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-2/,Part of Google Mayes County Campus
+Google,"4175 Main St Pryor Oklahoma, USA  ",-95.3322533669137,36.24467455,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-3/,Part of Google Mayes County Campus
+Google,"4175 Main St Pryor Oklahoma, USA  ",-95.3322533669137,36.24467455,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-4/,Part of Google Mayes County Campus
+Google,"3581 Main St Pryor Oklahoma, USA  ",-95.3210313728371,36.28940319790195,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-5/,Part of Google Mayes County Campus
+Google,"West 530 &amp; Lyons Pryor Oklahoma, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-6/,Part of Google Mayes County Campus
+Google,"West 530 &amp; Lyons Pryor Oklahoma, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-7/,Part of Google Mayes County Campus
+Google,"West 530 &amp; Webb St Pryor Oklahoma, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oklahoma/tulsa/google-mayes-county-building-8/,Part of Google Mayes County Campus
+Google,"4200 Columbia Rd The Dalles Oregon, USA",-121.18179228355262,45.60010065,Active,https://www.datacentermap.com/usa/oregon/the-dalles/google-the-dalles/,
+Google,"3500 River Rd The Dalles Oregon, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/oregon/the-dalles/google-3500-river-rd/,Part of Google The Dalles Campus
+Google,"4400 River Trl Wy The Dalles Oregon, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/oregon/the-dalles/google-taylor-lake-data-center/,Part of Google The Dalles Campus
+Google,"4200 Columbia Rd The Dalles Oregon, USA  ",-121.18179228355262,45.60010065,Active,https://www.datacentermap.com/usa/oregon/the-dalles/google-the-dalles-building-1/,Part of Google The Dalles Campus
+Google,"4200 Columbia Rd The Dalles Oregon, USA  ",-121.18179228355262,45.60010065,Active,https://www.datacentermap.com/usa/oregon/the-dalles/google-the-dalles-building-2/,Part of Google The Dalles Campus
+Google,"4200 Columbia Rd The Dalles Oregon, USA  ",-121.18179228355262,45.60010065,Active,https://www.datacentermap.com/usa/oregon/the-dalles/google-the-dalles-building-3/,Part of Google The Dalles Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county/,
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-1/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-10/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-2/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-3/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-4/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-5/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-6/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-7/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-8/,Part of Google Berkeley County Campus
+Google,"1669 Garrott Ave Moncks Corner South Carolina, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/google-berkeley-county-building-9/,Part of Google Berkeley County Campus
+Google,"1055 Research Center Dr Ridgeville South Carolina, USA",-1,-1,Under Construction,https://www.datacentermap.com/usa/south-carolina/charleston/google-project-dawson/,
+Google,"Winding Woods Commerce Park, 4818-4928 US-78 St George South Carolina, USA",-1,-1,Active,https://www.datacentermap.com/usa/south-carolina/charleston/project-evergreen/,
+Google,"1000 Boolean Dr Clarksville Tennessee, USA",-87.26033483667211,36.62816975,Active,https://www.datacentermap.com/usa/tennessee/clarksville/google-montgomery-county/,
+Google,"3800 Railport Pkwy Midlothian Texas, USA",-97.04880499999999,32.44324265,Active,https://www.datacentermap.com/usa/texas/dallas/google-midlothian/,
+Google,"Energy Park Drive Leesburg Virginia, USA",-77.54197760674994,39.05028938943329,Active,https://www.datacentermap.com/usa/virginia/ashburn/google-loudoun-county-campus/,
+Google,"20491 Goose Landing Ln Leesburg Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/ashburn/google-loudoun-county/,Part of Google Loudoun County Campus
+Google,"20481 Goose Landing Ln Leesburg Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/ashburn/google-loudoun-county2/,Part of Google Loudoun County Campus
+Google,"Wellington Road &amp; Piney Branch Lane Bristow Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/bristow/google-prince-william-county-campus/,
+Google,"Wellington Road &amp; Piney Branch Lane Bristow Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/bristow/google-prince-william-cty-bldg-1/,Part of Google Prince William County Campus
+Google,"Wellington Road &amp; Piney Branch Lane Bristow Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/bristow/google-prince-william-cty-bldg-2/,Part of Google Prince William County Campus
+Google,"Wellington Road &amp; Piney Branch Lane Bristow Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/bristow/google-prince-william-cty-bldg-3/,Part of Google Prince William County Campus
+Google,"Wellington Road &amp; Piney Branch Lane Bristow Virginia, USA  ",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/bristow/google-prince-william-cty-bldg-4/,Part of Google Prince William County Campus
+Google,"750 Watkins Centre Pkwy, Midlothian Virginia, USA",-1,-1,Planned,https://www.datacentermap.com/usa/virginia/richmond/google-project-loch/,
+Google,"2700 Bermuda Hundred Rd Chester Virginia, USA",-77.3039917,37.3444044,Planned,https://www.datacentermap.com/usa/virginia/richmond/google-project-peanut/,
+Google,"4200 Moseley Rd Moseley Virginia, USA",-77.7809621,37.4481681,Planned,https://www.datacentermap.com/usa/virginia/richmond/google-project-skye/,
+Google,"Botetourt Center Industrial Park, 984 International Pkwy Daleville Virginia, USA",-1,-1,Land Banked,https://www.datacentermap.com/usa/virginia/roanoke/google-botetourt-center-industrial-park/,
+Google,"24400 Howling Rooster Ln Sterling Virginia, USA",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/google-arcola-campus/,
+Google,"24400 Howling Rooster Ln Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/google-arcola-data-center-1/,Part of Google Arcola Campus
+Google,"24400 Howling Rooster Ln Sterling Virginia, USA  ",-1,-1,Active,https://www.datacentermap.com/usa/virginia/sterling/google-arcola-data-center-2/,Part of Google Arcola Campus
+Google,"24400 Howling Rooster Ln Sterling Virginia, USA  ",-1,-1,Under Construction,https://www.datacentermap.com/usa/virginia/sterling/google-arcola-data-center-3/,Part of Google Arcola Campus

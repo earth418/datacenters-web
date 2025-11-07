@@ -1,9 +1,17 @@
 // import us from './counties-albers-10m.json' with {type: "json"};
 // import * as zll from './zipc_latlon.json' with {type: "json"};
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import {geoAitoff} from "https://cdn.skypack.dev/d3-geo-projection@4";
 
+const projection = geoAitoff();
 
 let num_presses = 0;
+
+if (num_presses > 3) {
+    d3.select("#block").style("opacity", 0.0);
+    d3.select("#treemap-container").style("opacity", 0.0);
+    update(num_presses);
+}
 // update(4, true);
 // update(5, true);
 
@@ -14,13 +22,15 @@ function animate_map_property(layer, property, func_of_time, duration, delay=300
     }, delay);
 }
 
+const duration = 1500;
+
 let stop_rotating = false;
 
 
 function transition_top(element, duration) {
     const top_gap = "5%";
     // return d3.select(element).transition("t_"+element).duration(duration).style("top",top_gap);
-    return d3.select(element).transition("t_"+element).duration(duration).style("margin-bottom",top_gap);
+    return d3.select(element).transition("t_"+element).duration(duration).style("margin-top",top_gap);
 }
 
 function spinGlobe() {
@@ -34,103 +44,10 @@ let keep_spinning = true;
 map.on("moveend", () => {if (keep_spinning) spinGlobe();});
 
 
-
-const stages = function() {
-    const duration = instant ? 0 : 1000;
-    let stage_list = [];
-
-    let f123 = (stage) => {
-        d3.select("#start").transition().duration(duration).style("opacity",0.0);
-
-        d3.select("#b_t" + stage).transition("bt" + stage)
-            .duration(duration)
-            .style("left", "125%");
-            
-        d3.select("#b_t" + (stage + 1)).transition("bt" + (stage + 1))
-            .duration(duration)
-            .style("left", "25%");
-    };
-    
-    stage_list.push(f123(1), f123(2), f123(3));
-
-    // 4
-    stage_list.push(() => {
-        d3.select("#block").transition()
-            .duration(duration)
-            .style("opacity", 0.0)
-            .on("end", () => {
-                d3.select(this).style("display","none");
-            }
-        );
-    });
-
-    // 5
-    stage_list.push(() => {
-        transition();
-        d3.select("#treemap-container").transition()
-            .duration(duration)
-            .style("opacity", 0.0)
-            .on("end", () => {
-                d3.select(this).style("display","none");
-        });
-
-        spinGlobe();
-    });
-
-    // 6
-    stage_list.push(() => {
-        keep_spinning = false;
-            
-        d3.select("#sidebar1").transition()
-            .duration(duration)
-            .style("opacity",1.0);
-        
-        transition_top("#s1p1", duration);
-        // d3.select('#s1p1').transition().duration(duration).style("top",top_gap);
-
-        map.flyTo({
-            center: [-110.99,32.21],
-            zoom : 11
-        })
-    });
-
-    // 7
-    stage_list.push(() => {
-        map.flyTo({
-            center: [-110.7875,32.052],
-            zoom : 15
-        });
-
-        d3.select("#s1p1").transition().duration(duration).style("color","#707070ff");
-        transition_top("#s1p2", duration);
-        // d3.select('#s1p2').transition().duration(duration).style("top",top_gap);
-        // d3.select('#p3').transition().duration(duration).style("top","25%");
-
-        animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);
-    });
-
-    // 8
-    stage_list.push(() => {
-        // update(6);
-            map.flyTo({
-                center: [-110.8875,32.152],
-                zoom : 10.5
-            })
-
-            // d3.select('#p2').transition().duration(duration).style("top","25%");
-            d3.select("#s1p2").transition().duration(duration).style("color","#707070ff");
-            transition_top('#s1p3', duration);
-            // d3.select('#s1p3').transition().duration(duration).style("top","10%");
-
-            animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
-    });
-
-    return stage_list;
-};
-
 function update(stage, instant = false) {
-    const duration = instant ? 0 : 1000;
 
+    console.log(stage);
+    const duration = instant ? 0 : 1500;
 
     switch (stage) {
         case 1:
@@ -162,18 +79,19 @@ function update(stage, instant = false) {
             // update(4);
             transition();
             d3.select("#treemap-container").transition()
-                .duration(duration)
+                .duration(duration*2.5)
                 .style("opacity", 0.0)
                 .on("end", () => {
                     d3.select(this).style("display","none");}
                     );
 
-            spinGlobe();
+            d3.timeout(spinGlobe, 2.5*duration);
             break;
             // requestAnimationFrame(rotateCamera);
 
         case 6:
             keep_spinning = false;
+            map.stop();
             
             d3.select("#sidebar1").transition()
                 .duration(duration)
@@ -303,6 +221,7 @@ function update(stage, instant = false) {
                 d3.select("#s2p3").transition().duration(duration).style("color","#707070ff");
                 transition_top("#s2p4", duration);
 
+                d3.select("#windmap").transition().duration(duration).style("opacity", 1.0);
                 
                 animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * t, duration); 
             }, 50);
@@ -320,6 +239,8 @@ function update(stage, instant = false) {
                 bearing: 0.0,
                 duration: duration,
             });
+
+            d3.select("#windmap").transition().duration(duration).style("opacity", 0.0);
             
             break;
         
@@ -343,19 +264,30 @@ function update(stage, instant = false) {
             map.flyTo({
                 center: [-90.216323,35.108877],
                 zoom : 15,
-                pitch: 0.0,
-                bearing: 0.0,
                 duration: duration,
             });
+            animate_map_property("westmemphisgoogle_layer", "fill-opacity", (t) => 0.8 * t, duration);
+
             break;
         
         case 18:
             d3.select("#s3p2").transition().duration(duration).style("color","#707070ff");
             transition_top("#s3p3", duration);
+            
+            map.flyTo({
+                center: [-90.216323,35.108877],
+                zoom : 13,
+                duration: duration,
+            });
 
             break;
 
         case 19:
+            map.flyTo({
+                center: [-90.216323,35.108877],
+                zoom : 11,
+                duration: duration,
+            });
             d3.select("#s3p3").transition().duration(duration).style("color","#707070ff");
             transition_top("#s3p4", duration);
 
@@ -368,14 +300,41 @@ function update(stage, instant = false) {
         case 21:
             d3.select("#sidebar4").transition().duration(duration).style("opacity",1.0);
             transition_top("#s4p1", duration);
+            
+            map.flyTo({
+                center: [-86.50958727110606, 41.69935263597052],
+                zoom : 12,
+                duration: duration,
+            });
+
             break;
         case 22:
             d3.select("#s4p1").transition().duration(duration).style("color","#707070ff");
             transition_top("#s4p2", duration);
+            map.flyTo({
+                center: [-86.50958727110606, 41.69935263597052],
+                zoom : 10,
+                duration: duration,
+            });
+
+            
             break;
         case 23:
             d3.select("#s4p2").transition().duration(duration).style("color","#707070ff");
             transition_top("#s4p3", duration);
+            map.flyTo({
+                center: [-86.50958727110606, 39.69935263597052],
+                zoom : 6,
+                duration: duration*2.0,
+            });
+
+            for (let i = 0; i < 50; ++i) {
+                let h = indiana_cities[i].features[0].properties.houses;
+                let radius = Math.sqrt(h) / 30.0;
+                animate_map_property(`indiana_${i}`, "circle-radius", (t) => t * radius, duration / 2.0, duration / 2.0 + i * 25);
+            }
+            animate_map_property(`indiana_layer`, "fill-opacity", (t) => 0.25 * t, duration, duration);
+
             break;
         case 24:
             d3.select("#s4p3").transition().duration(duration).style("color","#707070ff");
@@ -384,9 +343,22 @@ function update(stage, instant = false) {
         case 25:
             d3.select("#sidebar4").transition().duration(duration).style("opacity",0.0);
             break;
-        case 26:
-            d3.select("#sidebar5").transition().duration(duration).style("opacity",1.0);
-            break;
+        // case 26:
+        //     d3.select("#sidebar5").transition().duration(duration).style("opacity",1.0);
+        //     transition_top("#s5p1", duration);
+        //     break;
+        // case 27:
+        //     d3.select("#s5p1").transition().duration(duration).style("color","#707070ff");
+        //     transition_top("#s5p2", duration);
+        //     break;
+        // case 28:
+        //     d3.select("#s5p2").transition().duration(duration).style("color","#707070ff");
+        //     transition_top("#s5p3", duration);
+        //     break;
+        // case 29:
+        //     d3.select("#s5p3").transition().duration(duration).style("color","#707070ff");
+        //     transition_top("#s5p4", duration);
+        //     break;
     }
 }
 
@@ -409,14 +381,14 @@ function animateRotateCamera(time) {
 document.addEventListener("keydown", (e) => {
     if (e.key == " ") {
         num_presses++;
+        update(num_presses);
     } else if (e.key == 37) {
         // left
         // num_presses--;   
     } else if (e.key == 39) {
         // right
-        num_presses++;
+        // num_presses++;
     }
-    update(num_presses);
 });
 
 document.addEventListener("touchstart", (e) => {
@@ -462,6 +434,8 @@ function parseCSV(str) {
     return arr;
 }
 
+// const ai = await d3.csv("../data/largest_ai_companies.csv"));
+
 const array_data = parseCSV(ai_companies);
 array_data[0] = ["origin","origin","","","","","","",""] // this is the name layer anyway
 
@@ -479,6 +453,18 @@ let data = array_data.map((w) => {
 // data[0].name = "origin";
 data[0].parent = "";
 
+function color_from_name(name) {
+    if (name == "Amazon")
+        return "#cb6200";
+    if (name == "Alphabet (Google)")
+        return "#47cc22";
+    if (name == "Microsoft")
+        return "#25cbcbff";
+    if (name == "Meta Platforms (Facebook)")
+        return "#0d0df6ff";
+
+    return "#f5ce8c";
+}
 
 let total_width = window.innerWidth,
 total_height = window.innerHeight;
@@ -537,7 +523,7 @@ leaf.append("rect")
     .attr("height", (d) => d.y1 - d.y0)
     .style("stroke","black")
     .style("stroke-width",0.5)
-    .style("fill", "#ffe3c8")
+    .style("fill", d => color_from_name(d.data.name))
     .style("fill-opacity", 1.0)
     // .style("fill", (d) => ["#ffe3c8", "#ffecd7"][Math.floor(Math.random() * 2)])
 
@@ -552,7 +538,7 @@ function font_size2(d) {return font_sizepx2(d) + "px"}
 
 
 leaf.filter(d => d.value > 195000000).append("text")
-    .attr("x", (d) => (d.x0 + d.x1) / 2.0 )
+    .attr("x", (d) => (d.x0 + d.x1) / 2.0)
     .attr("y", (d) => (d.y1 + d.y0) / 2.0)
     // .attr("dy", "0.5em")
     .attr("text-anchor", "middle")
@@ -580,10 +566,11 @@ const proj = d3.geoMercator()
     .translate([total_width / 2, total_height / 2])
     .scale(2500)
 
-// const proj = d3.geoSatellite()
-//     .center([-96.0066, 38.7135])
-//     .translate([total_width / 2, total_height / 2])
-//     .scale(100)
+const projglobe = d3.geoOrthographic()
+    .translate([total_width / 2, total_height / 2])
+    .rotate([-96.0066, 38.7135])
+    // .scale()
+    // .rotate([0, -25])
 
 
 function d_to_radius(d) {
@@ -598,44 +585,54 @@ function transition() {
 
     d3.select("#treemap-container").transition().duration(duration).style("background-color",null);
         
-    leaf.selectAll("rect").transition().duration(duration)
-            .attr("height", d_to_radius)
-            .attr("width", d_to_radius)
-            .attr("x", d => -d_to_radius(d)/2.0)
-            .attr("y", d => -d_to_radius(d)/2.0)
-            .attr("rx", d_to_radius)
-            .attr("ry", d_to_radius)
+    leaf.selectAll("rect").transition("a").duration(duration)
+        .style("opacity",0.0)
+    //         .attr("height", d_to_radius)
+    //         .attr("width", d_to_radius)
+    //         .attr("x", d => -d_to_radius(d)/2.0)
+    //         .attr("y", d => -d_to_radius(d)/2.0)
+    //         .attr("rx", d_to_radius)
+    //         .attr("ry", d_to_radius)
         
     leaf.selectAll("text").remove();
 
 
-    // let a_d_located = [];
-    // for (let i = 0; i < amazon_datacenters.features.length; ++i) {
-    //     let cc = amazon_datacenters.features[i].geometry.coordinates;
-    //     if (cc[1] == -1 && cc[0] == -1) {}
-    //     else a_d_located.push(cc);
-    // }
+    let a_d_located = [];
+    for (let i = 0; i < amazon_datacenters.features.length; ++i) {
+        let cc = amazon_datacenters.features[i].geometry.coordinates;
+        if (cc[1] == -1 && cc[0] == -1) {}
+        else a_d_located.push(cc);
+    }
 
-    // d3.
-    // const num = 20;
-    // for (let i = 0; i < num; ++i) {
-    //     for (let j = 0; j < num; ++j) {
-    //         // const p = amazon_datacenters.features[i * num + j].geometry.coordinates;
-    //         const p = a_d_located[i*num + j];
-    //         leaf.filter(d => d.data.name == "Amazon").append("rect")
-    //             .attr("x", d => d.x0 + (d.x1 - d.x0) * i / num)
-    //             .attr("y", d => d.y0 + (d.y1 - d.y0) * j / num)
-    //             .attr("width", d => (d.x1 - d.x0) / num)
-    //             .attr("height", d => (d.y1 - d.y0) / num)
-    //             .style("stroke","black")
-    //             .style("stroke-width",0.5)
-    //             .style("fill", "#ffe3c8")
-    //             .style("fill-opacity", 1.0)
-    //             .transition().duration(2.0*duration)
-    //             // .attr("opacity", 1.0)
-    //             .attr("transform", `translate(${proj(p[0], p[1])})`)
-    //     }
-    // }
+    const num = 9;
+    const og_leaf = leaf.filter(d => d.data.name == "Amazon");
+    for (let i = 0; i < num * (16/9); ++i) {
+        for (let j = 0; j < num; ++j) {
+            // const p = amazon_datacenters.features[i * num + j].geometry.coordinates;
+            const p = a_d_located[i*num + j];
+            console.log("proj: " + projglobe(p) + ", coords: " + p);
+            const clone_leaf = og_leaf.clone();
+            clone_leaf.transition().duration(1.0*duration)
+                    .attr("transform", `translate(${projglobe(p[0], p[1])})`)
+            
+            clone_leaf.append("rect")
+                .attr("x", d => d.x0 + (d.x1 - d.x0) * i / num)
+                .attr("y", d => d.y0 + (d.y1 - d.y0) * j / num)
+                .attr("width", d => (d.x1 - d.x0) / num)
+                .attr("height", d => (d.y1 - d.y0) / num)
+                .style("stroke","black")
+                .style("stroke-width",0.5)
+                .style("fill", d => color_from_name(d.data.name))
+                .style("fill-opacity", 1.0)
+                .transition().duration(1.0*duration)
+                    .attr("height", d_to_radius)
+                    .attr("width", d_to_radius)
+                    .attr("x", d => -d_to_radius(d)/2.0)
+                    .attr("y", d => -d_to_radius(d)/2.0)
+                    .attr("rx", d_to_radius)
+                    .attr("ry", d_to_radius)
+        }
+    }
 
     // leaf.transition().duration(duration)
     //     .attr("transform", d => `translate(${proj([d.data.lon, d.data.lat])})`)      
