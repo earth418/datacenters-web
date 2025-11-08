@@ -18,7 +18,7 @@ function geojson_point(latlon) {
     };
 }
 
-const google_centers = await d3.json("../data/google_centers.geojson");
+// const google_centers = await d3.json("../data/google_centers.geojson");
 
 // CSV
 // name, latitude, longitude 

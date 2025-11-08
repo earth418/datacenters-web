@@ -1,9 +1,9 @@
 // import us from './counties-albers-10m.json' with {type: "json"};
 // import * as zll from './zipc_latlon.json' with {type: "json"};
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-import {geoAitoff} from "https://cdn.skypack.dev/d3-geo-projection@4";
+import {geoSatellite} from "https://cdn.skypack.dev/d3-geo-projection@4";
 
-const projection = geoAitoff();
+// const projection = geoAitoff();
 
 let num_presses = 0;
 
@@ -78,14 +78,15 @@ function update(stage, instant = false) {
         case 5:
             // update(4);
             transition();
-            d3.select("#treemap-container").transition()
-                .duration(duration*2.5)
+
+            d3.select("#treemap-container").transition("treemapcontainer")
+                .duration(3.0 * duration)
                 .style("opacity", 0.0)
                 .on("end", () => {
                     d3.select(this).style("display","none");}
-                    );
+                );
 
-            d3.timeout(spinGlobe, 2.5*duration);
+            d3.timeout(spinGlobe, 3.0*duration);
             break;
             // requestAnimationFrame(rotateCamera);
 
@@ -325,14 +326,16 @@ function update(stage, instant = false) {
             map.flyTo({
                 center: [-86.50958727110606, 39.69935263597052],
                 zoom : 6,
-                duration: duration*2.0,
+                duration: duration*1.5,
             });
 
-            for (let i = 0; i < 50; ++i) {
-                let h = indiana_cities[i].features[0].properties.houses;
-                let radius = Math.sqrt(h) / 30.0;
-                animate_map_property(`indiana_${i}`, "circle-radius", (t) => t * radius, duration / 2.0, duration / 2.0 + i * 25);
-            }
+            d3.timeout(() => {
+                for (let i = 0; i < 50; ++i) {
+                    let h = indiana_cities[i].features[0].properties.houses;
+                    let radius = Math.sqrt(h) / 30.0;
+                    animate_map_property(`indiana_${i}`, "circle-radius", (t) => t * radius, duration / 2.0, duration / 2.0 + i * 25);
+                }
+            }, duration);
             animate_map_property(`indiana_layer`, "fill-opacity", (t) => 0.25 * t, duration, duration);
 
             break;
@@ -566,54 +569,49 @@ const proj = d3.geoMercator()
     .translate([total_width / 2, total_height / 2])
     .scale(2500)
 
-const projglobe = d3.geoOrthographic()
-    .translate([total_width / 2, total_height / 2])
-    .rotate([-96.0066, 38.7135])
+// const projglobe = d3.geoSatellite()
+const projglobe = geoSatellite()
+    .translate([0.98 * (total_width / 2), total_height / 2])
+    .scale(780)
+    .distance(4.0)
+    .rotate([99.5, -39.0, 0.0])
+    .clipAngle(Math.acos(1.0 / 4.0))
+    // .rotate([-96.0066, 38.7135])
+    // .rotate([38.0066, 95.7135])
     // .scale()
     // .rotate([0, -25])
 
 
 function d_to_radius(d) {
     const val = Math.max(5,d.value / 10000000);
-    return 5;
+    return 15;
 }
 
-function transition() {
-
-    const duration = 1000;
-    // const duration = 1000;
-
-    d3.select("#treemap-container").transition().duration(duration).style("background-color",null);
-        
-    leaf.selectAll("rect").transition("a").duration(duration)
-        .style("opacity",0.0)
-    //         .attr("height", d_to_radius)
-    //         .attr("width", d_to_radius)
-    //         .attr("x", d => -d_to_radius(d)/2.0)
-    //         .attr("y", d => -d_to_radius(d)/2.0)
-    //         .attr("rx", d_to_radius)
-    //         .attr("ry", d_to_radius)
-        
-    leaf.selectAll("text").remove();
-
-
-    let a_d_located = [];
-    for (let i = 0; i < amazon_datacenters.features.length; ++i) {
-        let cc = amazon_datacenters.features[i].geometry.coordinates;
-        if (cc[1] == -1 && cc[0] == -1) {}
-        else a_d_located.push(cc);
+function company_to_datacenters(company_name, company_datacenters) {
+    let located = [];
+    for (let i = 0; i < company_datacenters.features.length; ++i) {
+        let cc = company_datacenters.features[i].geometry.coordinates;
+        if (cc[1] == -1 && cc[0] == -1
+            // || Math.abs(cc[0] + 90) > 30.0 || Math.abs(cc[1] - 30.0) > 30
+            )
+        {}
+        else located.push([cc[0], cc[1]]);
     }
 
-    const num = 9;
-    const og_leaf = leaf.filter(d => d.data.name == "Amazon");
+    const num = 18;
+    const og_leaf = leaf.filter(d => d.data.name == company_name);
     for (let i = 0; i < num * (16/9); ++i) {
         for (let j = 0; j < num; ++j) {
             // const p = amazon_datacenters.features[i * num + j].geometry.coordinates;
-            const p = a_d_located[i*num + j];
-            console.log("proj: " + projglobe(p) + ", coords: " + p);
+            // console.log("proj: " + projglobe(p) + ", coords: " + p);
+
+            if (i * num + j >= located.length) {
+                continue;
+            }
+            const p = located[i*num + j];
             const clone_leaf = og_leaf.clone();
             clone_leaf.transition().duration(1.0*duration)
-                    .attr("transform", `translate(${projglobe(p[0], p[1])})`)
+                    .attr("transform", `translate(${projglobe(p)})`)
             
             clone_leaf.append("rect")
                 .attr("x", d => d.x0 + (d.x1 - d.x0) * i / num)
@@ -621,7 +619,7 @@ function transition() {
                 .attr("width", d => (d.x1 - d.x0) / num)
                 .attr("height", d => (d.y1 - d.y0) / num)
                 .style("stroke","black")
-                .style("stroke-width",0.5)
+                .style("stroke-width",0.1)
                 .style("fill", d => color_from_name(d.data.name))
                 .style("fill-opacity", 1.0)
                 .transition().duration(1.0*duration)
@@ -633,9 +631,31 @@ function transition() {
                     .attr("ry", d_to_radius)
         }
     }
+}
 
-    // leaf.transition().duration(duration)
-    //     .attr("transform", d => `translate(${proj([d.data.lon, d.data.lat])})`)      
+
+function transition() {
+
+    const duration = 1000;
+    // const duration = 1000;
+
+    d3.select("#treemap-container").transition().duration(duration).style("background-color",null);
+        
+    leaf.selectAll("rect").transition("a").duration(duration)
+        .style("opacity",0.0)
+
+    leaf.selectAll("text").remove();
+
+
+    // if (name == "Amazon")
+    // if (name == "Alphabet (Google)")
+    // if (name == "Microsoft")
+    // if (name == "Meta Platforms (Facebook)")
+
+    company_to_datacenters("Amazon", amazon_datacenters);
+    company_to_datacenters("Alphabet (Google)", google_centers);
+    company_to_datacenters("Microsoft", ms_centers);
+    company_to_datacenters("Meta Platforms (Facebook)", meta_centers);
 }
 
 
