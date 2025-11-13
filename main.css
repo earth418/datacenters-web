@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: "Stack Sans Notch", sans-serif;
+    font-weight: light;
 }
 
 /* p {
@@ -11,7 +12,7 @@ body {
 } */
 
 .b_text {
-    color:white;
+    color:#ecf2f8;
     /* font-family: sans-serif; */
     display: block;
     position: absolute;
@@ -26,7 +27,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: grey;
+    background-color: #0d1117;
 }
 
 .sidebar > p {
@@ -42,7 +43,7 @@ body {
     margin-top: 0.5em;
     position: relative;
     top: -150%;
-    text-align: justify;
+    /* text-align: justify; */
     /* transition: all; */
 }
 
@@ -50,11 +51,12 @@ body {
     margin-left: 1em;
     color: #ecf2f8;
     font-size: 2em;
+    margin-bottom: 0;
 }
 
 .unselected_text {
     display: block;
-    border-color: white;
+    border-color: #ecf2f8;
     border-width: 0px;
     border-style: solid;
     background-color: none;
@@ -64,13 +66,13 @@ body {
     margin: 1.25em;
     color: #89929b;
     /* font-family: sans-serif; */
-    font-size: 1.75vh;
+    font-size: 1.5vh;
     transition: all 0.8s ease-in-out;
 }
 
 .selected_text {
     display: block;
-    border-color: white;
+    border-color: #ecf2f8;
     border-width: 1px;
     border-style: solid;
     background-color: #161b22;
@@ -80,7 +82,7 @@ body {
     margin: 0.5em;
     color: #ECF2F8;
     /* font-family: sans-serif; */
-    font-size: 2.5vh;
+    font-size: 2.25vh;
     transition: all 0.8s ease-in-out;
     /* margin-top: 300%; */
 }
@@ -94,7 +96,7 @@ body {
 
     left: 0;
     height: 100%; 
-    background-color: #21262dbb;
+    background-color: #21262ddd;
     z-index:5;
     opacity: 0.0;
     overflow-y: scroll;
@@ -107,16 +109,24 @@ body {
     z-index:10000;
     height:3vmin;
     width:3vmin;
-    fill: white;
+    fill: #ecf2f8;
     /* border: ;
     background-color: white; */
 }
 
 #citations-list {
-    font-size: 10px;
+    padding-left: 8px;
+    padding-right: 4px;
+    font-size: 7px;
+    /* margin: 0.5em; */
 }
 
 #citations-list > li {
-    margin-bottom: 5px;
-    color: white;
+    margin-bottom: 0.4em;
+    color: #c6cdd5;
+}
+#citations-list > li > b {
+    /* margin-bottom: 0.5em; */
+    font-size: 10px;
+    color: #ecf2f8;
 }

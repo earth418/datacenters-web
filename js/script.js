@@ -736,12 +736,20 @@ let data = array_data.map((w) => {
         // , country : w[5], address: w[3], county: w[5], city: w[4], state: w[6], zip: w[7], lat: w[8], lon: w[9], parent: "origin"};
 });
 
+let displaying = false;
 const button = document.getElementById("info-button");
 button.onmouseenter = (event) => {
+    displaying = !displaying;
     d3.select("#info-sidebar").transition().duration(200).style("right","0%");
 }
 button.onmouseleave = (event) => {
-    d3.select("#info-sidebar").transition().duration(200).style("right","-25%");
+    displaying = !displaying;
+    d3.select("#info-sidebar").transition().duration(200).style("right",displaying ? "0%" : "-50%");
+}
+
+button.onclick = (event) => {
+    displaying = !displaying;
+    // d3.select("#info-sidebar").transition().duration(200).style("right",displaying ? "0%" : "-50%");
 }
 
 // thank you to 
@@ -771,8 +779,8 @@ function color_from_name(name) {
 let total_width = window.innerWidth,
 total_height = window.innerHeight;
 
-let treemap_ht = total_width - 230;
-let treemap_wd = total_height - 106;
+let treemap_ht = total_width - 100;
+let treemap_wd = total_height - 150;
 
 const root_data = d3.stratify()
     .id((d) => d.name)
@@ -785,8 +793,8 @@ const root = d3.treemap()
 .tile(d3.treemapSquarify)
 .size([treemap_ht, treemap_wd])
 .padding(0)
-.paddingTop(230)
-.paddingLeft(106)
+.paddingTop(200)
+.paddingLeft(100)
 (root_data);
 
 
@@ -795,7 +803,7 @@ const svg = d3.create("svg")
     .attr("viewBox", [0, 0, total_width, total_height])
     .attr("width", total_width)
     .attr("height", total_height)
-    .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;");
+    .attr("style", "max-width: 100%; height: auto; font: 10px;");
 
 const leaf = svg.selectAll("g")
     .data(root.leaves())

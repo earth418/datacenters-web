@@ -159,7 +159,7 @@ map.on('load', () => {
         'source':'west_memphis_google',
         'layout':{},
         'paint': {
-            'fill-color': '#088',
+            'fill-color': company_palette["google"],
             'fill-opacity': 0.0
         }
     })
@@ -176,7 +176,7 @@ map.on('load', () => {
         'source':'tuscon',
         'layout':{},
         'paint': {
-            'fill-color': '#088',
+            'fill-color': company_palette["amazon"],
             'fill-opacity': 0.0
         }
     })
@@ -208,7 +208,7 @@ map.on('load', () => {
         'source':'xAIcolossus',
         'layout':{},
         'paint': {
-            'fill-extrusion-color': 'rgba(53, 1, 42, 1)',
+            'fill-extrusion-color': company_palette["tesla"],
             'fill-extrusion-height': 5.0,
             'fill-extrusion-opacity': 0.0,
         }
