@@ -5,6 +5,10 @@ import {geoSatellite} from "https://cdn.skypack.dev/d3-geo-projection@4";
 
 // const projection = geoAitoff();
 
+// const palette = [
+
+// ]
+
 let num_presses = 0;
 
 if (num_presses > 3) {
@@ -27,10 +31,18 @@ const duration = 1500;
 let stop_rotating = false;
 
 
-function transition_top(element, duration) {
-    const top_gap = "5%";
+function transition_top(element) {
+    const top_gap = "0.5em";
     // return d3.select(element).transition("t_"+element).duration(duration).style("top",top_gap);
-    return d3.select(element).transition("t_"+element).duration(duration).style("margin-top",top_gap);
+    d3.select(element).transition("t_"+element).duration(duration / 2.0).style("top","0.5em");
+    d3.select(element).classed("selected_text", true);
+    // return d3.select(element).transition("t_"+element).duration(duration).style("margin-top",top_gap);
+}
+
+function defocus_element(element) {
+    d3.select(element).classed("selected_text", false);
+    d3.select(element).classed("unselected_text", true);
+   
 }
 
 function spinGlobe() {
@@ -43,40 +55,313 @@ let keep_spinning = true;
 
 map.on("moveend", () => {if (keep_spinning) spinGlobe();});
 
+function intro(stage) {
+    d3.select("#start").transition().duration(duration).style("opacity",0.0);
 
-function update(stage, instant = false) {
-
-    console.log(stage);
-    const duration = instant ? 0 : 1500;
-
-    switch (stage) {
-        case 1:
-        case 2:
-        case 3:
-            d3.select("#start").transition().duration(duration).style("opacity",0.0);
-
-            d3.select("#b_t" + stage).transition("bt" + stage)
-                .duration(duration)
-                .style("left", "125%")
-                
-            d3.select("#b_t" + (stage + 1)).transition("bt" + (stage + 1))
-                .duration(duration)
-                .style("left", "25%")
-            break;
+    d3.select("#b_t" + stage).transition("bt" + stage)
+        .duration(duration)
+        .style("left", "125%")
         
-        case 4:
-            // update(3);
-            d3.select("#block").transition()
-                .duration(duration)
-                .style("opacity", 0.0)
-                .on("end", () => {
-                    d3.select(this).style("display","none");
-                    console.log("done!")
+    d3.select("#b_t" + (stage + 1)).transition("bt" + (stage + 1))
+        .duration(duration)
+        .style("left", "25%")
+}
+
+function update(stage) {
+
+    let funcs = [
+            () => {}, // never called
+            intro,
+            intro,
+            intro,
+            intro,
+            () => { // case 4
+                    d3.select("#block").transition()
+                    .duration(duration)
+                    .style("opacity", 0.0)
+                    .on("end", () => {
+                        d3.select(this).style("display","none");
+                        console.log("done!")
                 }
                 );
-                break;
+            },
+            () => { // case 5
+                transition();
+
+                d3.select("#treemap-container").transition("treemapcontainer")
+                    .duration(1.5 * duration)
+                    .style("opacity", 0.0)
+                    .on("end", () => {
+                        d3.select(this).style("display","none");}
+                    );
+
+                d3.timeout(spinGlobe, 1.25*duration);
+            },
+            () => {
+                keep_spinning = false;
+                map.stop();
+                
+                d3.select("#sidebar1").transition()
+                    .duration(duration)
+                    .style("opacity",1.0);
+                
+                transition_top("#s1p1", duration);
+                // d3.select('#s1p1').transition().duration(duration).style("top",top_gap);
+
+                map.flyTo({
+                    center: [-110.99,32.21],
+                    zoom : 11
+                });
+            },
+            () => {
+                map.flyTo({
+                    center: [-110.7875,32.052],
+                    zoom : 15
+                })
+
+                defocus_element("#s1p1");
+                transition_top("#s1p2");
+
+                animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);                
+            },
+            () => {
+                defocus_element("#s1p2");
+                transition_top('#s1p3');
+            },
+            () => {
+                defocus_element("#s1p3");
+                transition_top("#s1p4");
+            },
+            () => {
+                defocus_element("#s1p4");
+                transition_top("#s1p5");
+
+                map.flyTo({
+                    center: [-110.8875,32.152],
+                    zoom : 10.5
+                })
+                animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
+            },
+            () => {
+                defocus_element("#s1p5");
+                transition_top("#s1p6");
+            },
+            () => {
+                d3.select("#sidebar1").transition().duration(duration).style("opacity",0.0);
+                animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration);
+                
+                map.flyTo({
+                    center: [-110.8875,32.152],
+                    zoom : 5
+                })
+            },
+            () => {
+                d3.select("#sidebar2").transition().duration(duration).style("opacity",1.0);
+                map.flyTo({
+                        center: [-90.04,35.14],
+                        zoom : 8
+                    })
+                    transition_top("#s2p1", duration);
+                    animate_map_property("xAIcolossuslayer", "fill-extrusion-opacity", (t) => 0.8*t, duration);
+                    // d3.select('#s2p1').transition().duration(duration).style("top","10%");
+                },
+            () => {
+                map.flyTo({
+                    center: [-90.15627488376435,35.05966538381292],
+                    zoom : 12
+                });
+
+                defocus_element("#s2p1");
+                transition_top("#s2p2");
+                
+                d3.timeout(() => map.addLayer({
+                    'id':'boxtownText',
+                    'type':'symbol',
+                    'source':'boxtown',
+                    'layout':{
+                        'text-field':'Boxtown'
+                    }
+                }), duration / 2.0);
+            },
+            () => {
+                map.flyTo({
+                    center: [-90.15627488376435,35.05966538381292],
+                    zoom : 15,
+                    pitch: 45.0,
+                    bearing: 0.0,
+                    duration: duration,
+                });
+
+                d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
+                
+                // new Promise(r => setTimeout(r, duration)).then(rotateCamera(0.0));
+
+                defocus_element("#s2p2");
+                transition_top("#s2p3");
+                animate_map_property("xAIcolossuslayer", "fill-extrusion-height", (t) => 50.0*t, duration);
+                // d3.select('#s2p3').transition().duration(duration).style("top","5%");
+            },
+            () => {
+                stop_rotating = true;
+                
+                d3.timeout(() => {
+                    map.flyTo({
+                        center: [-90.15627488376435,35.05966538381292],
+                        zoom : 12,
+                        pitch: 15.0,
+                        bearing: 0.0,
+                        duration: duration,
+                    });
+
+                    // d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
+                    
+                    defocus_element("#s2p3");
+                    transition_top("#s2p4");
+
+                    d3.select("#windmap").transition().duration(duration).style("opacity", 1.0);
+                    
+                    animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * t, duration); 
+                }, 50);
+            },
+            () => {
+                defocus_element("#s2p4");
+                transition_top("#s2p5");
+            },
+            () => {
+                d3.select("#sidebar2").transition().duration(duration).style("opacity",0.0);
+                animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration); 
+            
+                map.flyTo({
+                    center: [-90.15627488376435,35.05966538381292],
+                    zoom : 8,
+                    pitch: 0.0,
+                    bearing: 0.0,
+                    duration: duration,
+                });
+
+                // d3.select("#windmap").transition().duration(duration).style("opacity", 0.0);
+            },
+            () => {
+                d3.select("#sidebar3").transition().duration(duration).style("opacity",1.0);
+                transition_top("#s3p1", duration);
+
+                map.flyTo({
+                    center: [-90.18594924055635,35.146547415054584],
+                    zoom : 12,
+                    pitch: 0.0,
+                    bearing: 0.0,
+                    duration: duration,
+                });
+            },
+            () => {
+                defocus_element("#s3p1");
+                transition_top("#s3p2", duration);
+                
+                map.flyTo({
+                    center: [-90.216323,35.108877],
+                    zoom : 15,
+                    duration: duration,
+                });
+                animate_map_property("westmemphisgoogle_layer", "fill-opacity", (t) => 0.8 * t, duration);
+
+            },
+            () => {
+                defocus_element("#s3p2");
+                transition_top("#s3p3", duration);
+                
+                map.flyTo({
+                    center: [-90.216323,35.108877],
+                    zoom : 13,
+                    duration: duration,
+                });
+
+            },
+            () => {
+                map.flyTo({
+                    center: [-90.216323,35.108877],
+                    zoom : 11,
+                    duration: duration,
+                });
+                d3.select("#sidebar3").transition().duration(duration).style("opacity",0.0);
+            },
+            () => {
+            },
+            () => {
+                d3.select("#sidebar4").transition().duration(duration).style("opacity",1.0);
+                transition_top("#s4p1", duration);
+                
+                map.flyTo({
+                    center: [-86.50958727110606, 41.69935263597052],
+                    zoom : 12,
+                    duration: duration,
+                });
+
+            },
+            () => {
+                defocus_element("#s4p1");
+                transition_top("#s4p2", duration);
+                map.flyTo({
+                    center: [-86.50958727110606, 41.69935263597052],
+                    zoom : 10,
+                    duration: duration,
+                });
+
+            },
+            () => {
+                defocus_element("#s4p2");
+                transition_top("#s4p3");
+                map.flyTo({
+                    center: [-86.50958727110606, 39.69935263597052],
+                    zoom : 6,
+                    duration: duration*1.5,
+                });
+
+                d3.timeout(() => {
+                    for (let i = 0; i < 50; ++i) {
+                        let h = indiana_cities[i].features[0].properties.houses;
+                        let radius = Math.sqrt(h) / 30.0;
+                        animate_map_property(`indiana_${i}`, "circle-radius", (t) => t * radius, duration / 2.0, duration / 2.0 + i * 25);
+                    }
+                }, duration);
+                animate_map_property(`indiana_layer`, "fill-opacity", (t) => 0.25 * t, duration, duration);
+
+            },
+            () => {
+                defocus_element("#s4p3");
+                transition_top("#s4p4");
+            },
+            () => {
+                d3.select("#sidebar4").transition().duration(duration).style("opacity",0.0);
+            },
+            () => {
+                d3.select("#sidebar5").transition().duration(duration).style("opacity",1.0);
+                transition_top("#s5p1");
+            },
+            () => {
+                defocus_element("#s5p1");
+                transition_top("#s5p2");
+            },
+            () => {
+                defocus_element("#s5p2");
+                transition_top("#s5p3");
+            },
+            () => {
+                defocus_element("#s5p3");
+                transition_top("#s5p4");
+            },
+            () => {
+                defocus_element("#s5p4");
+                transition_top("#s5p5");
+            }
+    ];
+
+    funcs[stage](stage);
+}
+
+
+function old_update(stage) {
+    switch(stage) {
         case 5:
-            // update(4);
             transition();
 
             d3.select("#treemap-container").transition("treemapcontainer")
@@ -88,7 +373,6 @@ function update(stage, instant = false) {
 
             d3.timeout(spinGlobe, 3.0*duration);
             break;
-            // requestAnimationFrame(rotateCamera);
 
         case 6:
             keep_spinning = false;
@@ -114,6 +398,8 @@ function update(stage, instant = false) {
             })
 
             d3.select("#s1p1").transition().duration(duration).style("color","#707070ff");
+            d3.select("#s1p1").classed("selected_text", false);
+            d3.select("#s1p1").classed("unselected_text", true);
             transition_top("#s1p2", duration);
             // d3.select('#s1p2').transition().duration(duration).style("top",top_gap);
             // d3.select('#p3').transition().duration(duration).style("top","25%");
@@ -130,6 +416,9 @@ function update(stage, instant = false) {
 
             // d3.select('#p2').transition().duration(duration).style("top","25%");
             d3.select("#s1p2").transition().duration(duration).style("color","#707070ff");
+            d3.select("#s1p2").classed("unselected_text", true);
+            d3.select("#s1p2").classed("selected_text", false);
+
             transition_top('#s1p3', duration);
             // d3.select('#s1p3').transition().duration(duration).style("top","10%");
 
@@ -447,8 +736,13 @@ let data = array_data.map((w) => {
         // , country : w[5], address: w[3], county: w[5], city: w[4], state: w[6], zip: w[7], lat: w[8], lon: w[9], parent: "origin"};
 });
 
-
-
+const button = document.getElementById("info-button");
+button.onmouseenter = (event) => {
+    d3.select("#info-sidebar").transition().duration(200).style("right","0%");
+}
+button.onmouseleave = (event) => {
+    d3.select("#info-sidebar").transition().duration(200).style("right","-25%");
+}
 
 // thank you to 
 // https://d3-graph-gallery.com/graph/treemap_basic.html
@@ -458,15 +752,20 @@ data[0].parent = "";
 
 function color_from_name(name) {
     if (name == "Amazon")
-        return "#cb6200";
+        return company_palette["amazon"]; //"#cb6200";
     if (name == "Alphabet (Google)")
-        return "#47cc22";
+        return company_palette["google"]; // "#47cc22";
     if (name == "Microsoft")
-        return "#25cbcbff";
+        return company_palette["microsoft"]; // "#25cbcbff";
     if (name == "Meta Platforms (Facebook)")
-        return "#0d0df6ff";
+        return company_palette["meta"]; //"#0d0df6ff";
+    if (name == "NVIDIA")
+        return company_palette["nvidia"];
+    if (name == "Tesla")
+        return company_palette["tesla"];
 
-    return "#f5ce8c";
+    return palette["black2"];
+    // return "#f5ce8c";
 }
 
 let total_width = window.innerWidth,
@@ -524,8 +823,8 @@ leaf.append("rect")
     .attr("y", (d) => d.y0)
     .attr("width", (d) => d.x1 - d.x0)
     .attr("height", (d) => d.y1 - d.y0)
-    .style("stroke","black")
-    .style("stroke-width",0.5)
+    .style("stroke", palette["white"])
+    .style("stroke-width",2.0)
     .style("fill", d => color_from_name(d.data.name))
     .style("fill-opacity", 1.0)
     // .style("fill", (d) => ["#ffe3c8", "#ffecd7"][Math.floor(Math.random() * 2)])
@@ -546,7 +845,7 @@ leaf.filter(d => d.value > 195000000).append("text")
     // .attr("dy", "0.5em")
     .attr("text-anchor", "middle")
     .attr("font-size", font_size)
-    .attr("fill", "black")
+    .attr("fill", palette["white"])
     .attr("font-family", "sans-serif")
     .text(d => d.data.name)
     .append("tspan")
@@ -556,9 +855,10 @@ leaf.filter(d => d.value > 195000000).append("text")
         .attr("dy", (d) => "-0.5em")
         .attr("dx", (d) => "-0.25em")
         .attr("text-anchor", "end")
+        .attr("color",palette["white"])
         .attr("font-size", font_size2)
-        .attr("fill", "black")
         .attr("weight", "bold")
+        // .attr("fill", "black")
 
 document.getElementById("treemap-container").append(svg.node());
 

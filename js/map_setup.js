@@ -79,17 +79,17 @@ map.on('load', () => {
             'minzoom':2,
             'maxzoom':10,
             'paint': {
-                'circle-radius': 8,
+                'circle-radius': 6,
                 'circle-color': color,
             }
         });
     }
 
-    add_dcs(amazon_datacenters, "amazondatacenters", "#cb6200");
-    add_dcs(xai_centers, "xaicenters", "#0f095aff");
-    add_dcs(ms_centers, "mscenters", "#25cbcbff");
-    add_dcs(meta_centers, "metacenters", "#0d0df6ff");
-    add_dcs(google_centers, "googlecenters", "#47cc22ff")
+    add_dcs(amazon_datacenters, "amazondatacenters", company_palette["amazon"]);
+    add_dcs(xai_centers, "xaicenters", company_palette["tesla"]);
+    add_dcs(ms_centers, "mscenters", company_palette["microsoft"]);
+    add_dcs(meta_centers, "metacenters", company_palette["meta"]);
+    add_dcs(google_centers, "googlecenters", company_palette["google"])
 
     for (let i = 0; i < 50; ++i) {
         // let h = indiana_cities[i].features[0].properties.houses;

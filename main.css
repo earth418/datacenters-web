@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
 /* p {
@@ -11,7 +12,7 @@ body {
 
 .b_text {
     color:white;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     display: block;
     position: absolute;
     width: 50%;
@@ -30,33 +31,92 @@ body {
 
 .sidebar > p {
     display: block;
+    /* border-color: white; */
+    /* border-width: 1px; */
+    /* border-style: solid; */
+    /* background-color: black; */
+    /* border-radius: 0.25em; */
+    /* padding: 1em; */
+
+    /* margin: 1em; */
+    margin-top: 0.5em;
+    position: relative;
+    top: -150%;
+    text-align: justify;
+    /* transition: all; */
+}
+
+.sidebar > h3 {
+    margin-left: 1em;
+    color: #ecf2f8;
+    font-size: 2em;
+}
+
+.unselected_text {
+    display: block;
+    border-color: white;
+    border-width: 0px;
+    border-style: solid;
+    background-color: none;
+    border-radius: 0.0em;
+    padding: 0em;
+
+    margin: 1.25em;
+    color: #89929b;
+    /* font-family: sans-serif; */
+    font-size: 1.75vh;
+    transition: all 0.8s ease-in-out;
+}
+
+.selected_text {
+    display: block;
     border-color: white;
     border-width: 1px;
     border-style: solid;
-    background-color: black;
-    border-radius: 0.25em;
+    background-color: #161b22;
+    border-radius: 0.1em;
     padding: 1em;
 
-    margin: 1em;
-    color: white;
-    font-family: sans-serif;
-    font-size: 1.0vw;
-    margin-top: 300%;
-    /* position: relative; */
-    /* top: -200%; */
+    margin: 0.5em;
+    color: #ECF2F8;
+    /* font-family: sans-serif; */
+    font-size: 2.5vh;
+    transition: all 0.8s ease-in-out;
+    /* margin-top: 300%; */
 }
 
 .sidebar {
     position: absolute;
     display: flex;
-    max-width: 30%;
+    width: 30%;
     flex-grow: 0;
     flex-direction: column;
 
     left: 0;
     height: 100%; 
-    background-color: rgba(0.0, 0.0, 0.0, 0.7);
+    background-color: #21262dbb;
     z-index:5;
     opacity: 0.0;
     overflow-y: scroll;
+}
+
+#info-button {
+    position:absolute; 
+    top: 1vmin;
+    right:1vmin;
+    z-index:10000;
+    height:3vmin;
+    width:3vmin;
+    fill: white;
+    /* border: ;
+    background-color: white; */
+}
+
+#citations-list {
+    font-size: 10px;
+}
+
+#citations-list > li {
+    margin-bottom: 5px;
+    color: white;
 }

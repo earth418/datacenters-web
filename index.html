@@ -8,6 +8,15 @@
 
     <script src="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@^5.10.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <!-- <button id="transition" style="width: 25px; height: 10px; margin-left: 452px;">Click here</button> -->
@@ -16,129 +25,240 @@
             <p id="start" style="position: absolute; bottom: 25%; left: 25%; color:white; display:block; width: 50%; text-align: center; opacity:0.5;">
                 (Press spacebar to continue)</p> 
         <!-- <div style="top: 50%; bottom: 50%;"> -->
-            <p id="b_t1" class="b_text" style="left: 25%">In 2023, AI occupied a small fraction of the tech industry.</p>
-            <p id="b_t2" class="b_text">By 2025, the industry's largest players total a market cap of $20 trillion.</p>
-            <p id="b_t3" class="b_text">With companies like OpenAI and NVIDIA making double and even triple-digit billion dollar 
-                deals for data centers, expected to reach almost 13% of the US's electricity consumption by 2028 (up from less than 4% now),</p>
-            <p id="b_t4" class="b_text">What is all this money really doing?</p>
+            <p id="b_t1" class="b_text" style="left: 25%">
+                <span style="font-size: 5em;">When Big Tech Comes to Town</span>
+            </p>
+            <p id="b_t2" class="b_text">By 2025, the world's largest technology companies command a combined 
+                market value of $21 trillion (1).</p>
+            <p id="b_t3" class="b_text">Companies like OpenAI and NVIDIA now strike deals worth tens of 
+                billions of dollars to build massive data centers across the United States.</p>
+            <p id="b_t4" class="b_text">WFederal projections estimate these facilities will consume up to 
+                12% of the nation's electricity by 2028, nearly triple their 2023 consumption of 4.4% (2).</p>
+            <p id="b_t5" class="b_text">This infrastructure boom promises to power the next generation 
+                of artificial intelligence. But in communities across the country, residents confront a
+                 different reality: soaring electricity bills, environmental degradation, and opaque 
+                 decision-making that drastically impacts their lives.</p>
         </div>
     </div>
 
     <div id="sidebar1" class="sidebar">
-        <p id="s1p1">The city of Tuscon, AZ has been, for the last several months, in battle with the 
-            interests of these private corporations about a proposed data center within their
-            city limits.</p>
-        <p id="s1p2">This is Project Blue -- a 290 acre powerful data center campus, 
-            being built by a company called Beale Infrastructure, a datacenter building subsidary of asset manager Blue
-            Owl and reportedly tied to Amazon. The campus has at least three data centers and currently has a 286MW energy agreement, but with rumors that the final number of 
-            buildings
-            <a href="https://www.datacenterdynamics.com/en/news/amazon-named-as-company-behind-290-acre-data-center-campus-in-tuscson-arizona/">
-            could go up to ten</a>, with 600 MW of data center power. And this is one of two data centers Beale is planning to build in this county. </p>
-        <p id="s1p3">Hundreds of city residents protested and voted against
-            the construction of the data center, citing environmental, water use, and energy concerns, and 
-            the city of Tuscon blocked water access for the project.
-            But the company is building the data center anyway, <b style="color:#003">right outside</b> city limits.
+        <h3>TUSCON</h3>
+        <p id="s1p1">In Tucson, Arizona, a 290-acre data center project called 
+            Project Blue has become the latest flashpoint about the expansion 
+            of AI infrastructure within city limits.
+        </p>
+        <p id="s1p2">Beale Infrastructure, a subsidiary of asset manager Blue Owl, 
+            plans to build the facility for Amazon Web Services (3).
+        </p>
+        <p id="s1p3">The project requires 286 megawatts of electricity, 
+            or enough to power approximately 200,000 homes – about the number of houses 
+            in the city of Tucson – with potential expansion to 600 megawatts across ten buildings (4, 5).
         </p>
         <p id="s1p4">
-            Outside of the city and residents' jurisdiction and water availability, but well within range 
-            to take advantage of the region's energy, and labor resources.
+            Hundreds of residents protested against the construction of the project.
+            They cited concerns about water consumption in the desert climate and 
+            the strain on the local power grid. In August 2025, the Tucson City 
+            Council voted unanimously to deny the project's request to connect to 
+            the city's reclaimed water system (6).
+        </p>
+        <p id="s1p5">
+            Beale Infrastructure continued building anyway. The company purchased 
+            land in unincorporated Pima County, just outside Tucson's jurisdiction, 
+            and filed an energy agreement with state regulators to secure power from 
+            Tucson Electric Power (7). 
+        </p>
+        <p id="s1p6">
+            The data center will draw on the same regional grid that serves Tucson residents,
+            but city officials no longer have authority to regulate its construction or operations.
         </p>
     </div>
 
     <div id="sidebar2" class="sidebar">
-        <p id="s2p1">In Memphis, TN, Elon Musk's xAI has built an enormous data center --
-            one of the biggest in the world. xAI has dubbed it the "world's largest supercomputer," running over 230,000 NVidia GPUs.</p>
-        <p id="s2p2">The data center of course, has an enormous energy footprint -- 
-            and, to power the site, xAI built 35 small-scale methane gas turbines. The resulting air pollutants 
-            and carbon emissions have come to effect the nearby predominantly-black community of Boxton, which 
-            already has the highest levels of Athsma in the state, and its air pollution and cancer risks are 
-            significantly higher than average due to pollution from companies previously present in the area. 
+        <h3>MEMPHIS/BOXTOWN</h3>
+        <p id="s2p1">
+        1200 miles away, in Memphis, Tennessee, Elon Musk's artificial intelligence 
+        company xAI built what it calls "the world's largest supercomputer" in just 122 days. The 
+        facility, named Colossus, houses more than 200,000 NVIDIA graphics processing units (GPUS) 
+        that are used to train AI systems (8).
         </p>
-        <!-- https://www.nbcnews.com/news/us-news/musk-xai-colossus-supercomputer-boxtown-memphis-tennessee-rcna206242 -->
+        <p id="s2p2">
+            To meet Colossus's power demands, xAI installed 35 portable natural gas turbines 
+            that produce 421 megawatts of electricity, comparable to the output of a major 
+            power plant (9). The company avoided standard air quality permitting by classifying 
+            the turbines as "temporary," allowing them to operate for up to 364
+             consecutive days without regulatory approval (13).
+
+        </p>
         <p id="s2p3">
-            Musk says this is just the start for this AI data center, dubbed "Colossus." The billionaire promises this will
-            transform the region into a tech hub, already having purchased a nearby property and expanding talks with the 
-            municipality to install his turbines permanently.
+           The facility sits approximately two miles from Boxtown, a historically Black neighborhood 
+           where residents already face elevated health risks. Decades of industrial pollution in 
+           the area have produced asthma rates above the state average and cancer risks 
+           that exceed EPA safety thresholds by a factor of four (10, 11).
         </p>
         <p id="s2p4">
-            <!-- style="font-size:1em;"> -->
-            The EPA has been unable to investigate, and the mayor of Memphis allows
-            Musk to continue -- without any permits -- because he's promised the turbines are temporary.
-            However, 
-            "Researchers at the University of Tennessee, Knoxville, based on public satellite 
-            data from NASA and the European Space Agency, found that 
-            average concentrations of nitrogen dioxide (NO2) have increased by 3% when comparing the 
-            periods before June 2024 and afterward. They also found that peak NO2 levels have 
-            increased by 79% from pre-xAI levels in areas immediately 
-            surrounding the data center, and by 9% in nearby Boxtown." NO2 is a pollutant emitted
-            from many combustion reactions and causes respiratory problems after inhalation, and leads to
-            increased rates of athsma in children -- and because of xAI's data center, 
-            it will enter the lungs of Boxtown residents.
-            <!-- https://time.com/7308925/elon-musk-memphis-ai-data-center/ -->
+            Using satellite data from NASA and the European Space Agency, Researchers at the 
+            University of Tennessee, Knoxville measured air quality changes after Colossus began
+            operations last year. They found that average concentrations of nitrogen dioxide (NO2), a 
+            pollutant that exacerbates asthma and other respiratory conditions, increased 
+            by 3% across the area. Peak NO2 levels have also surged by 79% in areas 
+            immediately surrounding the data center, and by 9% in Boxtown itself (14).
+        </p>
+        <p id="s2p5">
+            The Environmental Protection Agency has not intervened. Memphis Mayor Paul Young
+         has allowed xAI to continue operations, and the company has purchased additional 
+         property nearby for expansion (12).
         </p>
     </div>
 
 
     <div id="sidebar3" class="sidebar">
-        <p id="s3p1">Right across from the Mississippi from xAI's Colossus, in West Memphis, AR, Google has
-            planned one of their flagship enormous data centers.</p>
+        <h3>WEST MEMPHIS</h3>
+        <p id="s3p1">Directly across the Mississippi River from Colossus, Google announced plans
+             for its own major data center in West Memphis, Arkansas. The $4 billion project 
+             represents the company's first facility in the state (17).
+        </p>
         <p id="s3p2">
-            Contrary to the majority of these data centers and likely to avoid the controversey 
-            and public outcry they've faced, Google has promised that alongside their data center
-            they will be building a 650 MW solar plant and 350 MW of power storage, as well as
-            paying for all electricity the data center will use. In addition, they've started a 
-            $25 million fund to help with energy costs in the area.
+            Google's proposal includes commitments that distinguish it from other data center 
+            projects. The company pledged to pay the full cost of electricity for the facility 
+            and to fund construction of a 600-megawatt solar plant paired with 350 megawatts 
+            of battery storage (15). Google also established a $25 million Energy Impact Fund 
+            to support energy efficiency programs for residents in surrounding communities (16).
         </p>
-        <!-- https://www.nbcnews.com/news/us-news/musk-xai-colossus-supercomputer-boxtown-memphis-tennessee-rcna206242 -->
         <p id="s3p3">
-            But this is Google's flagship data center, and will cost $4BN to build its first phase -- 
-            making that $25 million only 0.25% of the data center's total cost.
-            And are Google's promises her even enough? After all, 
-            this data center -- while its full scope is unknown -- will
-            use many multiples of the 650 MW of energy Google plans to add to the grid. 
-            How will that gap be filled? Unfortunately, 
-            almost certainly by burning natural gas,
-            especially given the current administration.
-        </p>
-        <p id="s3p4">
-            Adding one AI data center to a grid rivals adding millions 
-            of homes, and the regional power utility will increase capacity to compensate.
-            But if this data center is eventually no longer needed, or Google changes course,
-            the area's residents are left with expensive, overbuilt power generation infrastructure
-            that they now must pay for.
+            Yet questions remain about whether these commitments address the facility's full 
+            impact. The data center's ultimate power consumption will likely exceed the 650 
+            megawatts that Google plans to add through renewable sources. And, If Google later 
+            reduces operations or closes the facility, local ratepayers will continue paying 
+            for the expanded infrastructure built to serve it.
         </p>
     </div>
 
     <div id="sidebar4" class="sidebar">
+        <h3>NEW CARLISLE</h3>
         <p id="s4p1">
-            Up north, Amazon recently opened their massive AI data center in New Carlisle, Indiana -- 
-            wit most of its 500,000 Amazon-built GPUs
-            dedicated to human brain-replacing AI startup Anthropic. 
+            In October 2025, Just 13 months after breaking ground, Amazon opened an $11 
+            billion data center complex in New Carlisle, Indiana. The facility runs 
+            exclusively Amazon's proprietary Trainium chips and primarily serves Anthropic,
+             an AI research company that just secured a ‘strategic partnership’ with Amazon worth $8 billion(18).
+
         </p>
         <p id="s4p2">
-            By making deals directly with the electricity utility of the town, Amazon
-            is bypassing any munincipal control over what will very likely end up using
-            a significant amount of energy and leading to increased energy use and cost.
+            When complete, the complex will span 30 buildings across 1,200 acres of former 
+            farmland. It will consume 2.2 gigawatts of electricity, which is enough to power 
+            1.5 million homes, or more than half of all residential electricity consumption 
+            in Indiana (19). The site already operates approximately 500,000 AI chips, with 
+            a goal of reaching one million chips by the end of 2025.
+
         </p>
         <!-- https://www.nbcnews.com/news/us-news/musk-xai-colossus-supercomputer-boxtown-memphis-tennessee-rcna206242 -->
         <p id="s4p3">
-            Especially since this enormous project in the 2,000 person lakeside town uses as much
-            electricity as 1.5 million homes, over half the energy used by the homes of the state 
-            of Indiana -- more than the top 50 most populated cities in the state combed.
+            Amazon expedited construction by bypassing municipal review processes, negotiating
+            directly with the regional utility company Indiana Michigan Power. The state and 
+            local governments provided more than $8 billion in tax incentives over several 
+            decades to secure the project.
+
         </p>
         <p id="s4p4">
-            A Bloomberg investigation revealed that data centers have led to disproportionately 
-            large increases in energy costs for homes around the country, especially those
-            located in towns containing data centers. In the last five years, energy costs have 
-            risen by as much as 267%, while residential energy demand has stagnated or even fell.
-            In a world trending towards efficiency and getting more out of less energy use,
-            data centers are causing the US to increase our energy use more than ever.
+            Indiana Michigan Power expects data center growth to more than double Indiana's peak 
+            electricity demand by 2030, from 2.8 gigawatts to over 7 gigawatts. Company filings 
+            indicate that natural gas plants will provide approximately three-quarters of this 
+            additional capacity.
+        </p>
+    </div>
+
+    <div id="sidebar5" class="sidebar">
+        <h3>THE REAL COST</h3>
+        <p id="s5p1">
+            A Bloomberg News investigation analyzed wholesale electricity prices at tens of thousands of locations across the United States. In areas with significant data center activity, wholesale electricity costs increased by as much as 267% over five years. These wholesale costs flow directly into the retail prices that households and businesses pay.
+        </p>
+        <p id="s5p2">
+            During the same period, residential electricity demand remained flat or declined in many regions. The increases stem not from growing household consumption, but from the rapid expansion of data centers and the infrastructure required to power them.
+        </p>
+        <p id="s5p3">
+            In Baltimore, Maryland, residents saw their average monthly bills jump by $17 after a regional power auction reached record prices, driven in part by data center demand. State regulators approved another increase that will add up to $4 per month starting in 2026.
+        </p>
+        <p id="s5p4">
+            The pattern repeats across the country. In Ohio, average household bills increased by at least $15 per month in summer 2025, with utility companies and grid operators citing data center growth as a primary driver. 
+        </p>
+        <p id="s5p5">
+            The facilities profiled here represent a small fraction of the data centers under construction nationwide. The bill is just beginning to come due.
         </p>
     </div>
 
     <div id="treemap-container" style="pointer-events: none;"></div>
     <div id="map-container" style="position: absolute; height: 100%; width:100%; z-index: -100;pointer-events: none;"></div>
     
+
+    <div id="info-sidebar" style="position: absolute; 
+    width: 25%; height: 100%; right: -25%; background-color: #444;z-index: 10000;">
+        <ul id="citations-list" style="list-style-type: none; height: 200%;">
+            <li>
+                (1) Tech company market capitalizations, 2025 As of September 2025, the eight trillion-dollar tech companies (Nvidia, Apple, Microsoft, Alphabet, Amazon, Meta, Tesla, Broadcom) had a combined market capitalization of $21 trillion, accounting for 36% of the S&P 500. Source: CNBC, "Google leads monster week for tech, pushing megacaps to combined $21 trillion in market cap," September 5, 2025 https://www.cnbc.com/2025/09/05/tech-megacaps-worth-market-cap.html
+            </li>
+            <li>
+                (2) Data center electricity consumption projections Data centers are projected to consume approximately 6.7% to 12% of total US electricity by 2028, up from 4.4% in 2023, according to the US Department of Energy's 2024 Report on U.S. Data Center Energy Use. Source: US Department of Energy, "DOE Releases New Report Evaluating Increase in Electricity Demand from Data Centers," December 2024 https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers
+            </li>
+            <li>
+                (3) Project Blue ownership and Amazon connection Project Blue is being developed by Beale Infrastructure, a subsidiary of Blue Owl Capital, with Amazon Web Services identified as the end customer in county documents and media reporting. Source: Data Center Map, "Project Blue Data Center in Tucson | Amazon AWS" https://www.datacentermap.com/usa/arizona/tucson/project-blue/
+            </li>
+            <li>
+                (4) Project Blue energy agreement Under the filed energy agreement with the Arizona Corporation Commission, Tucson Electric Power Company (TEP) requested power for 286MW ramping up by 2028. Source: Data Center Dynamics, "Amazon-linked data center project in Tucson, Arizona, requests power despite water denial from local officials," September 2, 2025 https://www.datacenterdynamics.com/en/news/amazon-linked-data-center-project-in-tuscon-arizona-requests-power-despite-water-denial-from-local-officials/
+            </li>
+            <li>
+                (5) Project Blue full buildout capacity At full build-out, the campus could feature up to 10 buildings, totaling 2 million sq ft with a power capacity of 600MW, according to planning documents. Source: AZ Luminaria, "Project Blue data center inevitable says Tucson council member Nikki Lee," August 5, 2025 https://azluminaria.org/2025/08/05/tucson-city-council-to-discuss-project-blue-for-first-time-wednesday/
+            </li>
+            <li>
+                (6) Tucson water denial The Tucson City Council voted unanimously in August 2025 to reject the annexation request that would have given the project access to the city's reclaimed water system. Source: Fox Business, "Tucson votes down $250M Amazon data center citing water and energy use," August 7, 2025 https://www.foxbusiness.com/economy/arizona-city-defeats-massive-data-center-project-over-water-energy-concerns
+            </li>
+            <li>
+                (7) Project Blue continuing outside city limits Beale Infrastructure confirmed it is moving forward with building the data center on county land outside Tucson city limits, filing an energy agreement with state regulators. Source: AZ Luminaria, "Project Blue is back: Beale moving ahead with data center on county land," August 29, 2025 https://azluminaria.org/2025/08/27/project-blue-data-center-pima-county-beale-infrastructure-tep/
+            </li>
+            <li>
+                (8) xAI Colossus GPU count The Colossus supercomputer in Memphis initially featured 100,000 Nvidia H100 GPUs, which was expanded to 200,000 GPUs. Musk has announced plans to eventually reach 1 million GPUs at the facility. Source: TIME, "Inside Memphis' Battle Against Elon Musk's xAI Data Center," August 13, 2025 https://time.com/7308925/elon-musk-memphis-ai-data-center/
+            </li>
+            <li>
+                (9) xAI methane turbines xAI installed 35 methane gas-burning turbines at the Memphis facility, with a combined generating capacity of 421 megawatts. Source: The Register, "xAI to pull half the gas turbines powering Colossus DC," May 8, 2025 https://www.theregister.com/2025/05/08/xai_turbines_colossus
+            </li>
+            <li>
+                (10) Boxtown asthma rates Boxtown, a predominantly Black community near the xAI facility, had elevated asthma rates prior to the data center's construction, with rates above the state average. Source: NBC News, "A Tennessee neighborhood takes on Musk's xAI Colossus supercomputer in its fight for clean air," May 16, 2025 https://www.nbcnews.com/news/us-news/musk-xai-colossus-supercomputer-boxtown-memphis-tennessee-rcna206242
+            </li>
+            <li>
+                (11) Boxtown cancer risk A 2013 study found that Southwest Memphis's cancer rate is four times the national average. A ProPublica analysis found cancer risk in the area four times what the EPA considers acceptable. Source: TIME, "Inside Memphis' Battle Against Elon Musk's xAI Data Center," August 13, 2025 https://time.com/7308925/elon-musk-memphis-ai-data-center/
+            </li>
+            <li>
+                (12) xAI expansion plans xAI has purchased an additional property in nearby Whitehaven and is in discussions with local officials about expanding operations and permanently installing turbines. Source: CNN, "Elon Musk is building 'the world's biggest supercomputer.' It's powered with dozens of gas-powered turbines," May 19, 2025 https://www.cnn.com/2025/05/19/climate/xai-musk-memphis-turbines-pollution
+            </li>
+            <li>
+                (13) Permit loophole for temporary turbines The turbines operated without standard air quality permits under a regulatory provision allowing "portable" generators to run for up to 364 consecutive days without permits. In July 2025, the Shelby County Health Department issued permits for 15 of the turbines for permanent operation. Source: Inside Climate News, "In South Memphis, Elon Musk's Colossus Operated Gas Turbines Without Appropriate Permits," July 24, 2025 https://insideclimatenews.org/news/17072025/elon-musk-xai-data-center-gas-turbines-memphis/
+            </li>
+            <li>
+                (14) University of Tennessee NO2 study Researchers at the University of Tennessee, Knoxville analyzed NASA and European Space Agency satellite data, finding average NO2 concentrations increased 3% after June 2024, with peak levels increasing 79% near the data center and 9% in Boxtown. Source: TIME, "Inside Memphis' Battle Against Elon Musk's xAI Data Center," August 13, 2025 https://time.com/7308925/elon-musk-memphis-ai-data-center/
+            </li>
+            <li>
+                (15) Google West Memphis solar and storage commitment Google committed to fund construction of a 600MW solar facility paired with a 350MW battery storage system in Jefferson County, Arkansas, and to pay rates supporting this new renewable infrastructure. Source: Construction Review Online, "600MW Solar Power facility for Project Pyramid, Google's $4 Billion Hyperscale Data Center in Arkansas," October 4, 2025 https://constructionreviewonline.com/construction-projects/google-plans-10-billion-data-center-campus-in-west-memphis-arkansas/
+            </li>
+            <li>
+                (16) Google $25 million Energy Impact Fund Google established a $25 million Energy Impact Fund for energy affordability and efficiency initiatives in Crittenden County and surrounding areas. Source: Google Blog, "Google is investing in Arkansas with a new data center, energy efficiency programs and more," October 2, 2025 https://blog.google/inside-google/company-announcements/google-american-innovation-arkansas/
+            </li>
+            <li>
+                (17) Google West Memphis investment The Google data center project in West Memphis represents a $4 billion investment in the first phase. Source: Arkansas Business, "As Expected, Google Is Behind Multibillion-Dollar Data Center in West Memphis," September 16, 2025 https://www.arkansasbusiness.com/article/google-data-center-west-memphis/
+            </li>
+            <li>
+                (18) Amazon New Carlisle GPU count and Anthropic partnership Amazon's New Carlisle data center is running approximately 500,000 Trainium chips, with plans to reach 1 million by year end. The facility was built exclusively for Anthropic, in which Amazon has invested $8 billion. Source: CNBC, "Amazon opens $11 billion AI data center in rural Indiana as rivals race to break ground," October 29, 2025 https://www.cnbc.com/2025/10/29/amazon-opens-11-billion-ai-data-center-project-rainier-in-indiana.html
+            </li>
+            <li>
+                (19) Amazon New Carlisle electricity consumption The facility will consume 2.2 gigawatts of electricity when complete, enough to power 1.5 to 1.6 million homes. Indiana has approximately 2.8 million total households, making this roughly half of residential electricity demand in the state. Source: New York Times (reprinted in Spokesman-Review), "At Amazon's biggest data center, everything is supersized for AI," July 11, 2025 https://www.spokesman.com/stories/2025/jul/13/at-amazons-biggest-data-center-everything-is-super/
+            </li>
+            <li>
+                (20) Bloomberg investigation on energy costs A Bloomberg News analysis of wholesale electricity prices at tens of thousands of locations found costs increased by as much as 267% over five years in areas near significant data center activity. About 75% of the locations with the largest increases were within 50 miles of dense data center clusters. Source: Bloomberg, "How AI Data Centers Are Sending Your Power Bill Soaring," September 29, 2025 https://www.bloomberg.com/graphics/2025-ai-data-centers-electricity-prices/
+            </li>
+        </ul>
+
+    </div>
+
+    <button id='info-button' onmouseenter="">
+        <i class="fa fa-info"></i>
+    </button>
     
     <script>
         const map = new maplibregl.Map({
@@ -151,6 +271,24 @@
             canvasContextAttributes: {antialias: true},
             attributionControl: false
         });
+
+        const company_palette = {
+            "nvidia":"#fa7970",
+            "microsoft":"#faa356",
+            "google":"#7ce38b",
+            "amazon":"#77bdfb",
+            "meta":"#a2d2fb",
+            "tesla":"#cea5fb"
+        };
+
+        const palette = {
+            "black":"#0d1117",
+            "black2":"#161b22",
+            "grey1":"#21262d",
+            "grey2":"#89929b",
+            "grey3":"#c6cdd5",
+            "white":"#ecf2f8"
+        };
     </script>
 
 <!-- <script src="datacenters.js"></script> -->
