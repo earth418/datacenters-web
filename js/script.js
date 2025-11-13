@@ -53,6 +53,8 @@ function spinGlobe() {
 
 let keep_spinning = true;
 
+let can_reload = false;
+
 map.on("moveend", () => {if (keep_spinning) spinGlobe();});
 
 function intro(stage, base="#b_t", start="#start") {
@@ -338,7 +340,7 @@ function update(stage) {
                 for (let i = 0; i < 50; ++i) {
                     let h = indiana_cities[i].features[0].properties.houses;
                     let radius = Math.sqrt(h) / 30.0;
-                    animate_map_property(`indiana_${i}`, "circle-opacity", (t) => (1.0 - t) * radius, duration / 2.0, duration / 2.0 + i * 25);
+                    animate_map_property(`indiana_${i}`, "circle-radius", (t) => (1.0 - t) * radius, duration / 2.0, duration / 2.0 + i * 25);
                 }
                 animate_map_property(`indiana_layer`, "fill-opacity", (t) => 0.25 * (1.0 - t), duration, duration);
 
@@ -367,308 +369,28 @@ function update(stage) {
             },
             () => {
                 intro(4, "#b2_t")
-                d3.timeout(() => d3.select("#end_text").transition().duration(300).style("opacity", 1.0), 6000)
-            }
+                d3.timeout(() => {
+                    d3.select("#end_text").transition().duration(300).style("opacity", 1.0);
+                    can_reload = true;
+                }, 6000)
+            },
+            // () => {
+            //     if (can_reload)
+            //         window.location.reload(true);
+            //     else {
+            //         num_presses--;
+            //     }
+            // }
     ];
 
-    funcs[stage](stage);
-}
-
-
-function old_update(stage) {
-    switch(stage) {
-        case 5:
-            transition();
-
-            d3.select("#treemap-container").transition("treemapcontainer")
-                .duration(3.0 * duration)
-                .style("opacity", 0.0)
-                .on("end", () => {
-                    d3.select(this).style("display","none");}
-                );
-
-            d3.timeout(spinGlobe, 3.0*duration);
-            break;
-
-        case 6:
-            keep_spinning = false;
-            map.stop();
-            
-            d3.select("#sidebar1").transition()
-                .duration(duration)
-                .style("opacity",1.0);
-            
-            transition_top("#s1p1", duration);
-            // d3.select('#s1p1').transition().duration(duration).style("top",top_gap);
-
-            map.flyTo({
-                center: [-110.99,32.21],
-                zoom : 11
-            })
-            break;
-        
-        case 7:
-            map.flyTo({
-                center: [-110.7875,32.052],
-                zoom : 15
-            })
-
-            d3.select("#s1p1").transition().duration(duration).style("color","#707070ff");
-            d3.select("#s1p1").classed("selected_text", false);
-            d3.select("#s1p1").classed("unselected_text", true);
-            transition_top("#s1p2", duration);
-            // d3.select('#s1p2').transition().duration(duration).style("top",top_gap);
-            // d3.select('#p3').transition().duration(duration).style("top","25%");
-
-            animate_map_property('tusconlayer', 'fill-opacity', (t) => 0.8 * t, duration);                
-            break;
-
-        case 8:
-            // update(6);
-            map.flyTo({
-                center: [-110.8875,32.152],
-                zoom : 10.5
-            })
-
-            // d3.select('#p2').transition().duration(duration).style("top","25%");
-            d3.select("#s1p2").transition().duration(duration).style("color","#707070ff");
-            d3.select("#s1p2").classed("unselected_text", true);
-            d3.select("#s1p2").classed("selected_text", false);
-
-            transition_top('#s1p3', duration);
-            // d3.select('#s1p3').transition().duration(duration).style("top","10%");
-
-            animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * t, duration);
-            break;
-        
-        case 9:
-            d3.select("#s1p3").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s1p4", duration);
-            // d3.select('#s1p4').transition().duration(duration).style("top","10%");
-            break;
-
-        case 10:
-            d3.select("#sidebar1").transition().duration(duration).style("opacity",0.0);
-            animate_map_property("tusconcitylayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration);
-            
-            map.flyTo({
-                center: [-110.8875,32.152],
-                zoom : 5
-            })
-            break;
-        
-        case 11:
-            
-            d3.select("#sidebar2").transition().duration(duration).style("opacity",1.0);
-            map.flyTo({
-                    center: [-90.04,35.14],
-                    zoom : 8
-                })
-                transition_top("#s2p1", duration);
-                animate_map_property("xAIcolossuslayer", "fill-extrusion-opacity", (t) => 0.8*t, duration);
-                // d3.select('#s2p1').transition().duration(duration).style("top","10%");
-            break;
-
-        case 12:
-            map.flyTo({
-                    center: [-90.15627488376435,35.05966538381292],
-                    zoom : 12
-                });
-
-                d3.select("#s2p1").transition().duration(duration).style("color","#707070ff");
-                transition_top("#s2p2", duration);
-                
-                d3.timeout(() => map.addLayer({
-                    'id':'boxtownText',
-                    'type':'symbol',
-                    'source':'boxtown',
-                    'layout':{
-                        'text-field':'Boxtown'
-                    }
-                }), duration / 2.0);
-                // animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.8*t, duration);
-                // d3.select('#s2p2').transition().duration(duration).style("top","5%");
-            break;
-
-        case 13:
-            
-            map.flyTo({
-                center: [-90.15627488376435,35.05966538381292],
-                zoom : 15,
-                pitch: 45.0,
-                bearing: 0.0,
-                duration: duration,
-            });
-
-            d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
-            
-            // new Promise(r => setTimeout(r, duration)).then(rotateCamera(0.0));
-
-            d3.select("#s2p2").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s2p3", duration);
-            animate_map_property("xAIcolossuslayer", "fill-extrusion-height", (t) => 50.0*t, duration);
-            // d3.select('#s2p3').transition().duration(duration).style("top","5%");
-            break;
-            
-        case 14:
-            stop_rotating = true;
-            
-            d3.timeout(() => {
-                map.flyTo({
-                    center: [-90.15627488376435,35.05966538381292],
-                    zoom : 12,
-                    pitch: 15.0,
-                    bearing: 0.0,
-                    duration: duration,
-                });
-
-                // d3.timeout(() => requestAnimationFrame(rotateCamera), duration);
-                
-                d3.select("#s2p3").transition().duration(duration).style("color","#707070ff");
-                transition_top("#s2p4", duration);
-
-                d3.select("#windmap").transition().duration(duration).style("opacity", 1.0);
-                
-                animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * t, duration); 
-            }, 50);
-            break;
-
-        case 15:
-
-            d3.select("#sidebar2").transition().duration(duration).style("opacity",0.0);
-            animate_map_property("boxtownlayer", "fill-opacity", (t) => 0.5 * (1.0 - t), duration); 
-           
-            map.flyTo({
-                center: [-90.15627488376435,35.05966538381292],
-                zoom : 8,
-                pitch: 0.0,
-                bearing: 0.0,
-                duration: duration,
-            });
-
-            d3.select("#windmap").transition().duration(duration).style("opacity", 0.0);
-            
-            break;
-        
-        case 16:
-            d3.select("#sidebar3").transition().duration(duration).style("opacity",1.0);
-            transition_top("#s3p1", duration);
-
-            map.flyTo({
-                center: [-90.18594924055635,35.146547415054584],
-                zoom : 12,
-                pitch: 0.0,
-                bearing: 0.0,
-                duration: duration,
-            });
-            break;
-            
-        case 17:
-            d3.select("#s3p1").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s3p2", duration);
-            
-            map.flyTo({
-                center: [-90.216323,35.108877],
-                zoom : 15,
-                duration: duration,
-            });
-            animate_map_property("westmemphisgoogle_layer", "fill-opacity", (t) => 0.8 * t, duration);
-
-            break;
-        
-        case 18:
-            d3.select("#s3p2").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s3p3", duration);
-            
-            map.flyTo({
-                center: [-90.216323,35.108877],
-                zoom : 13,
-                duration: duration,
-            });
-
-            break;
-
-        case 19:
-            map.flyTo({
-                center: [-90.216323,35.108877],
-                zoom : 11,
-                duration: duration,
-            });
-            d3.select("#s3p3").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s3p4", duration);
-
-            break;
-        
-        case 20:
-            d3.select("#sidebar3").transition().duration(duration).style("opacity",0.0);
-            break;
-
-        case 21:
-            d3.select("#sidebar4").transition().duration(duration).style("opacity",1.0);
-            transition_top("#s4p1", duration);
-            
-            map.flyTo({
-                center: [-86.50958727110606, 41.69935263597052],
-                zoom : 12,
-                duration: duration,
-            });
-
-            break;
-        case 22:
-            d3.select("#s4p1").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s4p2", duration);
-            map.flyTo({
-                center: [-86.50958727110606, 41.69935263597052],
-                zoom : 10,
-                duration: duration,
-            });
-
-            
-            break;
-        case 23:
-            d3.select("#s4p2").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s4p3", duration);
-            map.flyTo({
-                center: [-86.50958727110606, 39.69935263597052],
-                zoom : 6,
-                duration: duration*1.5,
-            });
-
-            d3.timeout(() => {
-                for (let i = 0; i < 50; ++i) {
-                    let h = indiana_cities[i].features[0].properties.houses;
-                    let radius = Math.sqrt(h) / 30.0;
-                    animate_map_property(`indiana_${i}`, "circle-radius", (t) => t * radius, duration / 2.0, duration / 2.0 + i * 25);
-                }
-            }, duration);
-            animate_map_property(`indiana_layer`, "fill-opacity", (t) => 0.25 * t, duration, duration);
-
-            break;
-        case 24:
-            d3.select("#s4p3").transition().duration(duration).style("color","#707070ff");
-            transition_top("#s4p4", duration);
-            break;
-        case 25:
-            d3.select("#sidebar4").transition().duration(duration).style("opacity",0.0);
-            break;
-        // case 26:
-        //     d3.select("#sidebar5").transition().duration(duration).style("opacity",1.0);
-        //     transition_top("#s5p1", duration);
-        //     break;
-        // case 27:
-        //     d3.select("#s5p1").transition().duration(duration).style("color","#707070ff");
-        //     transition_top("#s5p2", duration);
-        //     break;
-        // case 28:
-        //     d3.select("#s5p2").transition().duration(duration).style("color","#707070ff");
-        //     transition_top("#s5p3", duration);
-        //     break;
-        // case 29:
-        //     d3.select("#s5p3").transition().duration(duration).style("color","#707070ff");
-        //     transition_top("#s5p4", duration);
-        //     break;
+    if (stage < funcs.length)
+        funcs[stage](stage);
+    else if (can_reload) {
+        window.location.reload(true);
     }
+
 }
+
 
 let zero;
 function rotateCamera(time) {
