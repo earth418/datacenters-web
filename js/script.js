@@ -12,7 +12,7 @@ import {geoSatellite} from "https://cdn.skypack.dev/d3-geo-projection@4";
 let num_presses = 0;
 
 if (num_presses > 3) {
-    d3.select("#block").style("opacity", 0.0);
+    d3.select("#block1").style("opacity", 0.0);
     d3.select("#treemap-container").style("opacity", 0.0);
     update(num_presses);
 }
@@ -47,7 +47,7 @@ function defocus_element(element) {
 
 function spinGlobe() {
     const center = map.getCenter();
-    center.lng += 10.0;
+    center.lng -= 10.0;
     map.easeTo({center, duration: 1000, easing: (n) => n});
 }
 
@@ -55,14 +55,14 @@ let keep_spinning = true;
 
 map.on("moveend", () => {if (keep_spinning) spinGlobe();});
 
-function intro(stage) {
-    d3.select("#start").transition().duration(duration).style("opacity",0.0);
+function intro(stage, base="#b_t", start="#start") {
+    d3.select(start).transition().duration(duration).style("opacity",0.0);
 
-    d3.select("#b_t" + stage).transition("bt" + stage)
+    d3.select(base + stage).transition(base + stage)
         .duration(duration)
         .style("left", "125%")
         
-    d3.select("#b_t" + (stage + 1)).transition("bt" + (stage + 1))
+    d3.select(base + (stage + 1)).transition(base + (stage + 1))
         .duration(duration)
         .style("left", "25%")
 }
@@ -76,7 +76,7 @@ function update(stage) {
             intro,
             intro,
             () => { // case 4
-                    d3.select("#block").transition()
+                    d3.select("#block1").transition()
                     .duration(duration)
                     .style("opacity", 0.0)
                     .on("end", () => {
@@ -306,10 +306,6 @@ function update(stage) {
                     duration: duration,
                 });
 
-            },
-            () => {
-                defocus_element("#s4p2");
-                transition_top("#s4p3");
                 map.flyTo({
                     center: [-86.50958727110606, 39.69935263597052],
                     zoom : 6,
@@ -327,31 +323,51 @@ function update(stage) {
 
             },
             () => {
+                defocus_element("#s4p2");
+                transition_top("#s4p3");
+
+
+            },
+            () => {
                 defocus_element("#s4p3");
                 transition_top("#s4p4");
             },
             () => {
                 d3.select("#sidebar4").transition().duration(duration).style("opacity",0.0);
+
+                for (let i = 0; i < 50; ++i) {
+                    let h = indiana_cities[i].features[0].properties.houses;
+                    let radius = Math.sqrt(h) / 30.0;
+                    animate_map_property(`indiana_${i}`, "circle-opacity", (t) => (1.0 - t) * radius, duration / 2.0, duration / 2.0 + i * 25);
+                }
+                animate_map_property(`indiana_layer`, "fill-opacity", (t) => 0.25 * (1.0 - t), duration, duration);
+
+                map.flyTo({
+                    center: [-96.0066, 38.7135],
+                    zoom : 3.0,
+                    duration: duration*1.5,
+                });
             },
             () => {
-                d3.select("#sidebar5").transition().duration(duration).style("opacity",1.0);
-                transition_top("#s5p1");
+                // d3.select("#block2").transition().style("visibility","visible");
+                d3.select("#block2").transition().duration(duration).style("opacity",1.0);
+                // transition_top("#s5p1");
+                keep_spinning = true;
+                spinGlobe();
+                
             },
             () => {
-                defocus_element("#s5p1");
-                transition_top("#s5p2");
+                intro(1, "#b2_t")
             },
             () => {
-                defocus_element("#s5p2");
-                transition_top("#s5p3");
+                intro(2, "#b2_t")
             },
             () => {
-                defocus_element("#s5p3");
-                transition_top("#s5p4");
+                intro(3, "#b2_t")
             },
             () => {
-                defocus_element("#s5p4");
-                transition_top("#s5p5");
+                intro(4, "#b2_t")
+                d3.timeout(() => d3.select("#end_text").transition().duration(300).style("opacity", 1.0), 6000)
             }
     ];
 

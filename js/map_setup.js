@@ -58,6 +58,12 @@ map.on('load', () => {
     // Insert the layer beneath any symbol layer.
     const layers = map.getStyle().layers;
 
+    map.setSky({
+        'sky-color':'#0D1117',
+        'fog-color':'#0000ff',
+        'atmosphere-blend': 1.0});
+
+
     let labelLayerId;
     for (let i = 0; i < layers.length; i++) {
         if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {

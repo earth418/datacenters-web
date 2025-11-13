@@ -20,9 +20,9 @@
 </head>
 <body>
     <!-- <button id="transition" style="width: 25px; height: 10px; margin-left: 452px;">Click here</button> -->
-    <div id="block" style="position: absolute; width: 100%; height: 100%; background-color: #0d1117; z-index: 10; pointer-events: none;">
-        <div style="display: flex; width: 100%; height: 100%; align-items: center; pointer-events: none;">
-            <p id="start" style="position: absolute; bottom: 25%; left: 25%; color:white; display:block; width: 50%; text-align: center; opacity:0.5;">
+    <div id="block1" class="block">
+        <div>
+            <p id="start" class="suggestion_text">
                 (Press spacebar to continue)</p> 
         <!-- <div style="top: 50%; bottom: 50%;"> -->
             <p id="b_t1" class="b_text" style="left: 25%">
@@ -166,7 +166,7 @@
         </p>
     </div>
 
-    <div id="sidebar5" class="sidebar">
+    <!-- <div id="sidebar5" class="sidebar">
         <h3>THE REAL COST</h3>
         <p id="s5p1">
             A Bloomberg News investigation analyzed wholesale electricity prices at tens of thousands of locations across the United States. In areas with significant data center activity, wholesale electricity costs increased by as much as 267% over five years. These wholesale costs flow directly into the retail prices that households and businesses pay.
@@ -183,6 +183,29 @@
         <p id="s5p5">
             The facilities profiled here represent a small fraction of the data centers under construction nationwide. The bill is just beginning to come due.
         </p>
+    </div> -->
+
+    <div id="block2" class="block" style="opacity: 0.0; background-color: #0d1117aa;">
+        <h3 style="position: absolute; width: 100%; text-align: center; font-size: 2em; color: #ecf2f8;">THE REAL COST</h3>
+        <div>
+            <p id="end_text" class="suggestion_text" style="opacity:0.0">
+                (Press spacebar to restart)</p> 
+            <p id="b2_t1" class="b_text" style="left: 25%">
+                A Bloomberg News investigation analyzed wholesale electricity prices at tens of thousands of locations across the United States. In areas with significant data center activity, wholesale electricity costs increased by as much as 267% over five years. These wholesale costs flow directly into the retail prices that households and businesses pay.
+            </p>
+            <p id="b2_t2" class="b_text">
+                During the same period, residential electricity demand remained flat or declined in many regions. The increases stem not from growing household consumption, but from the rapid expansion of data centers and the infrastructure required to power them.
+            </p>
+            <p id="b2_t3" class="b_text">
+                The pattern repeats across the country. In Ohio, average household bills increased by at least $15 per month in summer 2025, with utility companies and grid operators citing data center growth as a primary driver. 
+            </p>
+            <p id="b2_t4" class="b_text">
+                The pattern repeats across the country. In Ohio, average household bills increased by at least $15 per month in summer 2025, with utility companies and grid operators citing data center growth as a primary driver. 
+            </p>
+            <p id="b2_t5" class="b_text">
+                The facilities profiled here represent a small fraction of the data centers under construction nationwide. The bill is just beginning to come due.
+            </p>
+        </div>
     </div>
 
     <div id="treemap-container" style="pointer-events: none;"></div>
@@ -191,6 +214,9 @@
 
     <div id="info-sidebar" style="position: absolute; 
     width: 50%; height: 100%; right: -50%; background-color: #444;z-index: 10000;">
+
+        <h3 style="width: 100%; color: #ecf2f8;font-size: 1.5em; margin: 0; margin-left: 0%; text-align: center">CITATIONS</h3>
+
         <ul id="citations-list" style="list-style-type: none; height: 200%;">
             <li>
                 <b>(1) Tech company market capitalizations, 2025</b> As of September 2025, the eight trillion-dollar tech companies (Nvidia, Apple, Microsoft, Alphabet, Amazon, Meta, Tesla, Broadcom) had a combined market capitalization of $21 trillion, accounting for 36% of the S&P 500. Source: CNBC, "Google leads monster week for tech, pushing megacaps to combined $21 trillion in market cap," September 5, 2025 https://www.cnbc.com/2025/09/05/tech-megacaps-worth-market-cap.html
