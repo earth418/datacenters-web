@@ -30,6 +30,14 @@ const duration = 1500;
 
 let stop_rotating = false;
 
+function create_obj(company_name, company_color) {
+    return `<div class='legend_item'><div class='legend_colorbox' style='background-color: ${company_color}'></div><p>${company_name}</p></div>`;
+}    
+
+document.getElementById("legend").innerHTML = "";
+for (const company in company_palette) {
+    document.getElementById("legend").innerHTML += (create_obj(company, company_palette[company]));
+}
 
 function transition_top(element) {
     const top_gap = "0.5em";
@@ -508,7 +516,7 @@ function color_from_name(name) {
     if (name == "NVIDIA")
         return company_palette["nvidia"];
     if (name == "Tesla")
-        return company_palette["tesla"];
+        return company_palette["tesla/xai"];
 
     return palette["black2"];
     // return "#f5ce8c";

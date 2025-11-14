@@ -92,7 +92,7 @@ map.on('load', () => {
     }
 
     add_dcs(amazon_datacenters, "amazondatacenters", company_palette["amazon"]);
-    add_dcs(xai_centers, "xaicenters", company_palette["tesla"]);
+    add_dcs(xai_centers, "xaicenters", company_palette["tesla/xai"]);
     add_dcs(ms_centers, "mscenters", company_palette["microsoft"]);
     add_dcs(meta_centers, "metacenters", company_palette["meta"]);
     add_dcs(google_centers, "googlecenters", company_palette["google"])
@@ -214,7 +214,7 @@ map.on('load', () => {
         'source':'xAIcolossus',
         'layout':{},
         'paint': {
-            'fill-extrusion-color': company_palette["tesla"],
+            'fill-extrusion-color': company_palette["tesla/xai"],
             'fill-extrusion-height': 5.0,
             'fill-extrusion-opacity': 0.0,
         }

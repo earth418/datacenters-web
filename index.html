@@ -209,7 +209,11 @@
     </div>
 
     <div id="treemap-container" style="pointer-events: none;"></div>
-    <div id="map-container" style="position: absolute; height: 100%; width:100%; z-index: -100;pointer-events: none;"></div>
+    <div id="map-container" style="position: absolute; height: 100%; width:100%; z-index: -100;pointer-events: none;">
+        <div id="legend" style="position: absolute; height: 15%; width: 10%; right: 1em; bottom: 1em; background-color: #0d1117aa; z-index: 1;">
+            
+        </div>
+    </div>
     
 
     <div id="info-sidebar" style="position: absolute; 
@@ -304,7 +308,7 @@
             "google":"#7ce38b",
             "amazon":"#77bdfb",
             "meta":"#a2d2fb",
-            "tesla":"#cea5fb"
+            "tesla/xai":"#cea5fb"
         };
 
         const palette = {

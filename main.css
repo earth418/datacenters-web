@@ -159,3 +159,35 @@ body {
     font-size: 10px;
     color: #ecf2f8;
 }
+
+#legend {
+    padding: 2px;
+}
+
+.legend_item {
+    display: flex;
+    height: 12%;
+    font-size: 8px;
+    color: #ecf2f8;
+
+    /* border-top: 1px solid #0D1117; */
+    border-bottom: 1px solid #0D1117;
+    padding: 2px;
+}
+
+.legend_colorbox {
+    height: 90%;
+    width: 20%;
+    display: block;
+
+    border: 1px solid #ecf2f8;
+}
+
+.legend_item > p {
+    margin: 0;
+    width: 80%;
+    padding-left: 6px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    line-height: 1em;
+}
